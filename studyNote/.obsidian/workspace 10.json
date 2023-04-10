@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "9abfa625640266b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "cbe756fa01c8866e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1090b8a3a6aa0176",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "1d3d1af5adffb19f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTML+CSS/CSS/07新增特性.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c7cc17943c9798e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C++/C++基础入门.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6097270f7125498b",
+    "type": "split",
+    "children": [
+      {
+        "id": "299e969e41d19c2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e0902e926617a53",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c3e90a02ad1e8585",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "npx",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f4eafc8e2d80b944",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 158,
+    "collapsed": true
+  },
+  "right": {
+    "id": "92daa7b11a92905c",
+    "type": "split",
+    "children": [
+      {
+        "id": "52f67c233c17f19b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c18777e0cf223f2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1017c7d7c28899ab",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "C++/C++基础入门.md"
+              }
+            }
+          },
+          {
+            "id": "f2537ac478cbcb00",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "C++/C++基础入门.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e70a5370af551370",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "C++/C++基础入门.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "c7cc17943c9798e5",
+  "lastOpenFiles": [
+    "C++/未命名.md",
+    "C++/C++基础入门.md",
+    "C++/C++课程安排.md",
+    "HTML+CSS/CSS/07新增特性.md",
+    "HTML+CSS/CSS/08移动端.md",
+    "JavaScript 1/JS基础/06函数.md",
+    "JavaScript 1/JS基础/04数据类型.md",
+    "JavaScript 1/JS基础/02变量.md",
+    "JavaScript 1/ECMAScript6+/ch06.md",
+    "JavaScript 1/ECMAScript6+/ch04.md"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "main": {
+    "id": "7ae0337e4f8e4a8d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5a9816afb56fd2d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a50287fb9fffa0f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vue/vue3快速上手.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3894819a8ef3a90e",
+    "type": "split",
+    "children": [
+      {
+        "id": "2686785c7234a31b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0cfb49862d09fc5d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e92f3ba91aa55146",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "deb5086b49b28d55",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "eb9c450e0b06fe95",
+    "type": "split",
+    "children": [
+      {
+        "id": "39b0255da51c78a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0328f93bfe218c91",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "cd49fb55d2a392b0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "vue/vue3快速上手.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "a50287fb9fffa0f2",
+  "lastOpenFiles": [
+    "vue/vue_x.md",
+    "vue/vue_router 路由.md",
+    "C++基础入门.md"
+  ]
+}

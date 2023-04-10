@@ -1,0 +1,134 @@
+{
+  "main": {
+    "id": "9abfa625640266b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3d0076c7ddd2a52",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "vue/vue-text.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6097270f7125498b",
+    "type": "split",
+    "children": [
+      {
+        "id": "299e969e41d19c2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e0902e926617a53",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c3e90a02ad1e8585",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f4eafc8e2d80b944",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "92daa7b11a92905c",
+    "type": "split",
+    "children": [
+      {
+        "id": "52f67c233c17f19b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2640f906548e4bd8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "vue/vue-text.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "156327fa00552796",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "vue/vue-text.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0c18777e0cf223f2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1017c7d7c28899ab",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "vue/vue-text.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "f3d0076c7ddd2a52",
+  "lastOpenFiles": [
+    "面试/1.浙江大华.md"
+  ]
+}

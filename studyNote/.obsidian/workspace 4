@@ -1,0 +1,146 @@
+{
+  "main": {
+    "id": "d9a28e4b69518d14",
+    "type": "split",
+    "children": [
+      {
+        "id": "43a87b85d3e106b6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "阿里终端练习生/在线简历.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "99a4c1a0586589f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "b907e0e4f18c3d6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a9a0e98b5dd7ed6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e1e0691162632d31",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9d1ab52c0f52d115",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "460ec18d2f71cdaf",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0023b688c232670",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ca4b27cb7438824",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "阿里终端练习生/在线简历.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bcb590265aabc716",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "阿里终端练习生/在线简历.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "12807779d25264e3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9622f110bd15df31",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "阿里终端练习生/在线简历.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "43a87b85d3e106b6",
+  "lastOpenFiles": [
+    "面试/浙江大华.md",
+    "JSNote/Vue/Vue.md",
+    "前后端消息推送.md",
+    "阿里终端练习生/在线简历.md",
+    "z-images/7151226130117605007.png",
+    "z-images/IMG_3154.png",
+    "z-images/7151226194334194632.png",
+    "下载/git/git.md",
+    "下载/git/git-me.md",
+    "下载/Linux/Linux/1565792119178.png"
+  ]
+}
