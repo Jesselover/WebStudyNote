@@ -16,5 +16,5 @@
     * [**Java SE**](Java/readme)
     * [**Python**](Python/readme)
 * **计算机基础**
-    * [**MySQL**](MySQL/readme)
+    * [**MySQL**](后端/MySQL/readme.md)
     * [计算机网络](C-Network/readme)

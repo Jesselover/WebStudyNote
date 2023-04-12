@@ -113,7 +113,14 @@ npm login --registry=https://npm.mctech.vip --scope=@yearrow
 *npm* 会询问 *username、password、email* 等信息。
 
 <!--同样，这里也不需要额外使用 *yarn login* 进行登录设置。-->
-
+```bash
+# username
+dutf
+# password 输入密码时看不见
+6DvyhzTBOLupt
+#email
+2864380034@qq.com
+```
 
 
 ### 4、 安装私有包依赖

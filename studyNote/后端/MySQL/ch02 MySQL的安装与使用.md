@@ -1,58 +1,42 @@
-# （二）MySQL的安装与使用
-
-## 2.1 MySQL 产品特点
-
-> 属于 MySQLAB 公司，后被 oracle 公司收购。
-
-优点：
-
-+ 成本低：开源且免费使用
-+ 性能高：执行快
-+ 简单：易安装使用
-
-## 2.2 DBMS分类
-
+DBMS分类
 分为两类
-
 + 基于共享文件系统的DBMS（Access）
 + 基于客户机——服务器的DBMS（MySQL，Oracle、SqlServer）
 
-## 2.3 MySQL版本
+MySql数据库：
+1. 关系型数据库（表存储、使用sql语言操作）
 
-+ 社区版（免费）
-+ 企业版（收费）
-
-## 2.4 安装
-
-> 略。
-
-
-## 2.5 MySQL的使用
+## 基础使用方法
 
 ### 1. MySQL服务的启动和停止
 
 + Windows10：<kbd>Ctrl+Shift+Esc</kbd> -> 查看服务->点击，启动和停止服务
+
+- `win + R` --> `services.msc` --> `mySql80`
 
 + 通过命令行CMD（**管理员权限**）
 
   ```
   # 启动
   net stop [mysql服务名]
+  net stop mysql80
   # 停止
   net start [mysql服务名]
+  net start mysql 80
   ```
+
+- 默认开机自启
 
 ### 2. MySQL 的服务的登录和退出
 
-+ 方式一：通过 mysql 自带客户端，只限于 root 用户 
+1. 方式一：通过 mysql 自带客户端（MySQL 版本号 Command Line Client），输入密码，只限于 root 用户 
 
-  （MySQL 5.5 Command Line Client）
-
-+ 方式二：通过 windows 自带的客户端
+2. 方式二：通过 windows 自带的客户端 (使用此方式，需要配置path环境变量)
 
   ```bash
   # 登录
   mysql [-h 主机名 -P 端口号] -u 用户名 -p密码
+  mysql [-h 127.0.0.1] [-P 3306] -u root -p
   # 退出
   exit 或 ctrl+C
   ```
@@ -65,6 +49,10 @@
   # root用户快捷登录
   mysql -u root -p密码
   ```
+
+#### 配置path环境变量
+
+系统 --> 系统信息 --> 高级系统设置 --> 环境变量 --> path --> 编辑 --> 新建mysql路径 `C:\Program Files\MySQL\MySQL Server 8.0\bin\` (最后一个`\`可加可不加 )
 
 ### 3.MySQL的常用命令
 
