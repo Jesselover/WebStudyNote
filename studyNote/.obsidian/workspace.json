@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "梦诚/project.md",
+                "file": "梦诚/git.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -108,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "梦诚/project.md"
+                "file": "梦诚/git.md"
               }
             }
           },
@@ -118,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "梦诚/project.md",
+                "file": "梦诚/git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "梦诚/project.md",
+                "file": "梦诚/git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +147,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,6 +162,8 @@
   },
   "active": "afa28d52d039a6e8",
   "lastOpenFiles": [
+    "梦诚/gitlap.md",
+    "梦诚/project.md",
     "梦诚/tip.md",
     "other/Ajax/02 HTTP相关问题.md",
     "other/Ajax/01 概述.md",
@@ -174,14 +178,12 @@
     "HTML+CSS/CSS/05定位.md",
     "梦诚/git.md",
     "vue/vue_cli.md",
-    "梦诚/gitlap.md",
-    "面试/面经/深开鸿.md",
+    "西电课程/面试/面经/深开鸿.md",
     "项目/商品汇/myNote/01 初始化、大框架.md",
     "项目/商品汇/myNote/03 三级联动态数据、节流、路由跳转.md",
     "vue/vue3快速上手.md",
     "vue/vue_x.md",
     "vue/vue_router 路由.md",
-    "梦诚/project.md",
     "梦诚/代码细节.md",
     "未命名 2.canvas",
     "react/大佬笔记/React Hooks 项目/（三）项目列表功能模块.md",

@@ -1,6 +1,19 @@
 [总参考1](https://www.runoob.com/git/git-tutorial.html)
-
 [总参考2](https://www.bootcss.com/p/git-guide/)
+
+## 简要使用
+
+#### 远程仓库
+```yaml
+# 查看远程仓库简单名字
+git remote 
+# 查看远程仓库详情
+git remote -v
+git remote --verbose
+
+```
+
+
 ## gitlap
 
 - 自建代码托管平台、局域网代码托管中心
@@ -10,13 +23,14 @@
 	3. 主机名（windows必须配置host映射）
 `[dutf_ssh · SSH Keys · User Settings · GitLab (mctech.vip)](http://git.mctech.vip:8080/-/profile/keys/1056)`
 `[Preferences · User Settings · GitLab (mctech.vip)](http://git.mctech.vip:8080/-/profile/preferences#behavior)`
+
 ## git
 
 #### 概念
 
 Git是一个开源**分布式**版本控制系统、一个版本管理工具，而GitHub、GitLab、Gitee等是基于git的仓库托管平台，让我们使用起来更方便
 
-###### 集中式vs分布式
+##### 集中式vs分布式
 
 - **集中式**版本库集中存放在中央服务器，干活的时候，要先从中央服务器取得最新的版本，然后开始干活，干完活了，再把自己的活推送给中央服务器
 
@@ -24,22 +38,21 @@ Git是一个开源**分布式**版本控制系统、一个版本管理工具，�
 
   当然在实际使用分布式版本控制系统的时候，通常也有一台充当“中央服务器”的电脑，但这个服务器的作用仅仅是用来方便“交换”大家的修改，没有它大家也一样干活，只是交换修改不方便而已
 
-###### Git的工作流
+##### Git的工作流
 
 - 工作区：add 之前的代码，自己的临时修改内容
 - 暂存区：已经 add 进去，但还没有 commit 的
 - 本地分支：已经 commit 提交的
 - 远程分支：GitLab上可以看到的，项目组里所有人都能看见的
 
-#### 安装
+#### 安装与配置
 
 在Windows上，可以从Git官网下载安装程序，然后按默认选项安装
 
 安装完成后，在命令行里输入git -v能看到版本，在桌面点击右键能看到Git GUI Here和Git Bash Here的选项，说明安装成功！
 
-#### 配置
 
-###### 用户名和邮箱配置：
+##### 用户名和邮箱配置：
 
 Git用户名和邮箱有全局配置和仓库配置之分，仓库配置优先级高于全局配置
 
@@ -59,7 +72,7 @@ $ git config user.email "your@xx.com"
 
 可使用git config (如果是全局就加上--global) --list查看当前配置
 
-###### SSH配置：
+##### SSH配置：
 
 首先在默认地址，一般是"C:\Users\Administrator"下的“.ssh”文件夹，查看有无文件，如果没有就是还没生成过SSH密钥；如果有就打开.pub文件，复制内容，填入GitLab里。
 
