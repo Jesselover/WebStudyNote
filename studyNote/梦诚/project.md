@@ -26,14 +26,13 @@ package.json里看如何打包
 - localhost:端口号  （如若跳转失败，手动输入地址）
 
 
+
 ### 目录说明
 
 #### 目录
 .vscode
 	setting.json %%vscode编辑器和插件的相关配置%%
 	launch.json %%调试配置文件%%
-	
-
 dist
 node_modules
 src
@@ -71,11 +70,21 @@ jsconfig.json
 [vue项目中 jsconfig.json是什么_唐璜Taro的博客-CSDN博客](https://blog.csdn.net/weixin_44067347/article/details/125632655)
 yarn.lock
 mcpack.config.js
+vue.config.js
+babel.config.js: babel的配置文件[es6转es5]
+package.json: 应用包配置文件  
+README.md: 应用描述文件
+package-lock.json：包版本控制文件
+
+
+#### vue.config.js
+[配置参考 | Vue CLI (vuejs.org)](https://cli.vuejs.org/zh/config/#vue-config-js)
 
 #### jsconfig.json
 [vue项目中 jsconfig.json是什么_唐璜Taro的博客-CSDN博客](https://blog.csdn.net/weixin_44067347/article/details/125632655)
 #### package.json
 	[package.json 配置完全解读 - 掘金 (juejin.cn)](https://juejin.cn/post/7161392772665540644)	
+	[npm安装依赖(dependency)版本号及更新规则 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/462091907)
 ```json
 // "scripts" 指定项目的一些内置脚本命令，这些命令可以通过 npm run / yarn 来执行。通常包含项目开发，构建 等 CI 命令，比如
 "scripts": { "build": "webpack" }
@@ -96,6 +105,7 @@ package.json
 launch.json
 ![[b0ae295d30a528e9e815c05d945156a.png]]
 
+![[Pasted image 20230412153001.png]]
 
 #### launch.json
 [VSCode launch.json配置详解 - 掘金 (juejin.cn)](https://juejin.cn/post/6844904198702645262)
@@ -317,6 +327,22 @@ module.exports = {
   }
 }
 ```
+
+### 部署与发布
+
+##### 模块注册
+![[Pasted image 20230412165846.png]]
+模块编码：项目名-模块名
+模块地址：
+	mcpack.config.js / output地址 :`output: 'dist/web-content/assets/change-category-dictionary.js'`
+	模块地址：`/tp/change-category-dictionary.html` **html**
+
+应用配置 添加菜单
+![[Pasted image 20230412171136.png]]
+
+##### 权限
+![[Pasted image 20230412170538.png]]
+
 ### 组件
 #### kaka-grid 例子
 

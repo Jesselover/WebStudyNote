@@ -4,6 +4,18 @@
 ## 简要使用
 
 #### 远程仓库
+
+[git remote 命令 | 菜鸟教程 (runoob.com)](https://www.runoob.com/git/git-remote.html)
+
+本地项目与远程仓库建立链接
+```YAML
+# 初始化本地仓库
+git init 
+# 与远程仓库第一次建立链接
+git remote add orgin 远程仓库地址
+
+```
+
 ```yaml
 # 查看远程仓库简单名字
 git remote 

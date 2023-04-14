@@ -1,4 +1,7 @@
 #### v-if/v-show
+
+> 尽量使用v-if ，不加载dom节点。防止dom节点被恶意篡改
+
 |  |v-if|v-show|
 |--|----|-------|
 |控制手段|dom元素的控制与删除|css的display属性|
