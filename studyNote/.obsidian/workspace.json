@@ -4,18 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "bc07bc0f3cd22ff0",
+        "id": "83cdb010504e0d34",
         "type": "tabs",
         "children": [
           {
-            "id": "2bd211ddafdb7ee9",
+            "id": "a2c2569895e4ac50",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "梦诚/git.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -65,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 352.5
+    "width": 200
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -91,15 +96,26 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {
+                "file": "梦诚/git.md"
+              }
+            }
+          },
+          {
+            "id": "3a06d49edb409d83",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
               "state": {}
             }
           },
           {
-            "id": "b50008a56119af03",
+            "id": "b1cef3ca871e2fbf",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "梦诚/git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,26 +127,35 @@
             }
           },
           {
-            "id": "da2d845064fc6bf0",
+            "id": "291161ca9e867f40",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "梦诚/git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "6b9cce7b3ac908b1",
+            "id": "54428bca47251094",
             "type": "leaf",
             "state": {
-              "type": "calendar",
+              "type": "git-history-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "7d650d503b3614aa",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
               "state": {}
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -146,15 +171,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2bd211ddafdb7ee9",
+  "active": "a2c2569895e4ac50",
   "lastOpenFiles": [
+    "未命名 1.canvas",
+    "项目/yes.md",
+    "zczxc.md",
     "2023-04-21.md",
     "梦诚/vue.md",
     "未命名.canvas",
     "梦诚/project.md",
     "梦诚/images/Pasted image 20230412171136.png",
     "西电课程/面试/波行实习/note.md",
-    "未命名 1.canvas",
     "未命名 3.canvas",
     "梦诚/tip.md",
     "梦诚/images/Pasted image 20230412165846.png",
@@ -184,8 +211,6 @@
     "other/HTTP/_sidebar.md",
     "other/HTTP/_navbar.md",
     "other/HTTP/ch04.md",
-    "other/HTTP/03 Nginx 代理以及面向未来的 HTTP.md",
-    "other/HTTP/02 HTTP 各种特性总览.md",
     "小程序/images/13.png",
     "梦诚/images",
     "后端"
