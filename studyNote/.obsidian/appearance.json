@@ -1,9 +1,10 @@
 {
   "baseFontSize": 26,
-  "cssTheme": "Behave dark",
+  "cssTheme": "Comfort color dark",
   "interfaceFontFamily": "华文细黑",
   "translucency": true,
   "textFontFamily": "幼圆",
   "accentColor": "",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "nativeMenus": false
 }
