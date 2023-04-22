@@ -154,8 +154,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
@@ -171,7 +170,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a2c2569895e4ac50",
+  "active": "2fc98da5ddb42dc7",
   "lastOpenFiles": [
     "未命名 1.canvas",
     "项目/yes.md",
