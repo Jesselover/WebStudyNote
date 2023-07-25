@@ -1,5 +1,10 @@
+### 1. 本地搭建three.js 官网
 
-## 1. 用parcel搭建three.js开发环境
+下载后
+`npm install`
+`npm run serve`
+
+### 2. 用parcel搭建three.js开发环境
 
 1. 创建文件夹，用VScode打开
 	`npm init`
