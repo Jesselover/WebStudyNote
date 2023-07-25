@@ -30,11 +30,15 @@ git remote --verbose
 
 - 自建代码托管平台、局域网代码托管中心
 
+> TIP
+> 一般需要**配置host** （公司内网映射）；直接覆盖掉原先的host，不需要重启
+
+
 1. 访问
 	1. ip地址
 	3. 主机名（windows必须配置host映射）
-`[dutf_ssh · SSH Keys · User Settings · GitLab (mctech.vip)](http://git.mctech.vip:8080/-/profile/keys/1056)`
-`[Preferences · User Settings · GitLab (mctech.vip)](http://git.mctech.vip:8080/-/profile/preferences#behavior)`
+	`[dutf_ssh · SSH Keys · User Settings · GitLab (mctech.vip)](http://git.mctech.vip:8080/-/profile/keys/1056)`
+	`[Preferences · User Settings · GitLab (mctech.vip)](http://git.mctech.vip:8080/-/profile/preferences#behavior)`
 
 ## git
 
