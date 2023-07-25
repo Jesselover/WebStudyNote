@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "41ad9952bd520e2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ba4780212b693e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Three.js/threeJS.md"
+                "file": "未命名.md"
               }
             }
           },
@@ -122,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Three.js/threeJS.md",
+                "file": "未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Three.js/threeJS.md",
+                "file": "未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,10 +197,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "72ff7da4d57e7fb2",
+  "active": "7ba4780212b693e5",
   "lastOpenFiles": [
-    "前端基础/vue/vue_cli.md",
     "Three.js/threeJS.md",
+    "未命名.md",
+    "前端基础/vue/vue_cli.md",
     "workTools/git.md",
     "前端基础/JavaScript 1/JS基础/_sidebar.md",
     "前端基础.zip",
@@ -219,7 +238,6 @@
     "z其他/梦诚/npm 私有仓库使用说明.md",
     "z其他/梦诚/tip.md",
     "前端基础/JavaScript 1/JS基础/12复杂类型.md",
-    "前端基础/JavaScript 1/JS基础/09声明提升.md",
     "前端基础/z-images/图片/lifecycle.16e4c08e.png",
     "前端基础/z-images/basics7.png",
     "前端基础/z-images/Pasted image 20220909092828.png",

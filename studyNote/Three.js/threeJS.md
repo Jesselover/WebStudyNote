@@ -1,6 +1,21 @@
 
 ## 1. 用parcel搭建three.js开发环境
 
-`npm init`
-`npm install -g parcel-bundler`
-`npm install parcel-bundler --save-dev`
+1. 创建文件夹，用VScode打开
+	`npm init`
+	`npm install -g parcel-bundler`
+
+2. 创建src文件，里面添加index.html文件
+
+3. package.json 文件内
+```json
+  "scripts": {
+
+    "dev": "parcel src/index.html",
+
+    "build": "parcel build src/index.html"
+
+  },
+```
+
+4. `npm install parcel-bundler --save-dev`
