@@ -321,8 +321,6 @@ git stash apply (id)
 
 使用`git stash show`查看stash的修改内容：
 
-<img src="PIC/image-20221129105215350.png" alt="image-20221129105215350" style="zoom:80%;" />
-
 2. **cherry-pick**：将指定提交应用到其他分支
 
    [cherry-pick参考](https://ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
