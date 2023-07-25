@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workTools/git.md",
+                "file": "前端基础/vue/vue_cli.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -105,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "workTools/git.md"
+                "file": "前端基础/vue/vue_cli.md"
               }
             }
           },
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workTools/git.md",
+                "file": "前端基础/vue/vue_cli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workTools/git.md",
+                "file": "前端基础/vue/vue_cli.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,6 +181,7 @@
   },
   "active": "72ff7da4d57e7fb2",
   "lastOpenFiles": [
+    "workTools/git.md",
     "前端基础/JavaScript 1/JS基础/_sidebar.md",
     "前端基础.zip",
     "前端基础/JavaScript 1/JS-Advance/01avaScript 面向对象.md",
@@ -197,7 +197,6 @@
     "workTools/前端环境安装/host覆盖内容.txt",
     "workTools/前端环境安装/host.txt",
     "workTools/前端环境安装/新建文本文档.txt",
-    "workTools/git.md",
     "workTools/前端环境安装/Pasted image 20230725102213.png",
     "前端基础/vue/vue_cli.md",
     "workTools/node.md",
