@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md",
+                "file": "workTools/git.md",
                 "mode": "source",
                 "source": false
               }
@@ -197,14 +197,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a2c2569895e4ac50",
+  "active": "72ff7da4d57e7fb2",
   "lastOpenFiles": [
+    "workTools/git.md",
+    "workTools/前端环境安装/前端环境安装.md",
     "workTools/前端环境安装/Pasted image 20230725102213.png",
     "vue/vue_cli.md",
     "workTools/node.md",
     "workTools/前端环境安装",
-    "workTools/git.md",
-    "workTools/前端环境安装/前端环境安装.md",
     "z-other/less.md",
     "未命名",
     "z-other/Node.js/02 包与 npm 包管理器.md",
