@@ -185,7 +185,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.5
+    "width": 272.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,8 +197,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a2c2569895e4ac50",
+  "active": "6ac9a494f1df9476",
   "lastOpenFiles": [
+    "前端基础.zip",
     "前端基础/JavaScript 1/JS-Advance/01avaScript 面向对象.md",
     "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
     "前端基础/JavaScript 1/ECMAScript6+/ch01.md",
@@ -237,7 +238,6 @@
     "前端基础/JavaScript 1/JS基础/12复杂类型.md",
     "前端基础/JavaScript 1/JS基础/09声明提升.md",
     "前端基础/JavaScript 1/JS基础/03数据类型.md",
-    "前端基础/JavaScript 1/JS基础/_sidebar.md",
     "前端基础/z-images/图片/lifecycle.16e4c08e.png",
     "前端基础/z-images/basics7.png",
     "前端基础/z-images/Pasted image 20220909092828.png",
