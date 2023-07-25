@@ -4,25 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "83cdb010504e0d34",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a2c2569895e4ac50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "前端基础/JavaScript 1/JS基础/_sidebar.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "stacked": true
-      },
-      {
         "id": "a6d9d25fb92a9d2c",
         "type": "tabs",
         "children": [
@@ -124,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端基础/JavaScript 1/JS基础/_sidebar.md"
+                "file": "workTools/git.md"
               }
             }
           },
@@ -142,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "前端基础/JavaScript 1/JS基础/_sidebar.md",
+                "file": "workTools/git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "前端基础/JavaScript 1/JS基础/_sidebar.md",
+                "file": "workTools/git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,8 +180,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6ac9a494f1df9476",
+  "active": "72ff7da4d57e7fb2",
   "lastOpenFiles": [
+    "前端基础/JavaScript 1/JS基础/_sidebar.md",
     "前端基础.zip",
     "前端基础/JavaScript 1/JS-Advance/01avaScript 面向对象.md",
     "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
@@ -234,7 +216,6 @@
     "images/10.jpg 2.md",
     "images",
     "未命名 1.canvas",
-    "JavaScript 1.zip",
     "z其他/梦诚/npm 私有仓库使用说明.md",
     "z其他/梦诚/tip.md",
     "前端基础/JavaScript 1/JS基础/12复杂类型.md",
