@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md",
+                "file": "前端基础/JavaScript 1/JS基础/_sidebar.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md"
+                "file": "前端基础/JavaScript 1/JS基础/_sidebar.md"
               }
             }
           },
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md",
+                "file": "前端基础/JavaScript 1/JS基础/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md",
+                "file": "前端基础/JavaScript 1/JS基础/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,11 +197,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6ac9a494f1df9476",
+  "active": "a2c2569895e4ac50",
   "lastOpenFiles": [
+    "前端基础/JavaScript 1/JS-Advance/01avaScript 面向对象.md",
+    "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
+    "前端基础/JavaScript 1/ECMAScript6+/ch01.md",
+    "前端基础/JavaScript 1/JS基础/04数据类型.md",
+    "前端基础/JavaScript 1/JS基础/06函数.md",
+    "前端基础/JavaScript 1/JS基础/01初识JS.md",
+    "workTools/前端环境安装/前端环境安装.md",
     "Three.js",
     "小程序/小程序.md",
-    "workTools/前端环境安装/前端环境安装.md",
     "前端基础",
     "workTools/前端环境安装/host覆盖内容.txt",
     "workTools/前端环境安装/host.txt",
@@ -231,10 +237,7 @@
     "前端基础/JavaScript 1/JS基础/12复杂类型.md",
     "前端基础/JavaScript 1/JS基础/09声明提升.md",
     "前端基础/JavaScript 1/JS基础/03数据类型.md",
-    "前端基础/JavaScript 1/JS基础/01初识JS.md",
     "前端基础/JavaScript 1/JS基础/_sidebar.md",
-    "前端基础/JavaScript 1/JS基础/_navbar.md",
-    "前端基础/JavaScript 1/JS-Advance/01avaScript 面向对象.md",
     "前端基础/z-images/图片/lifecycle.16e4c08e.png",
     "前端基础/z-images/basics7.png",
     "前端基础/z-images/Pasted image 20220909092828.png",
@@ -244,9 +247,6 @@
     "前端基础/z-images/Pasted image 20221011104905.png",
     "前端基础/z-images/Pasted image 20221018205953.png",
     "前端基础/z-images/Pasted image 20221101110924.png",
-    "前端基础/z-images/images/8.png.md",
-    "z其他",
-    "前端基础/JavaScript 1/ECMAScript6+/readme.md",
     "未命名 3.canvas",
     "未命名 2.canvas"
   ]
