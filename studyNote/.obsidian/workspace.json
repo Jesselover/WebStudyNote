@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "梦诚/git.md",
-                "mode": "source",
+                "file": "z-other/Node.js/02 包与 npm 包管理器.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -65,6 +65,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "6d2dceaa11aba8c9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -97,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "梦诚/git.md"
+                "file": "z-other/Node.js/02 包与 npm 包管理器.md"
               }
             }
           },
@@ -115,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "梦诚/git.md",
+                "file": "z-other/Node.js/02 包与 npm 包管理器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "梦诚/git.md",
+                "file": "z-other/Node.js/02 包与 npm 包管理器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +162,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -162,56 +171,64 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2fc98da5ddb42dc7",
+  "active": "a2c2569895e4ac50",
   "lastOpenFiles": [
-    "未命名 1.canvas",
-    "项目/yes.md",
-    "zczxc.md",
-    "2023-04-21.md",
-    "梦诚/vue.md",
-    "未命名.canvas",
-    "梦诚/project.md",
-    "梦诚/images/Pasted image 20230412171136.png",
-    "西电课程/面试/波行实习/note.md",
-    "未命名 3.canvas",
-    "梦诚/tip.md",
-    "梦诚/images/Pasted image 20230412165846.png",
-    "西电课程/面试/Untitled.md",
-    "西电课程/面试/波行实习/imges/Pasted image 20230321104058.png",
-    "西电课程/面试/波行实习/imges",
-    "西电课程/面试/中国银行-准备.md",
-    "西电课程/面试/工商银行-准备.md",
-    "西电课程/面试/波行实习",
-    "梦诚/npm 私有仓库使用说明.md",
-    "梦诚/git.md",
-    "梦诚/代码细节.md",
-    "梦诚/images/Pasted image 20230412170538.png",
-    "vue/vue_router 路由.md",
+    "z-other/less.md",
     "vue/vue_cli.md",
-    "梦诚/images/Pasted image 20230412153001.png",
-    "梦诚/images/b0ae295d30a528e9e815c05d945156a.png",
-    "梦诚/images/2023-04-11.md",
-    "梦诚/gitlap.md",
-    "other/Node.js/05MongoDB 非关系型数据库.md",
-    "项目/onlineStore/note.md",
+    "workTools/node.md",
+    "z-other/Node.js/03Buffer 缓冲器.md",
+    "z-other/Node.js/02 包与 npm 包管理器.md",
+    "z-other/Node.js/01Node.js 初识.md",
+    "z-other/Node.js/00node.js基础.md",
+    "workTools/git.md",
+    "workTools",
+    "未命名.canvas",
+    "images/10.jpg 1.md",
+    "images/10.jpg.md",
+    "images/11.jpg.md",
+    "images/10.jpg 2.md",
+    "images",
+    "未命名 1.canvas",
+    "JavaScript 1.zip",
+    "z其他/梦诚/npm 私有仓库使用说明.md",
+    "z其他/梦诚/tip.md",
+    "JavaScript 1/JS基础/12复杂类型.md",
+    "JavaScript 1/JS基础/09声明提升.md",
+    "JavaScript 1/JS基础/03数据类型.md",
+    "JavaScript 1/JS基础/01初识JS.md",
+    "JavaScript 1/JS基础/_sidebar.md",
+    "JavaScript 1/JS基础/_navbar.md",
+    "JavaScript 1/JS-Advance/01avaScript 面向对象.md",
+    "z-images/图片/lifecycle.16e4c08e.png",
+    "z-images/basics7.png",
+    "z-images/Pasted image 20220909092828.png",
+    "z-images/Pasted image 20221006102140.png",
+    "z-images/Pasted image 20221006105553.png",
+    "z-images/Pasted image 20221006105612.png",
+    "z-images/Pasted image 20221011104905.png",
+    "z-images/Pasted image 20221018205953.png",
+    "z-images/Pasted image 20221101110924.png",
+    "z-images/Pasted image 20221106213016.png",
+    "z-images/images/8.png.md",
+    "z其他",
+    "JavaScript 1/ECMAScript6+/readme.md",
+    "JavaScript 1/ECMAScript6+/ch04.md",
+    "JavaScript 1/ECMAScript6+/ch02.md",
+    "JavaScript 1/ECMAScript6+/_navbar.md",
+    "未命名 3.canvas",
+    "z其他/西电课程/面试/波行实习/imges",
+    "z其他/西电课程/面试/波行实习",
     "未命名 2.canvas",
-    "项目/onlineStore",
-    "other/Ajax/02 HTTP相关问题.md",
-    "other/Ajax/01 概述.md",
-    "other/HTTP/_sidebar 2.md",
-    "other/HTTP/_sidebar.md",
-    "other/HTTP/_navbar.md",
-    "other/HTTP/ch04.md",
-    "小程序/images/13.png",
-    "梦诚/images",
-    "后端"
+    "z其他/项目/onlineStore",
+    "z其他/梦诚/images",
+    "z其他/后端"
   ]
 }
