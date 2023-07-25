@@ -9,7 +9,7 @@ https://blog.csdn.net/xx820702/article/details/126123533
 
 ​专门在Vue中实现集中式状态（数据）管理的一个Vue插件(`vue.use(Vuex)`)，对vue应用中多个组件的共享状态进行集中式的管理（读/写），也是一种组件间通信的方式，且适用于任意组件间通信。
 **1. Github 地址: [https://github.com/vuejs/vuex](https://github.com/vuejs/vuex)**
-![](Pasted%20image%2020220904211419.png)
+![](前端基础/vue/图片/Pasted%20image%2020220904211419.png)
 
 ### 2.何时使用？
 
@@ -129,7 +129,7 @@ this.$store.dispath('jia',this.n)
    >  备注：若没有网络请求或其他业务逻辑，组件中也可以越过actions，即不写```dispatch```，直接编写```commit```
 
 4. actions中的context
-![](Pasted%20image%2020220905204816.png)
+![](前端基础/vue/图片/Pasted%20image%2020220905204816.png)
 ### 5.getters的使用
 
 1. 概念：当state中的数据需要经过加工后再使用时，可以使用getters加工。（state与getter 类似于data与computed）

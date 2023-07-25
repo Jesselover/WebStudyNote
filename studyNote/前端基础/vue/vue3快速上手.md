@@ -381,7 +381,7 @@ const p = new Proxy(person，{})
 
 
 
-![](lifecycle.16e4c08e.png)
+![](前端基础/vue/图片/lifecycle.16e4c08e.png)
 
 - 两种写法:配置项, Composition API,后者优先级更强
 - Vue3.0中可以继续使用Vue2.x中的生命周期钩子，但有有两个被更名：
