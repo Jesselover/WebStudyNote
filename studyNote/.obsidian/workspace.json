@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
+                "file": "前端基础/z-other/Node.js/01Node.js 初识.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端基础/z-other/Node.js/00 node.js基础.md"
+                "file": "前端基础/z-other/Node.js/01Node.js 初识.md"
               }
             }
           },
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
+                "file": "前端基础/z-other/Node.js/01Node.js 初识.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
+                "file": "前端基础/z-other/Node.js/01Node.js 初识.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,14 +190,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "72ff7da4d57e7fb2",
+  "active": "6ac9a494f1df9476",
   "lastOpenFiles": [
+    "前端基础/z-other/Node.js.7z",
+    "前端基础/z-other/Node.js/05MongoDB 非关系型数据库.md",
+    "前端基础/z-other/Node.js/04fs 文件系统.md",
+    "前端基础/z-other/Node.js/03Buffer 缓冲器.md",
+    "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
+    "前端基础/z-other/Node.js/01Node.js 初识.md",
+    "前端基础/z-other/Node.js/00 node.js基础.md",
     "0-directory.md",
     "Three.js/threeJS.md",
     "workTools/前端环境安装/前端环境安装.md",
     "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
-    "前端基础/z-other/Node.js/00 node.js基础.md",
-    "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
     "未命名.md",
     "内部组件开发/Note.md",
     "前端基础/vue/vue3快速上手.md",
@@ -206,9 +211,6 @@
     "z其他/梦诚/npm 私有仓库使用说明.md",
     "z其他/梦诚/代码细节.md",
     "前端基础/z-other/Node.js/node.js.md",
-    "前端基础/z-other/Node.js/01Node.js 初识.md",
-    "前端基础/z-other/Node.js/04fs 文件系统.md",
-    "前端基础/z-other/Node.js/03Buffer 缓冲器.md",
     "前端基础/vue/vue_cli.md",
     "前端基础/vue/目录.md",
     "workTools/git.md",
@@ -217,8 +219,6 @@
     "前端基础/JavaScript 1/JS-Advance/01avaScript 面向对象.md",
     "前端基础/JavaScript 1/ECMAScript6+/ch01.md",
     "前端基础/JavaScript 1/JS基础/04数据类型.md",
-    "前端基础/JavaScript 1/JS基础/06函数.md",
-    "前端基础/JavaScript 1/JS基础/01初识JS.md",
     "Three.js",
     "前端基础",
     "workTools/前端环境安装/host覆盖内容.txt",
