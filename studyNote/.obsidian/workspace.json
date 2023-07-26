@@ -180,8 +180,9 @@
   },
   "active": "72ff7da4d57e7fb2",
   "lastOpenFiles": [
-    "前端基础/z-other/Node.js/00node.js基础.md",
     "前端基础/vue/vue_cli.md",
+    "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
+    "前端基础/z-other/Node.js/00node.js基础.md",
     "Three.js/threeJS.md",
     "内部组件开发/Note.md",
     "前端基础/vue/目录.md",
@@ -207,7 +208,6 @@
     "workTools/前端环境安装",
     "前端基础/z-other/less.md",
     "内部组件开发",
-    "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
     "前端基础/z-other/Node.js/03Buffer 缓冲器.md",
     "前端基础/z-other/Node.js/01Node.js 初识.md",
     "workTools",
