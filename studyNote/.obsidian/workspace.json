@@ -134,14 +134,6 @@
             }
           },
           {
-            "id": "3a06d49edb409d83",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "b1cef3ca871e2fbf",
             "type": "leaf",
             "state": {
@@ -185,6 +177,14 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "17310b7fd009f216",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
         ],
         "currentTab": 1
@@ -203,7 +203,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "25dccf22c6e0d984",
+  "active": "6ac9a494f1df9476",
   "lastOpenFiles": [
     "前端基础/vue/vue3快速上手.md",
     "workTools/directory.md",
