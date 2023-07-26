@@ -21,11 +21,13 @@
 
 2. 创建src文件，里面添加index.html文件,引入相应文件 
 
-> [ !Tip ] 
->
+>[!tip] 
+> 引入three.js脚本文件
+> `<script src="./main/main.js" type="module"></script>`
 
-> [!TIP]
-> 
+
+
+
 ```html
 <!DOCTYPE html>
 
@@ -58,7 +60,7 @@
 </html>
 ```
 
-3. package.json 文件内
+3. package.json 文件内, 配置入口文件
 ```json
   "scripts": {
 
@@ -70,7 +72,8 @@
 ```
 
 4. `npm install parcel-bundler --save-dev`
-5. `npm install three`  `src/main/main.js` 中 `import * as THREE from "three"`
+5. `npm install three`  
+6. `src/main/main.js` 中 `import * as THREE from "three"`
 
 ### 3. 使用three.js渲染场景和物体
 

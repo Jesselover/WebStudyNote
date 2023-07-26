@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -190,7 +191,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "06831c99f9bf8fa5",
+  "active": "6ac9a494f1df9476",
   "lastOpenFiles": [
     "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
     "0-directory.md",
