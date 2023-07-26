@@ -6,6 +6,8 @@
 
 ### 2. 用parcel搭建three.js开发环境
 
+[🚀 快速开始 | Parcel中文网 (parceljs.cn)](https://www.parceljs.cn/getting_started.html)
+
 1. 创建文件夹，用VScode打开
 	`npm init`
 	`npm install -g parcel-bundler`

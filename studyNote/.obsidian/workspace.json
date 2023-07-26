@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "68f273b85d46bdbf",
-        "type": "split",
+        "id": "a6d9d25fb92a9d2c",
+        "type": "tabs",
         "children": [
           {
-            "id": "c88300a1570414c2",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "25dccf22c6e0d984",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "内部组件开发/Note.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "72ff7da4d57e7fb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Three.js/threeJS.md",
+                "mode": "source",
+                "source": false
               }
-            ]
-          },
-          {
-            "id": "a6d9d25fb92a9d2c",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "72ff7da4d57e7fb2",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "前端基础/z-other/Node.js/00 node.js基础.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -130,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "内部组件开发/Note.md"
+                "file": "Three.js/threeJS.md"
               }
             }
           },
@@ -140,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "内部组件开发/Note.md",
+                "file": "Three.js/threeJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "内部组件开发/Note.md",
+                "file": "Three.js/threeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,23 +179,23 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "25dccf22c6e0d984",
+  "active": "72ff7da4d57e7fb2",
   "lastOpenFiles": [
+    "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
+    "前端基础/z-other/Node.js/00 node.js基础.md",
+    "内部组件开发/Note.md",
     "workTools/directory.md",
     "前端基础/vue/vue3快速上手.md",
     "z其他/梦诚/vue.md",
     "z其他/梦诚/tip.md",
     "z其他/梦诚/npm 私有仓库使用说明.md",
     "z其他/梦诚/代码细节.md",
-    "前端基础/z-other/Node.js/00 node.js基础.md",
     "前端基础/z-other/Node.js/node.js.md",
     "前端基础/z-other/Node.js/01Node.js 初识.md",
-    "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
     "前端基础/z-other/Node.js/04fs 文件系统.md",
     "前端基础/z-other/Node.js/03Buffer 缓冲器.md",
     "前端基础/vue/vue_cli.md",
     "Three.js/threeJS.md",
-    "内部组件开发/Note.md",
     "前端基础/vue/目录.md",
     "未命名.md",
     "workTools/git.md",
