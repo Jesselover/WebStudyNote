@@ -17,7 +17,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
+                    "file": "Three.js/threeJS.md",
                     "mode": "source",
                     "source": false
                   }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "import",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,8 +110,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -142,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端基础/JavaScript 1/ECMAScript6+/ch02.md"
+                "file": "Three.js/threeJS.md"
               }
             }
           },
@@ -152,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
+                "file": "Three.js/threeJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
+                "file": "Three.js/threeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,9 +218,9 @@
   },
   "active": "72ff7da4d57e7fb2",
   "lastOpenFiles": [
+    "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
     "前端基础/z-other/Node.js/00 node.js基础.md",
     "0-directory.md",
-    "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
     "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
     "未命名.md",
     "Three.js/threeJS.md",

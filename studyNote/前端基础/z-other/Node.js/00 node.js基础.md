@@ -98,6 +98,8 @@ terminal (终端)
 
 #### require import的区别
 
+[[前端基础/JavaScript 1/ECMAScript6+/ch02#19. ES6 模块化|ch02]]
+
 [面试：require 和 import 的区别？ - 掘金 (juejin.cn)](https://juejin.cn/post/7014011266796617736)
 
 | |require|import|

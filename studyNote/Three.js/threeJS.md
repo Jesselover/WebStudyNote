@@ -12,7 +12,38 @@
 	`npm init`
 	`npm install -g parcel-bundler`
 
-2. 创建src文件，里面添加index.html文件
+2. 创建src文件，里面添加index.html文件,引入相应文
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <!-- 引入样式 -->
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- 模块化开发，设置类型为module；type (en-US)
+
+该属性表示所代表的脚本类型 -->
+
+   <script src="./main/main.js" type="module"></script>
+
+</body>
+
+</html>
+```
 
 3. package.json 文件内
 ```json
@@ -26,3 +57,5 @@
 ```
 
 4. `npm install parcel-bundler --save-dev`
+5. `npm install three`
+6. 
