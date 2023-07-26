@@ -268,6 +268,7 @@ function render(){
 render()
 ```
 
+
 ### 6.设置物体移动、縮放、旋转
 
 ```js
@@ -353,3 +354,108 @@ function render() {
 
 render()
 ```
+
+### 7.应用requestAnimationFrame、clock跟踪时间处理动画
+
+```js
+// !应用requestAnimationFrame、clock跟踪时间处理动画
+
+import * as THREE from "three"
+
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+
+  
+
+const scene = new THREE.Scene()
+
+  
+
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
+
+camera.position.set(0, 0, 10) //x,y,z
+
+scene.add(camera)
+
+  
+
+const cubeGeometry = new THREE.BoxGeometry()
+
+const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 })
+
+const cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
+
+scene.add(cube)
+
+  
+
+const renderer = new THREE.WebGL1Renderer()
+
+renderer.setSize(window.innerWidth, window.innerHeight)
+
+  
+
+document.body.appendChild(renderer.domElement)
+
+  
+
+const controls = new OrbitControls(camera, renderer.domElement)
+
+  
+
+const axesHelper = new THREE.AxesHelper(5)
+
+scene.add(axesHelper)
+
+  
+
+// 设置时钟
+
+const clock = new THREE.Clock()
+
+  
+
+function render(time) {
+
+    // 使用requestAnimationFrame时间参数控制
+
+    // let t = time / 1000 % 5
+
+  
+
+    // 获取始终运行总时长
+
+    let time = clock.getElapsedTime()
+
+    let daltaTime = clock.getDelta()
+
+    console.log(time);
+
+    // cube.position.x = t
+
+    cube.rotation.x += 0.01
+
+    if (cube.position.x > 5) {
+
+        cube.position.x = 0
+
+    }
+
+    cube.scale.set(3, 1, 5)
+
+    renderer.render(scene, camera)
+
+    requestAnimationFrame(render)
+
+}
+
+  
+
+render()
+```
+
+### 8.Gsap动画库
+
+[gsap - npm (npmjs.com)](https://www.npmjs.com/package/gsap)
+
+`npm install gsap`
+`import gsap from "gsap"`
