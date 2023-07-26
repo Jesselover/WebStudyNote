@@ -138,6 +138,9 @@ renderer.render(scene,camera)
 ```
 
 ### 4. 轨道控制器OrbitControls查看物体
+
+[OrbitControls – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=OrbitControls#examples/zh/controls/OrbitControls)
+
 ```js
 // !轨道控制器查看物体
 
@@ -280,6 +283,8 @@ render()
 
 ### 6.设置物体移动、縮放、旋转
 
+[Object3D – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=Mesh#api/zh/core/Object3D)
+
 ```js
 // !设置物体移动、縮放、旋转
 
@@ -365,6 +370,9 @@ render()
 ```
 
 ### 7.应用requestAnimationFrame、clock跟踪时间处理动画
+
+[AnimationAction – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=Animation#api/zh/animation/AnimationAction)
+[Clock – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=clock#api/zh/core/Clock)
 
 ```js
 // !应用requestAnimationFrame、clock跟踪时间处理动画
