@@ -148,6 +148,11 @@ npm install -g yarn
     npm init -y
     ```
 
+```bash
+	npm init;    //这个命令用于初始化一个包，创建一个package.json文件，我们的项目都应该先执行npm init
+	npm init -y;  //快速的初始化一个包， 不能是一个中文名
+```
+
 - 下载项目的所有声明的依赖: 
     ```bash
     yarn

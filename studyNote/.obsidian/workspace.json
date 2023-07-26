@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
+                "file": "前端基础/z-other/Node.js/00node.js基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端基础/z-other/Node.js/02 包与 npm 包管理器.md"
+                "file": "前端基础/z-other/Node.js/00node.js基础.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
+                "file": "前端基础/z-other/Node.js/00node.js基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
+                "file": "前端基础/z-other/Node.js/00node.js基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,8 +180,12 @@
   },
   "active": "72ff7da4d57e7fb2",
   "lastOpenFiles": [
+    "前端基础/z-other/Node.js/01Node.js 初识.md",
     "前端基础/z-other/Node.js/00node.js基础.md",
     "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
+    "z其他/梦诚/tip.md",
+    "前端基础/z-other/Node.js/04fs 文件系统.md",
+    "前端基础/z-other/Node.js/03Buffer 缓冲器.md",
     "前端基础/vue/vue_cli.md",
     "Three.js/threeJS.md",
     "内部组件开发/Note.md",
@@ -208,17 +212,13 @@
     "workTools/前端环境安装",
     "前端基础/z-other/less.md",
     "内部组件开发",
-    "前端基础/z-other/Node.js/03Buffer 缓冲器.md",
-    "前端基础/z-other/Node.js/01Node.js 初识.md",
     "workTools",
     "未命名.canvas",
     "images/10.jpg 1.md",
     "images/10.jpg.md",
     "images/11.jpg.md",
-    "images/10.jpg 2.md",
     "images",
     "未命名 1.canvas",
-    "z其他/梦诚/npm 私有仓库使用说明.md",
     "前端基础/z-images/图片/lifecycle.16e4c08e.png",
     "前端基础/z-images/basics7.png",
     "前端基础/z-images/Pasted image 20220909092828.png",

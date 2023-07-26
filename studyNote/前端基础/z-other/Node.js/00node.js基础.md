@@ -51,8 +51,8 @@
 	}
 	```
 `
-	`exports`:对象,将变量或函数暴露到外部
-	`require`:函数,用来引入外部模块
+	`exports`: 对象,将变量或函数暴露到外部
+	`require`: 函数,用来引入外部模块
 	`module`:
 		- 代表当前模块本身
 		- exports就是module的属性`module.exports==exports`
@@ -62,8 +62,21 @@
 3.  模块分类与模块标识:
 	- 核心模块:由node引擎提供,模块标识就是其名字
 	- 文件模块:由用户自己创建,模块标识是它的路径
-	
+
+#### require import的区别
+
+[面试：require 和 import 的区别？ - 掘金 (juejin.cn)](https://juejin.cn/post/7014011266796617736)
+
+| |require|import|
+|-|-------|------|
+|标准|CommonJs|ES6|
+|输出|值的拷贝|值的引用|
+|执行|运行时执行，同步加载，是一个赋值过程|编译时执行，异步加载，是解构过程|
+|性能|稍低（运行时才能引入模块并且赋值给某个对象）| 稍快（只需根据import中的接口，在编译时引入指定模块）|
+
+
 ### 3.2暴露与引入
+
 1. 引入:在node中,通过require()函数来引入外部模块
 	- 参数:一个文件的路径.使用相对路径必须以`.`或`..`开头
 	- 返回值:一个对象,表示引入的模块
@@ -99,36 +112,7 @@ Node.js 的包基本遵循 CommonJS 规范，包将一组相关的模块组合�
 	包描述文件包含以下字段：**name、version**、description、keywords(包可以被搜索)、maintainers、contributors、bugs、licenses、repositories(仓库)、dependencies(依赖)、homepage、os、cpu、engine、builtin、directories、implements、scripts、author、bin、main、devDependencies。
 
 ### 4.2NPM
-- 全称：Node Package Manager，Node 的包管理器。
-- NPM帮助node完成了第三方模块的发布,安装,依赖.借助NPM.Node与第三方模块之间形成了一个良好的生态系统
-- NPM 与 Node 的关系： 安装 node 后自动安装 npm（npm是node官方出的包管理器，专门用于管理包）
 
-1. 常用命令
-	1. `npm -v` 查看版本;`npm version` 查看历史版本
-	2. `npm` 帮助说明
-	3. `npm search 包名` 搜索,需要联网
-	4. `npm init` 文件夹变包.给这个文件夹加一个 package.json 文件，且 package.json 里面的内容合法
-	5. `npm install 包名`  或者`npm i 包名` 
-		- 根据package.json 文件安装一个包.
-		- 安装的包在node_modules文件夹中
-		- `install`可以简写为`i`
-	6. `npm install 包名 --save` 安装包并添加到依赖中
-		- 在`package.json` 的`dependencies`属性中添加这个包
-	7. `npm install` 根据`package.json` 文件下载当前项目所依赖的包
-	8. `npm install 包名 -g` 全局安装包(全局安装的包,一般都是工具)
-	9. `npm remove 报名` 删除包 或者`npm r 包名` 
->[!TIP]
->以后安装建议用`npm install 包名 --save`
-
-### 4.2CNPM
-- 淘宝为我们搭建了一个国内的npm服务器，它目前是每隔10分钟将国外npm仓库的所有内容“搬运”回国内的服务器上，这样我们直接访问淘宝的国内服务器就可以了，它的地址是：https://registry.npm.taobao.org
-
-- - 第二种方法（建议）：替换npm仓库地址为淘宝镜像地址  
-    命令：
-    ```bash
-    npm config set registry https://registry.npm.taobao.org
-    ```
-    查看是否更改成功：`npm config get registry`，以后安装时，依然用 `npm` 命令，但是实际是从淘宝国内服务器下载的。
     
 ## 5.Buffer缓冲区
 - 数组中不能存储二进制文件（图片/视频/音频等媒体文件）
