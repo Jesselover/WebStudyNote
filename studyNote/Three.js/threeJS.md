@@ -59,7 +59,6 @@
 4. `npm install parcel-bundler --save-dev`
 5. `npm install three`  `src/main/main.js` 中 `import * as THREE from "three"`
 
-
 ### 3. 使用three.js渲染场景和物体
 
 ```js
@@ -121,3 +120,74 @@ document.body.appendChild(renderer.domElement)
 
 renderer.render(scene,camera)
 ```
+
+### 4. 轨道控制器查看物体
+```js
+// !轨道控制器查看物体
+
+import * as THREE from "three"
+
+// 导入轨道控制器
+
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+
+  
+
+const scene = new THREE.Scene()
+
+  
+
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
+
+camera.position.set(0,0,10) //x,y,z
+
+scene.add(camera)
+
+  
+
+const cubeGeometry = new THREE.BoxGeometry()
+
+const cubeMaterial = new THREE.MeshBasicMaterial({color:0xffff00})
+
+const cube = new THREE.Mesh(cubeGeometry,cubeMaterial)
+
+scene.add(cube)
+
+  
+
+const renderer = new THREE.WebGL1Renderer()
+
+renderer.setSize(window.innerWidth,window.innerHeight)
+
+  
+
+document.body.appendChild(renderer.domElement)
+
+  
+
+// renderer.render(scene,camera)
+
+  
+
+// 创建轨道控制器
+
+const controls = new OrbitControls(camera,renderer.domElement)
+
+  
+
+function render(){
+
+    renderer.render(scene,camera)
+
+    // 渲染下一帧的时候就会调用render函数
+
+    requestAnimationFrame(render)
+
+}
+
+  
+
+// 初始化渲染
+
+render()
+```_
