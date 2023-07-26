@@ -19,7 +19,13 @@
 	`npm init`
 	`npm install -g parcel-bundler`
 
-2. 创建src文件，里面添加index.html文件,引入相应文
+2. 创建src文件，里面添加index.html文件,引入相应文件 
+
+> [ !Tip ] 
+>
+
+> [!TIP]
+> 
 ```html
 <!DOCTYPE html>
 
@@ -735,3 +741,5 @@ window.addEventListener('resize', () => {
 
 })
 ```
+
+
