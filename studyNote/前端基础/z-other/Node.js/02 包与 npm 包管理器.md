@@ -61,18 +61,17 @@ Node.js 的包基本遵循 CommonJS 规范，包将一组相关的模块组合�
         备注：
         1. 局部安装完的第三方包，放在当前目录中 node_modules 这个文件夹里
         2. 安装完毕会自动产生一个 package-lock.json (npm版本在5以后才有)，里面缓存的是每个包的地址，目的是下次快一些。
-        3. 当安装完一个包，该包的名字会自动写入到 package.json 中的【dependencies(生产依赖)npm5及之前版本要加上 `--save` 后缀才可以。
+        3. 当安装完一个包，该包的名字会自动写入到 package.json 中的,dependencies(生产依赖)npm5及之前版本要加上 `--save` 后缀才可以。
     - `npm install xxx --save-dev` 或 `npm i xxx -D`  
         安装包并将该包写入到【devDependencies(开发依赖中)】  
         备注：什么是生产依赖与开发依赖？
         1. 只在开发时(写代码时)时才用到的库，就是开发依赖 ----- 例如：语法检查、压缩代码、扩展css前缀的包。
         2. 在生产环境中(项目上线)不可缺少的，就是生产依赖 ------ 例如：jquery、bootStrap等等。
         3. 注意：某些包即属于开发依赖，又属于生产依赖 -------例如：jquery。
-
     - `npm i xxx -g`  
         - 全局安装xxxx包（一般来说，**带有指令集的包要进行全局安装**，例如：browseri[00node.js基础](00node.js基础.md)fy、babel等）  
         - 全局安装的包，其指令到处可用，如果该包不带有指令，就无需全局安装。
-        - [00node.js基础](00node.js基础.md)查看全局安装的位置：`npm root -g`
+        - 查看全局安装的位置：`npm root -g`
     - `npm i xxx@yyy`  
         安装xxx包的yyy版本
     - `npm i`：安装 package.json 中声明的所有包
