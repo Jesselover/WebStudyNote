@@ -57,5 +57,5 @@
 ```
 
 4. `npm install parcel-bundler --save-dev`
-5. `npm install three`
+5. `npm install three`  `src/main/main.js` 中 `import * as THREE from "three"`
 6. 
