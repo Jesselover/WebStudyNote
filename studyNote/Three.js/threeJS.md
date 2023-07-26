@@ -1,3 +1,10 @@
+
+[three.js全网最全最新入门课程（2023年5月更新）【搞定前端前沿技术】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Gg411X7FY/?spm_id_from=333.337.search-card.all.click)
+
+[创建一个场景 – three.js docs (threejs.org)](https://threejs.org/docs/index.html#manual/zh/introduction/Creating-a-scene)
+
+
+
 ### 1. 本地搭建three.js 官网
 
 下载后
