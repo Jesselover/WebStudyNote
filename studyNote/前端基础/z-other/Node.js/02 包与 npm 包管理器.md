@@ -1,8 +1,8 @@
-# （[00node.js基础](00node.js基础.md)二） 包与 npm 包管理器
+# （[00 node.js基础](00%20node.js基础.md)二） 包与 npm 包管理器
 
 ## 1. package 包
 
-Node.js 的包基本遵循 CommonJS 规范，包将一组相关的模块组合在一起[00node.js基础](00node.js基础.md)，形成一组完整的工具。  
+Node.js 的包基本遵循 CommonJS 规范，包将一组相关的模块组合在一起[00 node.js基础](00%20node.js基础.md)，形成一组完整的工具。  
 包由包结构和包描述文件两个部分组成。
 - 包结构：用于组织包中的各种文件
 - 包描述文件：描述包的相关信息，以供外部读取分析
@@ -69,7 +69,7 @@ Node.js 的包基本遵循 CommonJS 规范，包将一组相关的模块组合�
         2. 在生产环境中(项目上线)不可缺少的，就是生产依赖 ------ 例如：jquery、bootStrap等等。
         3. 注意：某些包即属于开发依赖，又属于生产依赖 -------例如：jquery。
     - `npm i xxx -g`  
-        - 全局安装xxxx包（一般来说，**带有指令集的包要进行全局安装**，例如：browseri[00node.js基础](00node.js基础.md)fy、babel等）  
+        - 全局安装xxxx包（一般来说，**带有指令集的包要进行全局安装**，例如：browseri[00 node.js基础](00%20node.js基础.md)fy、babel等）  
         - 全局安装的包，其指令到处可用，如果该包不带有指令，就无需全局安装。
         - 查看全局安装的位置：`npm root -g`
     - `npm i xxx@yyy`  
