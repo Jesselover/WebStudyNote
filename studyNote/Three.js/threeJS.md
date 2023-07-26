@@ -473,6 +473,7 @@ render()
 ### 8.Gsap动画库
 
 [gsap - npm (npmjs.com)](https://www.npmjs.com/package/gsap)
+[GSAP3入门 - 掘金 (juejin.cn)](https://juejin.cn/post/7041862990622605349)
 
 `npm install gsap`
 `import gsap from "gsap"`
