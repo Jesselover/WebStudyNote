@@ -585,3 +585,153 @@ render()
 ```
 
 ### 9.根据尺寸变化实现自适应画面
+
+```js
+// ! 根据尺寸变化实现自适应画面
+
+import * as THREE from "three"
+
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+
+import gsap from "gsap"
+
+const scene = new THREE.Scene()
+
+  
+
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
+
+camera.position.set(0, 0, 10) //x,y,z
+
+scene.add(camera)
+
+  
+
+const cubeGeometry = new THREE.BoxGeometry()
+
+const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 })
+
+const cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
+
+scene.add(cube)
+
+cube.scale.set(1, 1, 1)
+
+  
+
+const renderer = new THREE.WebGL1Renderer()
+
+renderer.setSize(window.innerWidth, window.innerHeight)
+
+  
+
+document.body.appendChild(renderer.domElement)
+
+  
+
+const controls = new OrbitControls(camera, renderer.domElement)
+
+// 设置控制器阻尼，让控制器更有真实感觉
+
+// 将其设置为true以启用阻尼（惯性），这将给控制器带来重量感。默认值为false。
+
+// !请注意，如果该值被启用，你将必须在你的动画循环里调用.update()。
+
+controls.enableDamping = true
+
+  
+
+const axesHelper = new THREE.AxesHelper(5)
+
+scene.add(axesHelper)
+
+  
+
+var animate1 = gsap.to(cube.position, {
+
+    x: 5,
+
+    duration: 5,
+
+    ease: 'power1.in',
+
+    onComplete: () => {
+
+        console.log("结束");
+
+    },
+
+    onStart: () => {
+
+        console.log("开始");
+
+    },
+
+    repeat: -1,
+
+    yoyo: true,
+
+    delay: 2,
+
+})
+
+gsap.to(cube.rotation, { x: 2 * Math.PI, duration: 5, repeat: -1, })
+
+  
+
+window.addEventListener("dblclick", () => {
+
+    if (animate1.isActive())
+
+        animate1.pause()
+
+    else
+
+        animate1.resume()
+
+})
+
+  
+
+// 动画循环
+
+function render(time) {
+
+    // !请注意，如果controls.enableDamping被启用，你将必须在你的动画循环里调用.update()。
+
+    controls.update()
+
+    renderer.render(scene, camera)
+
+    requestAnimationFrame(render)
+
+}
+
+  
+
+render()
+
+  
+
+// !监听画面变化，更新渲染画面（根据尺寸变化实现自适应画面）
+
+window.addEventListener('resize', () => {
+
+    // 更新摄像头
+
+    camera.aspect = window.innerWidth / innerHeight
+
+    // 更新摄像头投影矩阵
+
+    camera.updateProjectionMatrix();
+
+    // 更新渲染器
+
+    renderer.setSize(window.innerWidth,window.innerHeight)
+
+    // 设置渲染器像素比,为设备像素比
+
+    renderer.setPixelRatio(window.devicePixelRatio)
+
+})
+```

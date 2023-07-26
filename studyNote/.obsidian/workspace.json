@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Three.js/threeJS.md",
+                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Three.js/threeJS.md"
+                "file": "前端基础/z-other/Node.js/00 node.js基础.md"
               }
             }
           },
@@ -127,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Three.js/threeJS.md",
+                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Three.js/threeJS.md",
+                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,11 +192,11 @@
   },
   "active": "72ff7da4d57e7fb2",
   "lastOpenFiles": [
-    "workTools/前端环境安装/前端环境安装.md",
+    "0-directory.md",
     "Three.js/threeJS.md",
+    "workTools/前端环境安装/前端环境安装.md",
     "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
     "前端基础/z-other/Node.js/00 node.js基础.md",
-    "0-directory.md",
     "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
     "未命名.md",
     "内部组件开发/Note.md",
