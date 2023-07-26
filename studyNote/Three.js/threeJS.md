@@ -128,7 +128,7 @@ document.body.appendChild(renderer.domElement)
 renderer.render(scene,camera)
 ```
 
-### 4. 轨道控制器查看物体
+### 4. 轨道控制器OrbitControls查看物体
 ```js
 // !轨道控制器查看物体
 
@@ -459,3 +459,129 @@ render()
 
 `npm install gsap`
 `import gsap from "gsap"`
+
+```js
+// ! Gsap动画
+
+import * as THREE from "three"
+
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+
+// 导入Gsap动画库
+
+import gsap from "gsap"
+
+const scene = new THREE.Scene()
+
+  
+
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
+
+camera.position.set(0, 0, 10) //x,y,z
+
+scene.add(camera)
+
+  
+
+const cubeGeometry = new THREE.BoxGeometry()
+
+const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 })
+
+const cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
+
+scene.add(cube)
+
+  
+
+const renderer = new THREE.WebGL1Renderer()
+
+renderer.setSize(window.innerWidth, window.innerHeight)
+
+  
+
+document.body.appendChild(renderer.domElement)
+
+  
+
+const controls = new OrbitControls(camera, renderer.domElement)
+
+  
+
+const axesHelper = new THREE.AxesHelper(5)
+
+scene.add(axesHelper)
+
+// 设置动画
+
+var animate1 = gsap.to(cube.position, {
+
+    x: 5,
+
+    duration: 5,
+
+    ease: 'power1.in',
+
+    onComplete: () => {
+
+        console.log("结束");
+
+    },
+
+    onStart: () => {
+
+        console.log("开始");
+
+    },
+
+    //! 无限次循环-1
+
+    repeat: -1,
+
+    // 往返运动
+
+    yoyo: true,
+
+    delay: 2,
+
+})
+
+gsap.to(cube.rotation, { x: 2 * Math.PI, duration: 5, repeat: -1, })
+
+  
+
+// 鼠标双击，不再移动
+
+window.addEventListener("dblclick", () => {
+
+    if (animate1.isActive())
+
+        // 暂停
+
+        animate1.pause()
+
+    else
+
+        // 恢复
+
+        animate1.resume()
+
+})
+
+  
+
+function render(time) {
+
+    cube.scale.set(1, 1, 1)
+
+    renderer.render(scene, camera)
+
+    requestAnimationFrame(render)
+
+}
+
+  
+
+render()
+```
+
+### 9.根据尺寸变化实现自适应画面
