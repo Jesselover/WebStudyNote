@@ -58,4 +58,66 @@
 
 4. `npm install parcel-bundler --save-dev`
 5. `npm install three`  `src/main/main.js` 中 `import * as THREE from "three"`
-6. 
+
+
+### 3. 使用three.js渲染场景和物体
+
+```js
+// 引入three.js
+
+import * as THREE from "three"
+
+// 1. 创建场景
+
+const scene = new THREE.Scene()
+
+// 2.创建相机(PerspectiveCamera透视相机)
+
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.9, 100)
+
+// 设置相机位置
+
+camera.position.set(0,0,10) //x,y,z
+
+scene.add(camera)
+
+  
+
+// 3.添加物体
+
+// 创建几何体
+
+const cubeGeometry = new THREE.BoxGeometry()
+
+const cubeMaterial = new THREE.MeshBasicMaterial({color:0xffff00})
+
+// 根据几何体、材质创建物体
+
+const cube = new THREE.Mesh(cubeGeometry,cubeMaterial)
+
+// 将几何体添加到场景
+
+scene.add(cube)
+
+  
+
+// 4.初始化渲染器
+
+const renderer = new THREE.WebGL1Renderer()
+
+// 设置渲染尺寸
+
+renderer.setSize(window.innerWidth,window.innerHeight)
+
+ 
+
+// 5.将webGL渲染的canvas内容添加到body
+
+document.body.appendChild(renderer.domElement)
+
+  
+
+// 6.使用渲染器，通过相机将场景进行渲染
+
+renderer.render(scene,camera)
+```
