@@ -267,3 +267,89 @@ function render(){
 
 render()
 ```
+
+### 6.设置物体移动、縮放、旋转
+
+```js
+// !设置物体移动、縮放、旋转
+
+import * as THREE from "three"
+
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+
+  
+
+const scene = new THREE.Scene()
+
+  
+
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
+
+camera.position.set(0, 0, 10) //x,y,z
+
+scene.add(camera)
+
+  
+
+const cubeGeometry = new THREE.BoxGeometry()
+
+const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 })
+
+const cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
+
+scene.add(cube)
+
+  
+
+const renderer = new THREE.WebGL1Renderer()
+
+renderer.setSize(window.innerWidth, window.innerHeight)
+
+  
+
+document.body.appendChild(renderer.domElement)
+
+  
+
+const controls = new OrbitControls(camera, renderer.domElement)
+
+  
+
+const axesHelper = new THREE.AxesHelper(5)
+
+scene.add(axesHelper)
+
+  
+
+function render() {
+
+    // 移动物体
+
+    cube.position.x += 0.01
+
+    cube.rotation.x += 0.01
+
+    if (cube.position.x > 5) {
+
+        cube.position.x = 0
+
+    }
+
+    // 缩放物体
+
+    cube.scale.set(3, 1, 5)
+
+    // 旋转物体
+
+    // cube.rotation.set(Math.PI / 4, 0, Math.PI / 4)
+
+    renderer.render(scene, camera)
+
+    requestAnimationFrame(render)
+
+}
+
+  
+
+render()
+```
