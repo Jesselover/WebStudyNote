@@ -17,7 +17,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "workTools/directory.md",
+                    "file": "内部组件开发/Note.md",
                     "mode": "source",
                     "source": false
                   }
@@ -102,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -129,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "workTools/directory.md"
+                "file": "内部组件开发/Note.md"
               }
             }
           },
@@ -139,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workTools/directory.md",
+                "file": "内部组件开发/Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workTools/directory.md",
+                "file": "内部组件开发/Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +192,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 272.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -203,10 +205,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6ac9a494f1df9476",
+  "active": "25dccf22c6e0d984",
   "lastOpenFiles": [
-    "前端基础/vue/vue3快速上手.md",
     "workTools/directory.md",
+    "前端基础/vue/vue3快速上手.md",
     "z其他/梦诚/vue.md",
     "z其他/梦诚/tip.md",
     "z其他/梦诚/npm 私有仓库使用说明.md",
