@@ -14,6 +14,8 @@
 ### 2. 用parcel搭建three.js开发环境
 
 [🚀 快速开始 | Parcel中文网 (parceljs.cn)](https://www.parceljs.cn/getting_started.html)
+[package.json 配置完全解读 - 掘金 (juejin.cn)](https://juejin.cn/post/7145759868010364959)
+一个包全局安装后，另一个项目需要用时，还需要在安装一次
 
 1. 创建文件夹，用VScode打开
 	`npm init`
@@ -24,8 +26,6 @@
 >[!tip] 
 > 引入three.js脚本文件
 > `<script src="./main/main.js" type="module"></script>`
-
-
 
 
 ```html

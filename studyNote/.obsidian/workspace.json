@@ -26,12 +26,13 @@
               "type": "markdown",
               "state": {
                 "file": "Three.js/threeJS.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端基础/vue/vue_cli.md"
+                "file": "Three.js/threeJS.md"
               }
             }
           },
@@ -127,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "前端基础/vue/vue_cli.md",
+                "file": "Three.js/threeJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "前端基础/vue/vue_cli.md",
+                "file": "Three.js/threeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,10 +192,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d43ae1b363ef0366",
+  "active": "bdd8a3b6342495f5",
   "lastOpenFiles": [
-    "Three.js/threeJS.md",
     "前端基础/vue/vue_cli.md",
+    "Three.js/threeJS.md",
     "0-directory.md",
     "未命名.md",
     "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",

@@ -4,6 +4,7 @@ command line interface
 ### 1、脚手架文件结构
 
 [package.json 配置完全解读 - 掘金 (juejin.cn)](https://juejin.cn/post/7145759868010364959)
+一个包全局安装后，另一个项目需要用时，还需要在安装一次
 
 	├── node_modules 
 	├── public
