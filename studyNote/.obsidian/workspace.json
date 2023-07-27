@@ -11,11 +11,28 @@
             "id": "d43ae1b363ef0366",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "前端基础/vue/vue_cli.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bdd8a3b6342495f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Three.js/threeJS.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "package",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,12 +86,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -100,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Three.js/threeJS.md"
+              }
             }
           },
           {
@@ -109,6 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Three.js/threeJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,6 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Three.js/threeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,12 +192,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d43ae1b363ef0366",
+  "active": "bdd8a3b6342495f5",
   "lastOpenFiles": [
-    "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
-    "前端基础/z-other/react/大佬笔记/React Hooks 项目/（终）项目总结.md",
+    "前端基础/vue/vue_cli.md",
     "Three.js/threeJS.md",
     "0-directory.md",
+    "未命名.md",
+    "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
+    "前端基础/z-other/react/大佬笔记/React Hooks 项目/（终）项目总结.md",
     "前端基础/z-other/Node.js/00 node.js基础.md",
     "前端基础/z-other/Node.js/01Node.js 初识.md",
     "前端基础/z-other/Node.js.7z",
@@ -185,7 +208,6 @@
     "前端基础/z-other/Node.js/03Buffer 缓冲器.md",
     "workTools/前端环境安装/前端环境安装.md",
     "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
-    "未命名.md",
     "内部组件开发/Note.md",
     "前端基础/vue/vue3快速上手.md",
     "z其他/梦诚/vue.md",
@@ -193,7 +215,6 @@
     "z其他/梦诚/npm 私有仓库使用说明.md",
     "z其他/梦诚/代码细节.md",
     "前端基础/z-other/Node.js/node.js.md",
-    "前端基础/vue/vue_cli.md",
     "前端基础/vue/目录.md",
     "workTools/git.md",
     "前端基础/JavaScript 1/JS基础/_sidebar.md",

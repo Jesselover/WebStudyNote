@@ -3,6 +3,8 @@ command line interface
 ## 00结构、版本、配置文件
 ### 1、脚手架文件结构
 
+[package.json 配置完全解读 - 掘金 (juejin.cn)](https://juejin.cn/post/7145759868010364959)
+
 	├── node_modules 
 	├── public
 	│   ├── favicon.ico: 页签图标
