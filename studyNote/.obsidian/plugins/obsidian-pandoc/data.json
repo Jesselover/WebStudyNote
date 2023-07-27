@@ -1,5 +1,5 @@
 {
-  "showCLICommands": false,
+  "showCLICommands": true,
   "addExtensionsToInternalLinks": "html",
   "injectAppCSS": "dark",
   "injectThemeCSS": false,
@@ -7,7 +7,7 @@
   "displayYAMLFrontmatter": false,
   "linkStrippingBehaviour": "text",
   "highDPIDiagrams": true,
-  "pandoc": "E:\\我的学习\\笔记\\docx",
+  "pandoc": "C:\\Users\\Administraror\\AppData\\Local\\P...",
   "pdflatex": "E:\\我的学习\\笔记\\docx",
   "outputFolder": "E:\\我的学习\\笔记\\docx",
   "extraArguments": "",
