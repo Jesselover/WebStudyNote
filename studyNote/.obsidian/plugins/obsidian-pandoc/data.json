@@ -7,9 +7,9 @@
   "displayYAMLFrontmatter": false,
   "linkStrippingBehaviour": "text",
   "highDPIDiagrams": true,
-  "pandoc": "C:\\Users\\Administraror\\AppData\\Local\\P...",
-  "pdflatex": "E:\\我的学习\\笔记\\docx",
-  "outputFolder": "E:\\我的学习\\笔记\\docx",
+  "pandoc": "C:\\Users\\Administraror\\AppData\\Local\\Pandoc\\pandoc.exe",
+  "pdflatex": "",
+  "outputFolder": "D:\\dtf\\obsidianExport",
   "extraArguments": "",
   "exportFrom": "md"
 }
