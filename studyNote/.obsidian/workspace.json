@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端基础/JavaScript 1/WebApi 1/02DOM 基础.md",
+                "file": "前端基础/JavaScript 1/JS基础/06函数.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "querySelecto",
+                "query": "箭头函数",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端基础/JavaScript 1/WebApi 1/02DOM 基础.md"
+                "file": "前端基础/JavaScript 1/JS基础/06函数.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "前端基础/JavaScript 1/WebApi 1/02DOM 基础.md",
+                "file": "前端基础/JavaScript 1/JS基础/06函数.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "前端基础/JavaScript 1/WebApi 1/02DOM 基础.md",
+                "file": "前端基础/JavaScript 1/JS基础/06函数.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,6 +194,8 @@
   },
   "active": "bdd8a3b6342495f5",
   "lastOpenFiles": [
+    "前端基础/z-other/webpack/01 基本使用.md",
+    "前端基础/JavaScript 1/WebApi 1/02DOM 基础.md",
     "前端基础/vue/vue_cli.md",
     "Three.js/threeJS.md",
     "0-directory.md",
@@ -220,8 +222,6 @@
     "前端基础/JavaScript 1/JS基础/_sidebar.md",
     "前端基础.zip",
     "前端基础/JavaScript 1/JS-Advance/01avaScript 面向对象.md",
-    "前端基础/JavaScript 1/ECMAScript6+/ch01.md",
-    "前端基础/JavaScript 1/JS基础/04数据类型.md",
     "Three.js",
     "前端基础",
     "workTools/前端环境安装/host覆盖内容.txt",
