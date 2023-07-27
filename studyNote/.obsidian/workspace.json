@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a6d9d25fb92a9d2c",
+        "id": "f039fdebe783ecb9",
         "type": "tabs",
         "children": [
           {
-            "id": "06831c99f9bf8fa5",
+            "id": "d43ae1b363ef0366",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Three.js/threeJS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b385e6a2e8f28069",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -60,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "package",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +69,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -115,9 +100,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Three.js/threeJS.md"
-              }
+              "state": {}
             }
           },
           {
@@ -126,7 +109,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Three.js/threeJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +125,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Three.js/threeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,12 +171,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6ac9a494f1df9476",
+  "active": "d43ae1b363ef0366",
   "lastOpenFiles": [
     "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
+    "前端基础/z-other/react/大佬笔记/React Hooks 项目/（终）项目总结.md",
+    "Three.js/threeJS.md",
     "0-directory.md",
     "前端基础/z-other/Node.js/00 node.js基础.md",
-    "Three.js/threeJS.md",
     "前端基础/z-other/Node.js/01Node.js 初识.md",
     "前端基础/z-other/Node.js.7z",
     "前端基础/z-other/Node.js/05MongoDB 非关系型数据库.md",
