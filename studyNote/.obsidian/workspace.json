@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md",
+                "file": "z其他/项目/后台管理项目/后台管理项目.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md"
+                "file": "z其他/项目/后台管理项目/后台管理项目.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md",
+                "file": "z其他/项目/后台管理项目/后台管理项目.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md",
+                "file": "z其他/项目/后台管理项目/后台管理项目.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,10 +193,15 @@
   },
   "active": "bdd8a3b6342495f5",
   "lastOpenFiles": [
+    "Pasted image 20230727172124.png",
+    "Pasted image 20230727172123.png",
+    "前端基础/vue/vue_cli.md",
+    "前端基础/vue/vue_x.md",
+    "前端基础/vue/vue3快速上手.md",
+    "workTools/前端环境安装/前端环境安装.md",
     "前端基础/JavaScript 1/JS基础/06函数.md",
     "前端基础/z-other/webpack/01 基本使用.md",
     "前端基础/JavaScript 1/WebApi 1/02DOM 基础.md",
-    "前端基础/vue/vue_cli.md",
     "Three.js/threeJS.md",
     "0-directory.md",
     "未命名.md",
@@ -208,18 +213,14 @@
     "前端基础/z-other/Node.js/05MongoDB 非关系型数据库.md",
     "前端基础/z-other/Node.js/04fs 文件系统.md",
     "前端基础/z-other/Node.js/03Buffer 缓冲器.md",
-    "workTools/前端环境安装/前端环境安装.md",
     "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
     "内部组件开发/Note.md",
-    "前端基础/vue/vue3快速上手.md",
     "z其他/梦诚/vue.md",
     "z其他/梦诚/tip.md",
     "z其他/梦诚/npm 私有仓库使用说明.md",
     "z其他/梦诚/代码细节.md",
     "前端基础/z-other/Node.js/node.js.md",
     "前端基础/vue/目录.md",
-    "workTools/git.md",
-    "前端基础/JavaScript 1/JS基础/_sidebar.md",
     "前端基础.zip",
     "Three.js",
     "前端基础",
@@ -240,7 +241,6 @@
     "前端基础/z-images/Pasted image 20221006105612.png",
     "前端基础/z-images/Pasted image 20221011104905.png",
     "前端基础/z-images/Pasted image 20221018205953.png",
-    "前端基础/z-images/Pasted image 20221101110924.png",
     "未命名 3.canvas",
     "未命名 2.canvas"
   ]
