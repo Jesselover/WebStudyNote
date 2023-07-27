@@ -1,0 +1,15 @@
+{
+  "showCLICommands": false,
+  "addExtensionsToInternalLinks": "html",
+  "injectAppCSS": "dark",
+  "injectThemeCSS": false,
+  "customCSSFile": null,
+  "displayYAMLFrontmatter": false,
+  "linkStrippingBehaviour": "text",
+  "highDPIDiagrams": true,
+  "pandoc": "E:\\我的学习\\笔记\\docx",
+  "pdflatex": "E:\\我的学习\\笔记\\docx",
+  "outputFolder": "E:\\我的学习\\笔记\\docx",
+  "extraArguments": "",
+  "exportFrom": "md"
+}
