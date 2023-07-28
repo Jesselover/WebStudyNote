@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Three.js/threeJS.md",
+                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "next",
+                "query": "importimport",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Three.js/threeJS.md"
+                "file": "前端基础/z-other/Node.js/00 node.js基础.md"
               }
             }
           },
@@ -127,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Three.js/threeJS.md",
+                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Three.js/threeJS.md",
+                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,10 +194,10 @@
   },
   "active": "bdd8a3b6342495f5",
   "lastOpenFiles": [
+    "Three.js/threeJS.md",
     "workTools/git.md",
     "前端基础/HTML+CSS/flex布局.md",
     "Three.js/练习笔记.md",
-    "Three.js/threeJS.md",
     "前端基础/vue/vue_cli.md",
     "前端基础/z-other/Node.js/01Node.js 初识.md",
     "z其他/项目/后台管理项目/后台管理项目.md",
