@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z其他/梦诚/project.md"
+                "file": "前端基础/vue/vue_cli.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "z其他/梦诚/project.md",
+                "file": "前端基础/vue/vue_cli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "z其他/梦诚/project.md",
+                "file": "前端基础/vue/vue_cli.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
