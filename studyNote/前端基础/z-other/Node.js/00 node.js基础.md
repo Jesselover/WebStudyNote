@@ -194,5 +194,8 @@ fs.writeFile(file,data[,options],callback(err,data))
 1.golbal:node中没用window.但有一个全局对象global,它的作用和网页中的window类似,**在全局中创建的变量都会作为global的属性保存**
 
 
+
+都开始快来尝尝v2132程序中把vds5654654654564654654645
+
 	
 	
