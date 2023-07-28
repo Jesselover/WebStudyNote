@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Three.js/threeJS.md",
+                "file": "前端基础/vue/vue_cli.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Three.js/threeJS.md"
+                "file": "前端基础/vue/vue_cli.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Three.js/threeJS.md",
+                "file": "前端基础/vue/vue_cli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Three.js/threeJS.md",
+                "file": "前端基础/vue/vue_cli.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,6 +193,7 @@
   },
   "active": "bdd8a3b6342495f5",
   "lastOpenFiles": [
+    "Three.js/threeJS.md",
     "前端基础/vue/vue_cli.md",
     "z其他/项目/后台管理项目/后台管理项目.md",
     "Pasted image 20230727172124.png",
@@ -203,7 +204,6 @@
     "前端基础/JavaScript 1/JS基础/06函数.md",
     "前端基础/z-other/webpack/01 基本使用.md",
     "前端基础/JavaScript 1/WebApi 1/02DOM 基础.md",
-    "Three.js/threeJS.md",
     "0-directory.md",
     "未命名.md",
     "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
