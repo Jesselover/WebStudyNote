@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "z其他/梦诚/project.md",
+                "file": "Three.js/threeJS.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,8 +86,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端基础/vue/vue_cli.md"
+                "file": "Three.js/threeJS.md"
               }
             }
           },
@@ -128,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "前端基础/vue/vue_cli.md",
+                "file": "Three.js/threeJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "前端基础/vue/vue_cli.md",
+                "file": "Three.js/threeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,12 +191,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f768b411beb25d5d",
+  "active": "bdd8a3b6342495f5",
   "lastOpenFiles": [
+    "前端基础/vue/vue_cli.md",
     "z其他/项目/后台管理项目/后台管理项目.md",
     "Pasted image 20230727172124.png",
     "Pasted image 20230727172123.png",
-    "前端基础/vue/vue_cli.md",
     "前端基础/vue/vue_x.md",
     "前端基础/vue/vue3快速上手.md",
     "workTools/前端环境安装/前端环境安装.md",

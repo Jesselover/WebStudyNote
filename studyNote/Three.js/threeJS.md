@@ -755,3 +755,4 @@ window.addEventListener('resize', () => {
 ```
 
 
+[threejs+vue/01 glb模型导入，改变汽车车身颜色 - 掘金 (juejin.cn)](https://juejin.cn/post/7122000200851259429)
