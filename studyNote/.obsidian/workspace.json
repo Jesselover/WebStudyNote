@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workTools/git.md",
+                "file": "Three.js/threeJS.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "workTools/git.md"
+                "file": "Three.js/threeJS.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workTools/git.md",
+                "file": "Three.js/threeJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workTools/git.md",
+                "file": "Three.js/threeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,6 +193,7 @@
   },
   "active": "bdd8a3b6342495f5",
   "lastOpenFiles": [
+    "workTools/git.md",
     "前端基础/HTML+CSS/flex布局.md",
     "Three.js/练习笔记.md",
     "Three.js/threeJS.md",
@@ -221,7 +222,6 @@
     "z其他/梦诚/vue.md",
     "z其他/梦诚/tip.md",
     "z其他/梦诚/npm 私有仓库使用说明.md",
-    "z其他/梦诚/代码细节.md",
     "前端基础.zip",
     "Three.js",
     "前端基础",
