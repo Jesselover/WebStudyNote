@@ -18,7 +18,7 @@ git remote add orgin 远程仓库地址
 
 ```yaml
 # 查看远程仓库简单名字
-git remote 
+ -
 # 查看远程仓库详情
 git remote -v
 git remote --verbose
