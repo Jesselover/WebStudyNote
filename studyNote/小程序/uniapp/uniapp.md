@@ -9,3 +9,4 @@ H5 Plus
 
 nvue: vue原生，作为局部使用更合适
 
+![[Pasted image 20230802141851.png]]
