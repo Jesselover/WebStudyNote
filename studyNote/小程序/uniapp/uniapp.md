@@ -10,3 +10,5 @@ H5 Plus
 nvue: vue原生，作为局部使用更合适
 
 ![[Pasted image 20230802141851.png]]
+
+[uni-app组成和跨端原理 | uni-app官网 (dcloud.net.cn)](https://uniapp.dcloud.net.cn/tutorial/)
