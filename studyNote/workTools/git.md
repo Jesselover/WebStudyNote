@@ -25,6 +25,17 @@ git remote --verbose
 
 ```
 
+```yaml
+# 本地仓库已有内容，推送并连接到远程仓库
+git init
+# 设置 .gitignore 文件
+git add .
+git commit -m "xxxx"
+git remote add orgin 远程仓库地址
+# 将本地的master分支推送到orgin主机的master分支
+git push -u origin master
+```
+
 
 ## gitlap
 
