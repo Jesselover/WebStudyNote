@@ -2,7 +2,7 @@
   "baseFontSize": 26,
   "cssTheme": "Comfort color dark",
   "interfaceFontFamily": "华文细黑",
-  "translucency": true,
+  "translucency": false,
   "textFontFamily": "幼圆",
   "accentColor": "",
   "theme": "obsidian",

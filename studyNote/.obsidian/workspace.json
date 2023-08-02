@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "小程序/uniapp/uniapp.md",
+                "file": "前端基础/HTML+CSS/移动端/其他布局.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "小程序/uniapp/uniapp.md"
+                "file": "前端基础/HTML+CSS/移动端/其他布局.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "小程序/uniapp/uniapp.md",
+                "file": "前端基础/HTML+CSS/移动端/其他布局.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "小程序/uniapp/uniapp.md",
+                "file": "前端基础/HTML+CSS/移动端/其他布局.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,12 +181,13 @@
   },
   "active": "d43ae1b363ef0366",
   "lastOpenFiles": [
+    "内部组件开发/Note.md",
+    "小程序/uniapp/uniapp.md",
     "前端基础/vue/vue_cli.md",
     "小程序/uniapp/images/Pasted image 20230802141851.png",
     "Pasted image 20230727172124.png",
     "Pasted image 20230727172123.png",
     "小程序/uniapp/images",
-    "小程序/uniapp/uniapp.md",
     "小程序/vx小程序/小程序.md",
     "小程序/vx小程序",
     "小程序/uniapp",
@@ -213,7 +214,6 @@
     "前端基础/z-other/Node.js/04fs 文件系统.md",
     "前端基础/z-other/Node.js/03Buffer 缓冲器.md",
     "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
-    "内部组件开发/Note.md",
     "前端基础.zip",
     "Three.js",
     "前端基础",
