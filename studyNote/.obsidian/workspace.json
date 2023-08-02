@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workTools/git.md",
+                "file": "小程序/uniapp/uniapp.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "workTools/git.md"
+                "file": "小程序/uniapp/uniapp.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workTools/git.md",
+                "file": "小程序/uniapp/uniapp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workTools/git.md",
+                "file": "小程序/uniapp/uniapp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,9 +193,14 @@
   },
   "active": "bdd8a3b6342495f5",
   "lastOpenFiles": [
+    "小程序/vx小程序/小程序.md",
+    "小程序/uniapp/uniapp.md",
+    "小程序/vx小程序",
+    "小程序/uniapp",
+    "小程序/vx小程序/images/1.png",
+    "workTools/git.md",
     "Three.js/练习笔记.md",
     "Three.js/threeJS.md",
-    "workTools/git.md",
     "前端基础/z-other/Node.js/00 node.js基础.md",
     "前端基础/HTML+CSS/flex布局.md",
     "前端基础/vue/vue_cli.md",
@@ -220,8 +225,6 @@
     "前端基础/JavaScript 1/ECMAScript6+/ch02.md",
     "内部组件开发/Note.md",
     "z其他/梦诚/vue.md",
-    "z其他/梦诚/tip.md",
-    "z其他/梦诚/npm 私有仓库使用说明.md",
     "前端基础.zip",
     "Three.js",
     "前端基础",
@@ -230,8 +233,6 @@
     "workTools/前端环境安装/新建文本文档.txt",
     "workTools/前端环境安装/Pasted image 20230725102213.png",
     "workTools/前端环境安装",
-    "内部组件开发",
-    "workTools",
     "未命名.canvas",
     "未命名 1.canvas",
     "前端基础/z-images/图片/lifecycle.16e4c08e.png",
@@ -240,7 +241,6 @@
     "前端基础/z-images/Pasted image 20221006102140.png",
     "前端基础/z-images/Pasted image 20221006105553.png",
     "前端基础/z-images/Pasted image 20221006105612.png",
-    "前端基础/z-images/Pasted image 20221011104905.png",
     "未命名 3.canvas",
     "未命名 2.canvas"
   ]
