@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
+                "file": "Three.js/练习笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,8 +86,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端基础/z-other/Node.js/00 node.js基础.md"
+                "file": "Three.js/练习笔记.md"
               }
             }
           },
@@ -128,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
+                "file": "Three.js/练习笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "前端基础/z-other/Node.js/00 node.js基础.md",
+                "file": "Three.js/练习笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,6 +195,7 @@
   "lastOpenFiles": [
     "Three.js/threeJS.md",
     "workTools/git.md",
+    "前端基础/z-other/Node.js/00 node.js基础.md",
     "前端基础/HTML+CSS/flex布局.md",
     "Three.js/练习笔记.md",
     "前端基础/vue/vue_cli.md",
@@ -213,7 +213,6 @@
     "未命名.md",
     "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
     "前端基础/z-other/react/大佬笔记/React Hooks 项目/（终）项目总结.md",
-    "前端基础/z-other/Node.js/00 node.js基础.md",
     "前端基础/z-other/Node.js.7z",
     "前端基础/z-other/Node.js/05MongoDB 非关系型数据库.md",
     "前端基础/z-other/Node.js/04fs 文件系统.md",
