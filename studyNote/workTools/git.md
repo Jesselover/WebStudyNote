@@ -34,6 +34,8 @@ git commit -m "xxxx"
 git remote add orgin 远程仓库地址
 # 将本地的master分支推送到orgin主机的master分支
 git push -u origin master
+# -u 参数相当于是让你本地的仓库和远程仓库进行了关联
+#git push <远程主机名> <本地分支名>:<远程分支名>
 ```
 
 
