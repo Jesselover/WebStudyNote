@@ -22,3 +22,8 @@ nvue: vue原生，作为局部使用更合适
 > open-type 为 relaunch （可携带参数） 则可以跳转
   
 
+`easycom` ：只要组件安装在项目根目录或uni_modules的components目录下，并符合`components/组件名称/组件名称.vue`或`uni_modules/插件ID/components/组件名称/组件名称.vue`目录结构。就可以不用引用、注册，直接在页面中使用。
+
+在components下面创建新组件，勾选新建同名目录
+
+[pages.json 页面路由 | uni-app官网 (dcloud.net.cn)](https://uniapp.dcloud.net.cn/collocation/pages.html#easycom)
