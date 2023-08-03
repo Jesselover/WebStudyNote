@@ -16,3 +16,5 @@ nvue: vue原生，作为局部使用更合适
 [uni-app —— 使用Vue.js注意事项 - 掘金 (juejin.cn)](https://juejin.cn/post/6881459593868918792?searchId=202308021516166209C4BF362494A4BC06)
 
 建议使用绝对路径
+
+uniapp配合使用scss，需要安装scss。
