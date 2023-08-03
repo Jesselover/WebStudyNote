@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "小程序/uniapp/uniapp.md",
+                "file": "前端基础/z-other/Promise/00 promise基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rpx",
+                "query": "tip",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +86,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -191,8 +193,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d43ae1b363ef0366",
+  "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
+    "前端基础/z-other/Promise/00 promise基础.md",
+    "前端基础/z-other/jQuery/00 基础.md",
+    "小程序/uniapp/uniapp.md",
     "小程序/vx小程序/小程序.md",
     "images/21.png.md",
     "images",
@@ -200,7 +205,6 @@
     "小程序/vx小程序/images/34.png",
     "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
     "前端基础/z-other/Node.js/00 node.js基础.md",
-    "小程序/uniapp/uniapp.md",
     "前端基础/z-other/Node.js/01Node.js 初识.md",
     "前端基础/HTML+CSS/移动端/其他布局.md",
     "内部组件开发/Note.md",
@@ -227,8 +231,6 @@
     "未命名.md",
     "前端基础/z-other/react/大佬笔记/React Hooks 项目/（终）项目总结.md",
     "前端基础/z-other/Node.js.7z",
-    "前端基础/z-other/Node.js/05MongoDB 非关系型数据库.md",
-    "前端基础/z-other/Node.js/04fs 文件系统.md",
     "前端基础.zip",
     "Three.js",
     "前端基础",

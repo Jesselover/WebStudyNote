@@ -17,6 +17,8 @@ nvue: vue原生，作为局部使用更合适
 
 建议使用绝对路径
 
-uniapp配合使用scss，需要安装scss。
+> [!TIP]  tarBar导航菜单与opentype跳转差异
+> tarBar里面有的，不能谁用navigate跳转
+> open-type 为 relaunch （可携带参数） 则可以跳转
+  
 
-》
