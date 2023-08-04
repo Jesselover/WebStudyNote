@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d43ae1b363ef0366",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "前端基础/z-other/Promise/00 promise基础.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "dd56f0c6fda49245",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tip",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -196,8 +182,9 @@
   "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
     "前端基础/z-other/Promise/00 promise基础.md",
-    "前端基础/z-other/jQuery/00 基础.md",
+    "前端基础/z-other/react/大佬笔记/React Hooks 项目/（三）项目列表功能模块.md",
     "小程序/uniapp/uniapp.md",
+    "前端基础/z-other/jQuery/00 基础.md",
     "小程序/vx小程序/小程序.md",
     "images/21.png.md",
     "images",
@@ -229,7 +216,6 @@
     "前端基础/JavaScript 1/WebApi 1/02DOM 基础.md",
     "0-directory.md",
     "未命名.md",
-    "前端基础/z-other/react/大佬笔记/React Hooks 项目/（终）项目总结.md",
     "前端基础/z-other/Node.js.7z",
     "前端基础.zip",
     "Three.js",
