@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md",
+                "file": "小程序/uniapp/uniapp.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md"
+                "file": "小程序/uniapp/uniapp.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md",
+                "file": "小程序/uniapp/uniapp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workTools/前端环境安装/前端环境安装.md",
+                "file": "小程序/uniapp/uniapp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,6 +181,9 @@
   },
   "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
+    "workTools/前端环境安装/前端环境安装.md",
+    "Three.js/threeJS.md",
+    "Three.js/练习笔记.md",
     "小程序/uniapp/uniapp.md",
     "前端基础/z-other/Promise/00 promise基础.md",
     "前端基础/z-other/react/大佬笔记/React Hooks 项目/（三）项目列表功能模块.md",
@@ -204,13 +207,10 @@
     "小程序/uniapp",
     "小程序/vx小程序/images/1.png",
     "workTools/git.md",
-    "Three.js/练习笔记.md",
-    "Three.js/threeJS.md",
     "前端基础/HTML+CSS/flex布局.md",
     "z其他/项目/后台管理项目/后台管理项目.md",
     "前端基础/vue/vue_x.md",
     "前端基础/vue/vue3快速上手.md",
-    "workTools/前端环境安装/前端环境安装.md",
     "前端基础/JavaScript 1/JS基础/06函数.md",
     "前端基础/z-other/webpack/01 基本使用.md",
     "前端基础/JavaScript 1/WebApi 1/02DOM 基础.md",
