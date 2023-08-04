@@ -41,4 +41,4 @@ nvue: vue原生，作为局部使用更合适
 
 > [!tip] 小程序不支持 this.$router
 
-当获取参数的时候，建议使用 `onLoad()`
+当获取参数的时候，建议使用 `onLoad(e)`
