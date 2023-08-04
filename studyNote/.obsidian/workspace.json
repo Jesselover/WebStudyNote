@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "小程序/uniapp/uniapp.md",
+                "file": "workTools/前端环境安装/前端环境安装.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "小程序/uniapp/uniapp.md"
+                "file": "workTools/前端环境安装/前端环境安装.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "小程序/uniapp/uniapp.md",
+                "file": "workTools/前端环境安装/前端环境安装.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "小程序/uniapp/uniapp.md",
+                "file": "workTools/前端环境安装/前端环境安装.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,9 +181,9 @@
   },
   "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
+    "小程序/uniapp/uniapp.md",
     "前端基础/z-other/Promise/00 promise基础.md",
     "前端基础/z-other/react/大佬笔记/React Hooks 项目/（三）项目列表功能模块.md",
-    "小程序/uniapp/uniapp.md",
     "前端基础/z-other/jQuery/00 基础.md",
     "小程序/vx小程序/小程序.md",
     "images/21.png.md",
