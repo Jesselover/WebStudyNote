@@ -49,3 +49,5 @@ nvue: vue原生，作为局部使用更合适
 
 [uni.showToast(OBJECT) | uni-app官网 (dcloud.net.cn)](https://uniapp.dcloud.net.cn/api/ui/prompt.html#showtoast )
 
+
+` uni.hideToast() `建议 `mask` 设置为 `true` ，加载的时候不能进行其他操作
