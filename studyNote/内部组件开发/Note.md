@@ -8,6 +8,3 @@
 1. 下载安装sass
 [安装Sass | Sass中文网](https://www.sass.hk/install/)
 
-## Echart 表格学习
-
-[快速上手 - Handbook - Apache ECharts](https://echarts.apache.org/handbook/zh/get-started/)
