@@ -13,3 +13,10 @@
 5. 将配置项设置给echart实例对象  %% `myCahrt.setOption（option）`%%
 
 为什么没有 `echart.init(dom)` 初始化数据
+
+### 2. note
+
+图标跟窗口的大小变化
+`window.addEventListener("resize",function(){myChart.resize()})`
+
+### 3. 柱形图
