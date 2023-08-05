@@ -14,9 +14,13 @@
 
 为什么没有 `echart.init(dom)` 初始化数据
 
-### 2. note
+### 2. Tips
 
 图标跟窗口的大小变化
 `window.addEventListener("resize",function(){myChart.resize()})`
 
 ### 3. 柱形图
+
+
+
+### 4.折线图
