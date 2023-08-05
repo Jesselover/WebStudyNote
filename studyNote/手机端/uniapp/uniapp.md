@@ -27,7 +27,7 @@ nvue: vue原生，作为局部使用更合适
 > [!TIP]  tarBar导航菜单与opentype跳转差异
 > tarBar里面有的，不能谁用navigate跳转
 > open-type 为 relaunch （可携带参数） 则可以跳转
-  
+
 
 ### easycom
 
