@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workTools/Echart/Echart.md",
+                "file": "2023-08-05.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "workTools/Echart/Echart.md"
+                "file": "2023-08-05.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workTools/Echart/Echart.md",
+                "file": "2023-08-05.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workTools/Echart/Echart.md",
+                "file": "2023-08-05.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5,
-    "collapsed": true
+    "width": 272.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,8 +180,12 @@
   },
   "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
-    "内部组件开发/Note.md",
+    "0-directory.md",
+    "2023-08-05.md",
     "workTools/Echart/Echart.md",
+    "images/21.png.md",
+    "z-logBook",
+    "内部组件开发/Note.md",
     "workTools/前端环境安装/前端环境安装.md",
     "workTools/Echart",
     "前端基础/z-other/less.md",
@@ -193,7 +196,6 @@
     "前端基础/z-other/react/大佬笔记/React Hooks 项目/（三）项目列表功能模块.md",
     "前端基础/z-other/jQuery/00 基础.md",
     "手机端/vx小程序/小程序.md",
-    "images/21.png.md",
     "images",
     "手机端/vx小程序/images/34.png",
     "前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
@@ -215,13 +217,10 @@
     "前端基础/vue/vue3快速上手.md",
     "前端基础/JavaScript 1/JS基础/06函数.md",
     "前端基础/z-other/webpack/01 基本使用.md",
-    "前端基础/JavaScript 1/WebApi 1/02DOM 基础.md",
-    "0-directory.md",
     "前端基础/z-other/Node.js.7z",
     "前端基础.zip",
     "Three.js",
     "前端基础",
-    "workTools/前端环境安装/host覆盖内容.txt",
     "workTools/前端环境安装/Pasted image 20230725102213.png",
     "未命名.canvas",
     "未命名 1.canvas",
