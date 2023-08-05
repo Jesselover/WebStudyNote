@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workTools/Tips/代码细节.md",
+                "file": "workTools/Echart/Echart.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "workTools/Tips/代码细节.md"
+                "file": "workTools/Echart/Echart.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workTools/Tips/代码细节.md",
+                "file": "workTools/Echart/Echart.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workTools/Tips/代码细节.md",
+                "file": "workTools/Echart/Echart.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,8 +181,9 @@
   },
   "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
-    "workTools/Tips/Tips.md",
+    "内部组件开发/Note.md",
     "workTools/Tips/代码细节.md",
+    "workTools/Tips/Tips.md",
     "2023-08-05.md",
     "0-directory.md",
     "z其他/梦诚/vue.md",
@@ -199,7 +200,6 @@
     "workTools/Echart/Echart.md",
     "images/21.png.md",
     "z-logBook",
-    "内部组件开发/Note.md",
     "workTools/前端环境安装/前端环境安装.md",
     "workTools/Echart",
     "前端基础/z-other/less.md",
