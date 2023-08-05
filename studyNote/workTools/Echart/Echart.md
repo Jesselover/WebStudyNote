@@ -10,6 +10,6 @@
 2. 准备一个具备大小的DOM容器  %%生成的图表会放入这个容器内%%
 3. 初始化Echart实例对象 %%实例化echart对象%%
 4. 指定配置项和数据（option） %%根据具体需求修改配置选项%%
-5. 将配置项设置给echart实例对象 
+5. 将配置项设置给echart实例对象  %% `myCahrt.setOption（option）`%%
 
 为什么没有 `echart.init(dom)` 初始化数据

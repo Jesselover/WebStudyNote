@@ -166,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 272.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,9 +181,9 @@
   },
   "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
-    "0-directory.md",
-    "2023-08-05.md",
     "workTools/Echart/Echart.md",
+    "2023-08-05.md",
+    "0-directory.md",
     "images/21.png.md",
     "z-logBook",
     "内部组件开发/Note.md",
