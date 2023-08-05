@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "z其他/梦诚/tip.md",
+                "file": "workTools/Tips/代码细节.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z其他/梦诚/tip.md"
+                "file": "workTools/Tips/代码细节.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "z其他/梦诚/tip.md",
+                "file": "workTools/Tips/代码细节.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "z其他/梦诚/tip.md",
+                "file": "workTools/Tips/代码细节.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,20 +181,22 @@
   },
   "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
-    "z其他/梦诚/project.md",
+    "workTools/Tips/Tips.md",
+    "workTools/Tips/代码细节.md",
+    "2023-08-05.md",
+    "0-directory.md",
     "z其他/梦诚/vue.md",
+    "workTools/Tips",
     "z其他/梦诚/tip.md",
+    "z其他/梦诚/project.md",
     "z其他/梦诚/npm 私有仓库使用说明.md",
-    "z其他/梦诚/代码细节.md",
     "z其他/梦诚/images/b0ae295d30a528e9e815c05d945156a.png",
     "z其他/梦诚/images/Pasted image 20230412153001.png",
     "z其他/梦诚/images/Pasted image 20230412165846.png",
     "z其他/梦诚/images/Pasted image 20230412170538.png",
     "z其他/梦诚/images/Pasted image 20230412171136.png",
     "z其他/梦诚.7z",
-    "2023-08-05.md",
     "workTools/Echart/Echart.md",
-    "0-directory.md",
     "images/21.png.md",
     "z-logBook",
     "内部组件开发/Note.md",
@@ -225,7 +227,6 @@
     "workTools/git.md",
     "前端基础/z-other/Node.js.7z",
     "前端基础.zip",
-    "Three.js",
     "未命名.canvas",
     "未命名 1.canvas",
     "未命名 3.canvas",
