@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-08-05.md",
+                "file": "z其他/梦诚/tip.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-08-05.md"
+                "file": "z其他/梦诚/tip.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-08-05.md",
+                "file": "z其他/梦诚/tip.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-08-05.md",
+                "file": "z其他/梦诚/tip.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,8 +181,19 @@
   },
   "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
-    "workTools/Echart/Echart.md",
+    "z其他/梦诚/project.md",
+    "z其他/梦诚/vue.md",
+    "z其他/梦诚/tip.md",
+    "z其他/梦诚/npm 私有仓库使用说明.md",
+    "z其他/梦诚/代码细节.md",
+    "z其他/梦诚/images/b0ae295d30a528e9e815c05d945156a.png",
+    "z其他/梦诚/images/Pasted image 20230412153001.png",
+    "z其他/梦诚/images/Pasted image 20230412165846.png",
+    "z其他/梦诚/images/Pasted image 20230412170538.png",
+    "z其他/梦诚/images/Pasted image 20230412171136.png",
+    "z其他/梦诚.7z",
     "2023-08-05.md",
+    "workTools/Echart/Echart.md",
     "0-directory.md",
     "images/21.png.md",
     "z-logBook",
@@ -212,23 +223,11 @@
     "手机端/uniapp",
     "手机端/vx小程序/images/1.png",
     "workTools/git.md",
-    "前端基础/HTML+CSS/flex布局.md",
-    "z其他/项目/后台管理项目/后台管理项目.md",
-    "前端基础/vue/vue_x.md",
-    "前端基础/vue/vue3快速上手.md",
-    "前端基础/JavaScript 1/JS基础/06函数.md",
-    "前端基础/z-other/webpack/01 基本使用.md",
     "前端基础/z-other/Node.js.7z",
     "前端基础.zip",
     "Three.js",
-    "前端基础",
-    "workTools/前端环境安装/Pasted image 20230725102213.png",
     "未命名.canvas",
     "未命名 1.canvas",
-    "前端基础/z-images/图片/lifecycle.16e4c08e.png",
-    "前端基础/z-images/basics7.png",
-    "前端基础/z-images/Pasted image 20220909092828.png",
-    "前端基础/z-images/Pasted image 20221006102140.png",
     "未命名 3.canvas",
     "未命名 2.canvas"
   ]
