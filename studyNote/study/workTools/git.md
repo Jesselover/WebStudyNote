@@ -38,7 +38,12 @@ git push -u origin master
 #git push <远程主机名> <本地分支名>:<远程分支名>
 ```
 
+```YAML
+git branch -a 
+# 查看远程仓库分支
+```
 
+[Git拉取分支报错(fatal:‘XXX' is not a commit and a branch ‘XXX' cannot be created from it) - lwjnicole - 博客园 (cnblogs.com)](https://www.cnblogs.com/lwjnicole/p/13174305.html)
 ## gitlap
 
 - 自建代码托管平台、局域网代码托管中心
