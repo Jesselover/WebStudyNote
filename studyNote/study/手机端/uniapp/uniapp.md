@@ -53,3 +53,6 @@ nvue: vue原生，作为局部使用更合适
 ` uni.hideToast() `建议 `mask` 设置为 `true` ，加载的时候不能进行其他操作
 
 
+### 在uniapp中使用Echart
+
+[uni-app引用echarts_uniapp引入echarts_花归去的博客-CSDN博客](https://blog.csdn.net/weixin_42120669/article/details/106123645)
