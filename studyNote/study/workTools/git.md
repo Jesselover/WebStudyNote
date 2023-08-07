@@ -7,6 +7,8 @@
 
 [git remote 命令 | 菜鸟教程 (runoob.com)](https://www.runoob.com/git/git-remote.html)
 
+[Git - 远程仓库的使用 (git-scm.com)](https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8)
+
 本地项目与远程仓库建立链接
 ```YAML
 # 初始化本地仓库
