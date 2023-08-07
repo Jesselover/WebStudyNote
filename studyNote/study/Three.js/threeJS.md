@@ -4,7 +4,7 @@
 [创建一个场景 – three.js docs (threejs.org)](https://threejs.org/docs/index.html#manual/zh/introduction/Creating-a-scene)
 
 
-
+## study
 ### 1. 本地搭建three.js 官网
 
 下载后
@@ -755,3 +755,8 @@ window.addEventListener('resize', () => {
 ```
 
 
+
+
+## practice
+
+[threejs+vue/01 glb模型导入，改变汽车车身颜色 - 掘金 (juejin.cn)](https://juejin.cn/post/7122000200851259429)
