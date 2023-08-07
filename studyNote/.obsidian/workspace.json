@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-08-07.md",
+                "file": "study/workTools/git.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-08-07.md"
+                "file": "study/workTools/git.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-08-07.md",
+                "file": "study/workTools/git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-08-07.md",
+                "file": "study/workTools/git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,8 +180,8 @@
   },
   "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
-    "study/workTools/git.md",
     "2023-08-07.md",
+    "study/workTools/git.md",
     "study/手机端/uniapp/uniapp.md",
     "天行健/logBook.md",
     "z-logBook/2023-08-05.md",
