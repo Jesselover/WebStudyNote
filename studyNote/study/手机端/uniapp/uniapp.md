@@ -56,3 +56,8 @@ nvue: vue原生，作为局部使用更合适
 ### 在uniapp中使用Echart
 
 [uni-app引用echarts_uniapp引入echarts_花归去的博客-CSDN博客](https://blog.csdn.net/weixin_42120669/article/details/106123645)
+
+## practice01
+
+### login 
+[表单验证、数据验证 - graceUI js 模块 - DCloud 插件市场](https://ext.dcloud.net.cn/plugin?id=383)
