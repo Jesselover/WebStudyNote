@@ -59,5 +59,5 @@ nvue: vue原生，作为局部使用更合适
 
 ## practice01
 
-### login 
+
 [表单验证、数据验证 - graceUI js 模块 - DCloud 插件市场](https://ext.dcloud.net.cn/plugin?id=383)
