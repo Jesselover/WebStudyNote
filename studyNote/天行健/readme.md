@@ -21,7 +21,7 @@
 |txj-app-dev| http://192.168.96.180:3001/txj-app-dev/txj-tsp-uniapp||
 | 原型设计 | https://run.mockplus.cn/FTVINVmLnCK7veCl/index.html?to=6601330E-CB25-4109-8347-0569359C0E16||
 |蓝湖| https://lanhuapp.com/web/#/item/project/stage?tid=4857dcb1-2d84-49d2-9b77-d67263147b8f&pid=298aa30e-e590-4b59-8e5b-ae67c3003c57||
-
+|德银邮箱|http://mail.deewinfl.com/webmail （dutongfei@deewinfl.com clgg@0807）|
 # 本地配置
 
 ### git配置
