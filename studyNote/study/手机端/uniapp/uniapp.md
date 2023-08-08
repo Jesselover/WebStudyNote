@@ -62,5 +62,7 @@ nvue: vue原生，作为局部使用更合适
 
 [表单验证、数据验证 - graceUI js 模块 - DCloud 插件市场](https://ext.dcloud.net.cn/plugin?id=383)
 
+
+去掉scrollview的滚动条 
 ![[Pasted image 20230808161310.png]]
 
