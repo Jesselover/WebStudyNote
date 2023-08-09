@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "伪类",
+                "query": "v-deep",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -181,10 +181,11 @@
   },
   "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
+    "study/前端基础/vue/vue项目/后台管理项目.md",
+    "study/手机端/uniapp/uniapp.md",
     "2023-08-09.md",
     "2023-08-08.md",
     "2023-08-07.md",
-    "study/手机端/uniapp/uniapp.md",
     "study/前端基础/HTML+CSS/CSS/02复合选择器.md",
     "study/手机端/uniapp/images/Pasted image 20230808161310.png",
     "天行健/readme.md",
@@ -218,7 +219,6 @@
     "study/workTools/Echart",
     "study/前端基础/z-other/less.md",
     "study/前端基础/z-other/Promise/00 promise基础.md",
-    "study/前端基础/z-other/react/大佬笔记/React Hooks 项目/（三）项目列表功能模块.md",
     "images",
     "study/手机端/vx小程序/images/34.png",
     "study/手机端/uniapp/images/Pasted image 20230802141851.png",

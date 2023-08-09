@@ -83,5 +83,5 @@ nvue: vue原生，作为局部使用更合适
 	}
 ```
 
-1. `/deep/` 由于
-[css关于/deep/的解释和用法_cscc deep_weixin_40442888的博客-CSDN博客](https://blog.csdn.net/weixin_40442888/article/details/97622810)
+1. `/deep/` 由于 `<style>` 的 `scoped` 属性，无法更改子组件的样式，需要使用深度选择器
+[vue中的css深度选择器 :deep(<inner-selector>)、/deep/、>>>、::v-deep 到底是什么？ - 掘金 (juejin.cn)](https://juejin.cn/post/6978781674070884366)
