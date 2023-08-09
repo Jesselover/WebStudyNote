@@ -63,6 +63,25 @@ nvue: vue原生，作为局部使用更合适
 [表单验证、数据验证 - graceUI js 模块 - DCloud 插件市场](https://ext.dcloud.net.cn/plugin?id=383)
 
 
-去掉scrollview的滚动条 
-![[Pasted image 20230808161310.png]]
+##### 去掉scrollview的滚动条 
+[uniapp去除滚动条的方法_uniapp去掉滚动条_前端若水的博客-CSDN博客](https://blog.csdn.net/qq_37547964/article/details/109530142)
 
+```scss
+.navscroll {
+		// 去掉自带的滑动条
+		// /deep/::-webkit-scrollbar {
+		// 	display: none;
+		// }
+
+		/deep/::-webkit-scrollbar {
+			display: none !important;
+			width: 0 !important;
+			height: 0 !important;
+			-webkit-appearance: none;
+			background: transparent;
+		}
+	}
+```
+
+1. `/deep/` 由于
+[css关于/deep/的解释和用法_cscc deep_weixin_40442888的博客-CSDN博客](https://blog.csdn.net/weixin_40442888/article/details/97622810)
