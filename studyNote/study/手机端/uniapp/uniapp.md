@@ -90,4 +90,6 @@ nvue: vue原生，作为局部使用更合适
 	[vue中的css深度选择器 :deep(<inner-selector>)、/deep/、>>>、::v-deep 到底是什么？ - 掘金 (juejin.cn)](https://juejin.cn/post/6978781674070884366?searchId=20230809112044596954C1334A692867F2)
 
 
-##### 全局使用scss变量
+##### how to 使用 全局使用scss变量
+
+[【uni-app】定义sass全局变量 - 掘金 (juejin.cn)](https://juejin.cn/post/7165742881649623048)
