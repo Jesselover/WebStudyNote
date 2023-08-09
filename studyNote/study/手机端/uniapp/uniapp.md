@@ -84,4 +84,10 @@ nvue: vue原生，作为局部使用更合适
 ```
 
 1. `/deep/` 由于 `<style>` 的 `scoped` 属性，无法更改子组件的样式，需要使用深度选择器
-[vue中的css深度选择器 :deep(<inner-selector>)、/deep/、>>>、::v-deep 到底是什么？ - 掘金 (juejin.cn)](https://juejin.cn/post/6978781674070884366)
+
+	[vue样式穿透的几种方式 - 掘金 (juejin.cn)](https://juejin.cn/post/7090570269495918599)
+
+	[vue中的css深度选择器 :deep(<inner-selector>)、/deep/、>>>、::v-deep 到底是什么？ - 掘金 (juejin.cn)](https://juejin.cn/post/6978781674070884366?searchId=20230809112044596954C1334A692867F2)
+
+
+##### 全局使用scss变量

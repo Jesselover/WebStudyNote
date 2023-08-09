@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "v-deep",
+                "query": "scoped",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -181,8 +182,10 @@
   },
   "active": "dd56f0c6fda49245",
   "lastOpenFiles": [
-    "study/前端基础/vue/vue项目/后台管理项目.md",
+    "study/z其他/notes-master/vue&vue-router&vuex/vue.md",
+    "study/前端基础/vue/vue_cli.md",
     "study/手机端/uniapp/uniapp.md",
+    "study/前端基础/vue/vue项目/后台管理项目.md",
     "2023-08-09.md",
     "2023-08-08.md",
     "2023-08-07.md",
@@ -217,8 +220,6 @@
     "z-logBook",
     "study/workTools/前端环境安装/前端环境安装.md",
     "study/workTools/Echart",
-    "study/前端基础/z-other/less.md",
-    "study/前端基础/z-other/Promise/00 promise基础.md",
     "images",
     "study/手机端/vx小程序/images/34.png",
     "study/手机端/uniapp/images/Pasted image 20230802141851.png",
