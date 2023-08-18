@@ -5,6 +5,7 @@
 
 
 ## study
+
 ###  本地搭建three.js 官网，用parcel搭建three.js开发环境
 
 下载后
@@ -838,6 +839,10 @@ directionaLight.shadow.camera.updateProjectionMatrix()
 
 
 
+
+### 光线投射技术
+
+[Three.js - Group 组合对象_group和object3d有什么区别_「已注销」的博客-CSDN博客](https://blog.csdn.net/ithanmang/article/details/80965712?spm=1001.2014.3001.5501)
 ## summary
 
 [Three.js中文网 (webgl3d.cn)](http://www.webgl3d.cn/)
@@ -906,6 +911,12 @@ import * as THREE from 'three';
 >[!QUESTION] 环境光颜色？
 
 #### 创建相机？？
+ 
+- 透视相机 PerspectiveCamera：进大远小，模拟人眼
+- 正交相机：视锥体就是一个立方体，无近大远小，永远渲染2d场景或者ui元素
+
+设置合适的相机参数？
+
 
 ```js
     // 创建相机
@@ -923,15 +934,83 @@ import * as THREE from 'three';
         100
 
       );
+      
+      // 相机位置
 
       this.camera.position.set(0, 2, 10);
+      
+      // 观察目标点的坐标
 
-      //   this.camera.lookAt(this.scene.position);
+      this.camera.lookAt(this.scene.position);
 
       //   this.scene.add(this.camera);
 
     },
 ```
+#### 创建轨道控制器
+
+Orbit controls（轨道控制器）可以使得相机围绕目标进行轨道运动。
+
+> 轨道控制器会影响lookAt的设置，注意手动修改`control`
+```js
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+```
+
+```js
+    // 创建控制器
+
+    createOrbitControls() {
+
+      this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+
+      this.controls.enableDamping = true; // 启用阻尼
+
+      this.controls.minPolarAngle = 0.5; // 最小绕y轴角度
+
+      this.controls.maxPolarAngle = 1.35; // 最大绕y轴角度
+
+      this.controls.zoomSpeed = 0.3; // 放慢缩放速度
+
+    },
+```
+
+```js
+    // 加载
+
+    render() {
+
+      this.renderer.render(this.scene, this.camera);
+
+      this.controls && this.controls.update(); //使用控制器后，必须在加载的时候update
+
+      requestAnimationFrame(this.render);
+
+    },
+```
+
+#### 创建灯光
+
+- 环境光ambient：环境光会均匀的照亮场景中所有物体，环境光不能用来投射阴影，因为它没有方向。
+- 平行光directionalLight ：类似于太阳光
+- 点光源pointLight：类似于灯泡
+- 聚光灯spotlight：类似于手电筒 
+
+```js
+  
+
+    // 添加燈光
+
+    createLight() {
+
+      let light1 = new THREE.DirectionalLight(0xffffff, 1); // 创建一个方向光，参数为光的颜色和强度
+
+      light1.position.set(0, 0, 10);
+
+      this.scene.add(light1);
+
+    },
+```
+
 
 #### 创建渲染器
 
@@ -949,6 +1028,7 @@ import * as THREE from 'three';
         this.container.clientHeight
 
       );
+      this.renderer.antialisa = true; // 抗锯齿
 
       //   this.renderer.setClearColor("pink"); // 设置画面颜色
 
@@ -992,43 +1072,6 @@ import * as THREE from 'three';
     },
 ```
 
-#### 创建控制器
-
-```js
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-```
-
-```js
-    // 创建控制器
-
-    createOrbitControls() {
-
-      this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-
-      this.controls.enableDamping = true; // 启用阻尼
-
-      this.controls.minPolarAngle = 0.5; // 最小绕y轴角度
-
-      this.controls.maxPolarAngle = 1.35; // 最大绕y轴角度
-
-      this.controls.zoomSpeed = 0.3; // 放慢缩放速度
-
-    },
-```
-
-```js
-    // 加载
-
-    render() {
-
-      this.renderer.render(this.scene, this.camera);
-
-      this.controls && this.controls.update(); //使用控制器后，必须在加载的时候update
-
-      requestAnimationFrame(this.render);
-
-    },
-```
 
 #### 创建坐标轴辅助器
 
@@ -1040,24 +1083,6 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       const axesHelper = new THREE.AxesHelper(5);
 
       this.scene.add(axesHelper);
-
-    },
-```
-
-#### 创建灯光
-
-```js
-  
-
-    // 添加燈光
-
-    createLight() {
-
-      let light1 = new THREE.DirectionalLight(0xffffff, 1); // 创建一个方向光，参数为光的颜色和强度
-
-      light1.position.set(0, 0, 10);
-
-      this.scene.add(light1);
 
     },
 ```
@@ -1108,12 +1133,64 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 
 
+
+> 载入模型后，记得根据模型调节相机参数
 ### Object3D
 
 [Object3D – three.js docs (threejs.org)](https://threejs.org/docs/index.html#api/zh/core/Object3D)
 
+#### 世界坐标与局部坐标
+
+#####   局部坐标/世界坐标
+世界坐标：自己的局部坐标position与所有父对象的局部坐标position的叠加
+
+```js
+obj.getWorldPosition(Vector3)
+```
+
+>[!QUESTION] 改变模型相对局部坐标的原点位置？
+>改变集合体顶点位置，可以改变模型自身相对坐标原点的位置
+
+
+
+
+
+
+#### 常用属性
+##### rotation 与 position
+
 rotation属性和旋转方法rotateX()差异类似position属性和平移方法translateX()的差异，一个是相对坐标系设置角度、位置，一个是相对当前的三维模型的状态设置角度、位置参数。 旋转与平移参考的都是坐标系，不过参考的坐标系稍有不同，平移参考的是世界坐标系或者说三维场景对象Scene的坐标系，和相机对象一样，在整个三维场景中的位置， 三维模型的旋转参考的是模型坐标系，也就是对三维模型本身建立的坐标系。
 
+
+##### visible 
+
+控制模型的可见性，布尔值
+才智material也有这个属性
+
+#### 常用方法
+
+##### object3d.traverse(function)
+
+`object3d.traverse((child)=>{})` 递归查找
+
+##### object3d.getObjectByName(string)
+
+
+##### objecct3d.add(obj3D)
+
+```js
+obj.add( axesHelper );
+obj.add( obj1 );
+```
+
+##### objecct3d.remove(obj3D)
+
+### 后处理
+
+#### OutlinePass.js 高亮发光描边
+![[Pasted image 20230816165030.png]]
+
+![[Pasted image 20230816165332.png]]
 ## application
 
 [threejs+vue/01 glb模型导入，改变汽车车身颜色 - 掘金 (juejin.cn)](https://juejin.cn/post/7122000200851259429)
@@ -1127,15 +1204,31 @@ rotation属性和旋转方法rotateX()差异类似position属性和平移方法t
 
 [three.js聚光灯SpotLight使用，调整聚光灯颜色、位置、角度、强度、距离、衰减指数、方向、可见性、是否产生阴影属性(vue中使用three.js09)_threejs spotlight_点燃火柴的博客-CSDN博客](https://blog.csdn.net/qw8704149/article/details/108541970)
 ###### target
-1. 轮子的转动
-2. 发动机转速
-3. 车是否启动 
-4. 灯光、转向灯 
-5. 车门
+
+1. 轮子的转动 number
+2. 发动机转速 number
+3. 车是否启动  Boolean
+4. 
+```js
+
+open{
+	type:
+	status:
+}
+```
+5. 灯光、转向灯  
+6. 车门 、车窗  
 	开关门交互：3D建模的时候，保证每个车门是一个Group，在3D软件中，让本地坐标轴和车门旋转轴重合，然后代码根据车门节点名称，获取车group，然后最后tweenjs生成开关门动画
-6. 尾气
-7. 档位
-8. 车窗
+```js
+{
+type: window||door , //string
+windiow/door: left||right , //string
+status: Boolean 
+}
+```
+1. 尾气
+2. 档位
+
 
 
 1，2，5 group+rotation
@@ -1148,3 +1241,200 @@ rotation属性和旋转方法rotateX()差异类似position属性和平移方法t
 ![[Pasted image 20230811163807.png]]
 设置发光材质
 ![[Pasted image 20230811163947.png]]
+
+### 车门开启、关闭
+
+
+```
+door ：left || right
+xxxDoor ：此门的group ,在import3D中获取
+xxxDoorStatus: Boolean ,true 表示开启，false 表示关闭
+
+```
+```js
+    
+    door(door) {
+
+      if (door === "left") {
+
+        const rotation = this.leftDoor.rotation;
+
+        const z = this.leftDoorStatus ? 0 : Math.PI / 3
+
+        const tween = new TWEEN.Tween(rotation);
+
+        tween.to({ z }, 1000);
+
+        tween.start();
+
+        this.leftDoorStatus = !this.leftDoorStatus
+
+      }
+
+      if (door === "right") {
+
+        const rotation = this.rightDoor.rotation;
+
+        const z = this.rightDoorStatus ? 0 : -Math.PI / 3
+
+        const tween = new TWEEN.Tween(rotation);
+
+        tween.to({ z }, 1000);
+
+        tween.start();
+
+        this.rightDoorStatus = !this.rightDoorStatus
+
+      }
+
+    },
+    
+   render() {
+      ...
+      TWEEN.update();
+      ...
+    },
+```
+
+
+使用光线投射技术，点击车门开启、关闭车门
+```JS
+    onMouseClick(event) {
+
+      this.raycaster = new THREE.Raycaster();
+
+      this.mouse = new THREE.Vector2();
+
+      //通过鼠标点击的位置计算出raycaster所需要的点的位置，以屏幕中心为原点，值的范围为-1到1.
+
+      this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+
+      this.mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
+
+      this.raycaster.setFromCamera(this.mouse, this.camera);
+
+      const intersectsRight = this.raycaster.intersectObjects(this.rightDoor.children);
+
+      const intersectsLeft = this.raycaster.intersectObjects(this.leftDoor.children);
+
+      if (intersectsRight.length) {
+
+        this.door("right")
+
+      }
+
+      if(intersectsLeft.length){
+
+        this.door("left")
+
+      }
+
+      this.renderer.render( this.scene, this.camera );
+
+    },
+```
+
+在mounted中绑定点击事件
+
+```JS
+  mounted() {
+
+    window.addEventListener('click', this.onMouseClick, false)
+
+  },
+```
+
+
+### 车窗开启、关闭
+
+```
+zz: {
+
+        open: {
+
+          type: "open",
+
+          status: Boolean //true 开启 false 关闭
+
+        },
+
+        wheelsVelocity: {
+
+          type: "velocity",
+
+          velocity: Number,
+
+        },
+
+        motorVelocity: {
+
+          type: 'motorVelocity',
+
+          velocity: Number
+
+        },
+
+        window: {
+
+          type: "window",
+
+          windiow: "left" || "right", //string
+
+          status: Boolean//true 开启 false 关闭
+
+        },
+
+        door: {
+
+          type: "door",
+
+          door: "left" || "right", //string
+
+          status: Boolean//true 开启 false 关闭
+
+        },
+
+        turnSignals: {
+
+          type: "turnSignals",
+
+          signal: "left" || "right", //string
+
+          status: Boolean//true 开启 false 关闭
+
+  
+
+        },
+
+        light: {
+
+          type: "light",
+
+          status: Boolean//true 开启 false 关闭
+
+        }
+
+      }
+      
+```
+
+### 车门开启、关闭. 
+### 启动时发动机闪烁
+
+>[!question] 改变一个物体材料，其他的也跟着变？
+>
+>threejs中的网格物体对材质的是引用传递，不是值传递，如果material1 被 mesh1和mesh2用到了，改变 mesh1.material.color，则mesh2的材质颜色也改了。解决方法：赋予一个新的材质
+
+
+### updata
+[threejs单击选中模型高亮显示/选中模型发光_threejs模型轮廓发光_冉冉胜起的博客-CSDN博客](https://blog.csdn.net/qq_15023917/article/details/114366480)
+
+
+
+[一次Three.js加载obj模型引出的，点击改变模型颜色的问题_人中伊布的博客-CSDN博客](https://blog.csdn.net/darkproc/article/details/80015901)
+
+模型需求：
+1. 车窗颜色加深（看到开关车窗效果）
+2. 发动机名字（要更改发动机材料属性）
+3. 挡位相关问题
+4. 车外壳整理，可以一件改变车颜色（先不弄这个，等做完其他功能有时间再说）

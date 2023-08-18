@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f039fdebe783ecb9",
+        "id": "464817a9ab726d1a",
         "type": "tabs",
         "children": [
           {
-            "id": "dd56f0c6fda49245",
+            "id": "89485f850fd6258d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -150,7 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 311.5
+    "width": 223.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,10 +163,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "dd56f0c6fda49245",
+  "active": "89485f850fd6258d",
   "lastOpenFiles": [
+    "study/workTools/前端环境安装/前端环境安装.md",
+    "study/0-directory.md",
+    "Pasted image 20230816165030.png",
+    "Pasted image 20230816165332.png",
+    "Pasted image 20230817160423.png",
+    "Pasted image 20230817160448.png",
+    "Pasted image 20230817160527.png",
     "study/Three.js/threeJS.md",
-    "study/Three.js/threeJS.md",
+    "天行健/readme.md",
     "booklog/2023-W32.md",
     "booklog",
     "2023-08-07.md",
@@ -173,16 +181,13 @@
     "2023-08-09.md",
     "2023-08-08.md",
     "study/前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
-    "study/0-directory.md",
     "study/前端基础/z-other/Node.js/00 node.js基础.md",
-    "study/workTools/前端环境安装/前端环境安装.md",
     "study/手机端/uniapp/uniapp.md",
     "study/z其他/notes-master/vue&vue-router&vuex/vue.md",
     "study/前端基础/vue/vue_cli.md",
     "study/前端基础/vue/vue项目/后台管理项目.md",
     "study/前端基础/HTML+CSS/CSS/02复合选择器.md",
     "study/手机端/uniapp/images/Pasted image 20230808161310.png",
-    "天行健/readme.md",
     "天行健/logBook.md",
     "未命名.md",
     "study/workTools/Echart/Echart.md",
@@ -193,21 +198,15 @@
     "天行健",
     "study/内部组件开发/Note.md",
     "study/workTools/Tips/代码细节.md",
-    "study/workTools/Tips/Tips.md",
     "study/workTools/Tips",
     "study/z其他/梦诚/images/b0ae295d30a528e9e815c05d945156a.png",
     "study/z其他/梦诚/images/Pasted image 20230412153001.png",
     "study/z其他/梦诚/images/Pasted image 20230412165846.png",
     "study/z其他/梦诚/images/Pasted image 20230412170538.png",
-    "study/z其他/梦诚/images/Pasted image 20230412171136.png",
     "study/z其他/梦诚.7z",
     "z-logBook",
     "study/workTools/Echart",
     "images",
-    "study/手机端/vx小程序/images/34.png",
-    "study/手机端/uniapp/images/Pasted image 20230802141851.png",
-    "Pasted image 20230727172124.png",
-    "Pasted image 20230727172123.png",
     "study/手机端/uniapp/images",
     "study/手机端/vx小程序",
     "未命名.canvas",
