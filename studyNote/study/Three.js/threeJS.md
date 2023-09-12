@@ -4,845 +4,7 @@
 [创建一个场景 – three.js docs (threejs.org)](https://threejs.org/docs/index.html#manual/zh/introduction/Creating-a-scene)
 
 
-## study
 
-###  本地搭建three.js 官网，用parcel搭建three.js开发环境
-
-下载后
-`npm install`
-`npm run serve`
-
-[🚀 快速开始 | Parcel中文网 (parceljs.cn)](https://www.parceljs.cn/getting_started.html)
-[package.json 配置完全解读 - 掘金 (juejin.cn)](https://juejin.cn/post/7145759868010364959)
-一个包全局安装后，另一个项目需要用时，还需要在安装一次
-
-1. 创建文件夹，用VScode打开
-	`npm init`
-	`npm install -g parcel-bundler`
-
-2. 创建src文件，里面添加index.html文件,引入相应文件 
-
->[!tip] 
-> 引入three.js脚本文件
-> `<script src="./main/main.js" type="module"></script>`
-
-
-```html
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
-
-    <!-- 引入样式 -->
-
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-</head>
-
-<body>
-
-    <!-- 模块化开发，设置类型为module；type (en-US)
-
-该属性表示所代表的脚本类型 -->
-
-   <script src="./main/main.js" type="module"></script>
-
-</body>
-
-</html>
-```
-
-3. package.json 文件内, 配置入口文件
-```json
-  "scripts": {
-
-    "dev": "parcel src/index.html",
-
-    "build": "parcel build src/index.html"
-
-  },
-```
-
-4. `npm install parcel-bundler --save-dev`
-5. `npm install three`  
-6. `src/main/main.js` 中 `import * as THREE from "three"`
-
-###  使用three.js渲染场景和物体
-
-```js
-// 引入three.js
-
-import * as THREE from "three"
-
-// 1. 创建场景
-
-const scene = new THREE.Scene()
-
-// 2.创建相机(PerspectiveCamera透视相机)
-
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.9, 100)
-
-// 设置相机位置
-
-camera.position.set(0,0,10) //x,y,z
-
-scene.add(camera)
-
-  
-
-// 3.添加物体
-
-// 创建几何体
-
-const cubeGeometry = new THREE.BoxGeometry()
-
-const cubeMaterial = new THREE.MeshBasicMaterial({color:0xffff00})
-
-// 根据几何体、材质创建物体
-
-const cube = new THREE.Mesh(cubeGeometry,cubeMaterial)
-
-// 将几何体添加到场景
-
-scene.add(cube)
-
-  
-
-// 4.初始化渲染器
-
-const renderer = new THREE.WebGL1Renderer()
-
-// 设置渲染尺寸
-
-renderer.setSize(window.innerWidth,window.innerHeight)
-
- 
-
-// 5.将webGL渲染的canvas内容添加到body
-
-document.body.appendChild(renderer.domElement)
-
-  
-
-// 6.使用渲染器，通过相机将场景进行渲染
-
-renderer.render(scene,camera)
-```
-
-### 轨道控制器OrbitControls查看物体
-
-[OrbitControls – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=OrbitControls#examples/zh/controls/OrbitControls)
-
-```js
-// !轨道控制器查看物体
-
-import * as THREE from "three"
-
-// 导入轨道控制器
-
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-
-  
-
-const scene = new THREE.Scene()
-
-  
-
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
-
-camera.position.set(0,0,10) //x,y,z
-
-scene.add(camera)
-
-  
-
-const cubeGeometry = new THREE.BoxGeometry()
-
-const cubeMaterial = new THREE.MeshBasicMaterial({color:0xffff00})
-
-const cube = new THREE.Mesh(cubeGeometry,cubeMaterial)
-
-scene.add(cube)
-
-  
-
-const renderer = new THREE.WebGL1Renderer()
-
-renderer.setSize(window.innerWidth,window.innerHeight)
-
-  
-
-document.body.appendChild(renderer.domElement)
-
-  
-
-// renderer.render(scene,camera)
-
-  
-
-// 创建轨道控制器
-
-const controls = new OrbitControls(camera,renderer.domElement)
-
-  
-
-function render(){
-
-    renderer.render(scene,camera)
-
-    // 渲染下一帧的时候就会调用render函数
-
-    requestAnimationFrame(render)
-
-}
-
-  
-
-// 初始化渲染
-
-render()
-```
-
-
-### 使用坐标轴
-
-```js
-// !添加坐标辅助器
-
-import * as THREE from "three"
-
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-
-  
-
-const scene = new THREE.Scene()
-
-  
-
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
-
-camera.position.set(0,0,10) //x,y,z
-
-scene.add(camera)
-
-  
-
-const cubeGeometry = new THREE.BoxGeometry()
-
-const cubeMaterial = new THREE.MeshBasicMaterial({color:0xffff00})
-
-const cube = new THREE.Mesh(cubeGeometry,cubeMaterial)
-
-scene.add(cube)
-
-  
-
-const renderer = new THREE.WebGL1Renderer()
-
-renderer.setSize(window.innerWidth,window.innerHeight)
-
-  
-
-document.body.appendChild(renderer.domElement)
-
-  
-
-const controls = new OrbitControls(camera,renderer.domElement)
-
-  
-
-// 添加坐标轴辅助器
-
-const axesHelper = new THREE.AxesHelper(5)
-
-scene.add(axesHelper)
-
-  
-
-function render(){
-
-    renderer.render(scene,camera)
-
-    requestAnimationFrame(render)
-
-}
-
-  
-
-render()
-```
-
-
-### 设置物体移动、縮放、旋转
-
-[Object3D – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=Mesh#api/zh/core/Object3D)
-
-> postion是相对于父元素的位置
-
- postion https://threejs.org/docs/index.html?q=vector3#api/zh/math/Vector3
-
-```js
-// !设置物体移动、縮放、旋转
-
-import * as THREE from "three"
-
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-
-  
-
-const scene = new THREE.Scene()
-
-  
-
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
-
-camera.position.set(0, 0, 10) //x,y,z
-
-scene.add(camera)
-
-  
-
-const cubeGeometry = new THREE.BoxGeometry()
-
-const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 })
-
-const cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
-
-scene.add(cube)
-
-  
-
-const renderer = new THREE.WebGL1Renderer()
-
-renderer.setSize(window.innerWidth, window.innerHeight)
-
-  
-
-document.body.appendChild(renderer.domElement)
-
-  
-
-const controls = new OrbitControls(camera, renderer.domElement)
-
-  
-
-const axesHelper = new THREE.AxesHelper(5)
-
-scene.add(axesHelper)
-
-  
-
-function render() {
-
-    // 移动物体
-
-    cube.position.x += 0.01
-
-    cube.rotation.x += 0.01
-
-    if (cube.position.x > 5) {
-
-        cube.position.x = 0
-
-    }
-
-    // 缩放物体
-
-    cube.scale.set(3, 1, 5)
-
-    // 旋转物体
-
-    // cube.rotation.set(Math.PI / 4, 0, Math.PI / 4)
-
-    renderer.render(scene, camera)
-
-    requestAnimationFrame(render)
-
-}
-
-  
-
-render()
-```
-
-### 应用requestAnimationFrame、clock跟踪时间处理动画
-
-[AnimationAction – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=Animation#api/zh/animation/AnimationAction)
-[Clock – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=clock#api/zh/core/Clock)
-
-```js
-// !应用requestAnimationFrame、clock跟踪时间处理动画
-
-import * as THREE from "three"
-
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-
-  
-
-const scene = new THREE.Scene()
-
-  
-
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
-
-camera.position.set(0, 0, 10) //x,y,z
-
-scene.add(camera)
-
-  
-
-const cubeGeometry = new THREE.BoxGeometry()
-
-const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 })
-
-const cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
-
-scene.add(cube)
-
-  
-
-const renderer = new THREE.WebGL1Renderer()
-
-renderer.setSize(window.innerWidth, window.innerHeight)
-
-  
-
-document.body.appendChild(renderer.domElement)
-
-  
-
-const controls = new OrbitControls(camera, renderer.domElement)
-
-  
-
-const axesHelper = new THREE.AxesHelper(5)
-
-scene.add(axesHelper)
-
-  
-
-// 设置时钟
-
-const clock = new THREE.Clock()
-
-  
-
-function render(time) {
-
-    // 使用requestAnimationFrame时间参数控制
-
-    // let t = time / 1000 % 5
-
-  
-
-    // 获取始终运行总时长
-
-    let time = clock.getElapsedTime()
-
-    let daltaTime = clock.getDelta()
-
-    console.log(time);
-
-    // cube.position.x = t
-
-    cube.rotation.x += 0.01
-
-    if (cube.position.x > 5) {
-
-        cube.position.x = 0
-
-    }
-
-    cube.scale.set(3, 1, 5)
-
-    renderer.render(scene, camera)
-
-    requestAnimationFrame(render)
-
-}
-
-  
-
-render()
-```
-
-### Gsap动画库
-
-[gsap - npm (npmjs.com)](https://www.npmjs.com/package/gsap)
-[GSAP3入门 - 掘金 (juejin.cn)](https://juejin.cn/post/7041862990622605349)
-
-`npm install gsap`
-`import gsap from "gsap"`
-
-```js
-// ! Gsap动画
-
-import * as THREE from "three"
-
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-
-// 导入Gsap动画库
-
-import gsap from "gsap"
-
-const scene = new THREE.Scene()
-
-  
-
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
-
-camera.position.set(0, 0, 10) //x,y,z
-
-scene.add(camera)
-
-  
-
-const cubeGeometry = new THREE.BoxGeometry()
-
-const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 })
-
-const cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
-
-scene.add(cube)
-
-  
-
-const renderer = new THREE.WebGL1Renderer()
-
-renderer.setSize(window.innerWidth, window.innerHeight)
-
-  
-
-document.body.appendChild(renderer.domElement)
-
-  
-
-const controls = new OrbitControls(camera, renderer.domElement)
-
-  
-
-const axesHelper = new THREE.AxesHelper(5)
-
-scene.add(axesHelper)
-
-// 设置动画
-
-var animate1 = gsap.to(cube.position, {
-
-    x: 5,
-
-    duration: 5,
-
-    ease: 'power1.in',
-
-    onComplete: () => {
-
-        console.log("结束");
-
-    },
-
-    onStart: () => {
-
-        console.log("开始");
-
-    },
-
-    //! 无限次循环-1
-
-    repeat: -1,
-
-    // 往返运动
-
-    yoyo: true,
-
-    delay: 2,
-
-})
-
-gsap.to(cube.rotation, { x: 2 * Math.PI, duration: 5, repeat: -1, })
-
-  
-
-// 鼠标双击，不再移动
-
-window.addEventListener("dblclick", () => {
-
-    if (animate1.isActive())
-
-        // 暂停
-
-        animate1.pause()
-
-    else
-
-        // 恢复
-
-        animate1.resume()
-
-})
-
-  
-
-function render(time) {
-
-    cube.scale.set(1, 1, 1)
-
-    renderer.render(scene, camera)
-
-    requestAnimationFrame(render)
-
-}
-
-  
-
-render()
-```
-
-### 根据尺寸变化实现自适应画面
-
-```js
-// ! 根据尺寸变化实现自适应画面
-
-import * as THREE from "three"
-
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-
-import gsap from "gsap"
-
-const scene = new THREE.Scene()
-
-  
-
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
-
-camera.position.set(0, 0, 10) //x,y,z
-
-scene.add(camera)
-
-  
-
-const cubeGeometry = new THREE.BoxGeometry()
-
-const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 })
-
-const cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
-
-scene.add(cube)
-
-cube.scale.set(1, 1, 1)
-
-  
-
-const renderer = new THREE.WebGL1Renderer()
-
-renderer.setSize(window.innerWidth, window.innerHeight)
-
-  
-
-document.body.appendChild(renderer.domElement)
-
-  
-
-const controls = new OrbitControls(camera, renderer.domElement)
-
-// 设置控制器阻尼，让控制器更有真实感觉
-
-// 将其设置为true以启用阻尼（惯性），这将给控制器带来重量感。默认值为false。
-
-// !请注意，如果该值被启用，你将必须在你的动画循环里调用.update()。
-
-controls.enableDamping = true
-
-  
-
-const axesHelper = new THREE.AxesHelper(5)
-
-scene.add(axesHelper)
-
-  
-
-var animate1 = gsap.to(cube.position, {
-
-    x: 5,
-
-    duration: 5,
-
-    ease: 'power1.in',
-
-    onComplete: () => {
-
-        console.log("结束");
-
-    },
-
-    onStart: () => {
-
-        console.log("开始");
-
-    },
-
-    repeat: -1,
-
-    yoyo: true,
-
-    delay: 2,
-
-})
-
-gsap.to(cube.rotation, { x: 2 * Math.PI, duration: 5, repeat: -1, })
-
-  
-
-window.addEventListener("dblclick", () => {
-
-    if (animate1.isActive())
-
-        animate1.pause()
-
-    else
-
-        animate1.resume()
-
-})
-
-  
-
-// 动画循环
-
-function render(time) {
-
-    // !请注意，如果controls.enableDamping被启用，你将必须在你的动画循环里调用.update()。
-
-    controls.update()
-
-    renderer.render(scene, camera)
-
-    requestAnimationFrame(render)
-
-}
-
-  
-
-render()
-
-  
-
-// !监听画面变化，更新渲染画面（根据尺寸变化实现自适应画面）
-
-window.addEventListener('resize', () => {
-
-    // 更新摄像头
-
-    camera.aspect = window.innerWidth / innerHeight
-
-    // 更新摄像头投影矩阵
-
-    camera.updateProjectionMatrix();
-
-    // 更新渲染器
-
-    renderer.setSize(window.innerWidth,window.innerHeight)
-
-    // 设置渲染器像素比,为设备像素比
-
-    renderer.setPixelRatio(window.devicePixelRatio)
-
-})
-```
-
-
-
-### 材质
-
-> 1. 有的材质需要灯光才能看见
-> 2. 图片资源默认在public静态资源下。如果要放在src中，要require
-> 3. texture.colorSpace = THREE.SRGBColorSpace 更符合人眼感知。默认是线性。
-> 4. blender中的部分材质，在threejs中无法渲染，建议选择简单材质
-
-
-
-#### 贴图
-
-ao贴图：环境遮挡贴图
-alph map：透明度贴图
-[Threejs02 - 贴图、阴影和灯光 - 掘金 (juejin.cn)](https://juejin.cn/post/7240268161538719805?searchId=2023081014283437D458565F8479F38D83)
-
-####  雾 
-scene.fog
-
-### 灯光与阴影
-
-#### 阴影
-
-1. 材质对光照有反应
-2. 设置渲染器开启阴影计算
-3. 设置光照投影阴影
-4. 设置物体投影阴影
-5. 设置物理接收阴影
-
-```js
-// 可以产生阴影的光：平行光、点光源
-// 支持产生阴影的材质：标准网格材质、物理网格材质
-renderer.shadowMap.enable = true
-directionaLight.castShadow = true
-sphere.castShadow = true
-plane.receiveShadow = true
-```
-
-
-```js
-// 阴影贴图模糊度
-light1.shadow.radius = 20; 
-// 阴影贴图分辨率
-light1.shadow.mapSize.set(2048, 2048);
-```
-
-
-[OrthographicCamera – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=ca#api/zh/cameras/OrthographicCamera)
-```js
-directionaLight.shadow.camera.top = 5
-directionaLight.shadow.camera.buttom = -5
-directionaLight.shadow.camera.left = -5
-directionaLight.shadow.camera.top = 5
-directionaLight.shadow.camera.far = 500
-directionaLight.shadow.camera.near = 0.5
-
-// 更改相机属性后，必须进行更新矩阵
-directionaLight.shadow.camera.updateProjectionMatrix()
-```
-
-#### 聚光灯
-[SpotLight – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=spo#api/zh/lights/SpotLight)
-
-```js
-      light1.angle = Math.PI / 10;
-
-      light1.distance = 40;
-
-      // light1.target = this.cube;
-      
-      light1.penumbra = 0.5;
-
-      //  this.renderer.physicalCorrectLights = true;
-      light1.decay = 0.5;
-```
-####  点光源
-### TWEEN
-[tween.js 用户指南 | tween.js (tweenjs.github.io)](https://tweenjs.github.io/tween.js/docs/user_guide_zh-CN.html)
-
-
-
-
-### 光线投射技术
-
-[Three.js - Group 组合对象_group和object3d有什么区别_「已注销」的博客-CSDN博客](https://blog.csdn.net/ithanmang/article/details/80965712?spm=1001.2014.3001.5501)
 ## summary
 
 [Three.js中文网 (webgl3d.cn)](http://www.webgl3d.cn/)
@@ -855,7 +17,6 @@ directionaLight.shadow.camera.updateProjectionMatrix()
 ```SHELL
 npm install three
 ```
-
 ```js
 import * as THREE from 'three';
 ```
@@ -874,7 +35,7 @@ import * as THREE from 'three';
 
       controls: null,
 
-      container: null,
+      container: null,  // 也可以设置为局部变量
 ```
 
 2. 容器准备
@@ -1088,6 +249,73 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 ```
 
 
+### 灯光与阴影
+
+#### 阴影
+
+1. 材质对光照有反应
+2. 设置渲染器开启阴影计算
+3. 设置光照投影阴影
+4. 设置物体投影阴影
+5. 设置物理接收阴影
+
+```js
+// 可以产生阴影的光：平行光、点光源
+// 支持产生阴影的材质：标准网格材质、物理网格材质
+renderer.shadowMap.enable = true
+directionaLight.castShadow = true
+sphere.castShadow = true
+plane.receiveShadow = true
+```
+
+
+```js
+// 阴影贴图模糊度
+light1.shadow.radius = 20; 
+// 阴影贴图分辨率
+light1.shadow.mapSize.set(2048, 2048);
+```
+
+
+[OrthographicCamera – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=ca#api/zh/cameras/OrthographicCamera)
+```js
+directionaLight.shadow.camera.top = 5
+directionaLight.shadow.camera.buttom = -5
+directionaLight.shadow.camera.left = -5
+directionaLight.shadow.camera.top = 5
+directionaLight.shadow.camera.far = 500
+directionaLight.shadow.camera.near = 0.5
+
+// 更改相机属性后，必须进行更新矩阵
+directionaLight.shadow.camera.updateProjectionMatrix()
+```
+
+#### 聚光灯
+[SpotLight – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=spo#api/zh/lights/SpotLight)
+
+```js
+      light1.angle = Math.PI / 10;
+
+      light1.distance = 40;
+
+      // light1.target = this.cube;
+      
+      light1.penumbra = 0.5;
+
+      //  this.renderer.physicalCorrectLights = true;
+      light1.decay = 0.5;
+```
+####  点光源
+### TWEEN
+[tween.js 用户指南 | tween.js (tweenjs.github.io)](https://tweenjs.github.io/tween.js/docs/user_guide_zh-CN.html)
+
+
+
+
+### 光线投射技术
+
+[Three.js - Group 组合对象_group和object3d有什么区别_「已注销」的博客-CSDN博客](https://blog.csdn.net/ithanmang/article/details/80965712?spm=1001.2014.3001.5501)
+
 ### 载入模型
 
 [载入3D模型 – three.js docs (threejs.org)](https://threejs.org/docs/index.html#manual/zh/introduction/Loading-3D-models)
@@ -1145,16 +373,12 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 世界坐标：自己的局部坐标position与所有父对象的局部坐标position的叠加
 
 ```js
-obj.getWorldPosition(Vector3)
+const worldPosition = new THREE.Vector3()
+      this.gearshift.getWorldPosition(worldPosition)
 ```
 
 >[!QUESTION] 改变模型相对局部坐标的原点位置？
 >改变集合体顶点位置，可以改变模型自身相对坐标原点的位置
-
-
-
-
-
 
 #### 常用属性
 ##### rotation 与 position
@@ -1166,6 +390,16 @@ rotation属性和旋转方法rotateX()差异类似position属性和平移方法t
 
 控制模型的可见性，布尔值
 才智material也有这个属性
+
+
+##### material
+
+外部材质共享材质问题
+	1. 不要共享材质，独享材质
+	2. material.clone(),返回一个新的材质，重新赋值给 material
+
+PDR材质
+
 
 #### 常用方法
 
@@ -1185,256 +419,183 @@ obj.add( obj1 );
 
 ##### objecct3d.remove(obj3D)
 
+### 粒子系统
+
+[Three.js 进阶之旅：神奇的粒子系统-迷失太空 👨‍🚀 - 掘金 (juejin.cn)](https://juejin.cn/post/7155278132806123557)
+
+#### 精灵Sprites
+
+[Sprite – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=spri#api/zh/objects/Sprite)
+[SpriteMaterial – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=spri#api/zh/materials/SpriteMaterial)
+
+##### 概述
+
+- 精灵是一个总是面朝着摄像机的平面，通常含有使用一个半透明的纹理。
+- 每个对象需要分别由 `Three.js` 进行管理。%% => 大量创建粒子时会产生性能问题，建议使用Points %%
+
+
+`THREE.SpriteMatrial` 对象的一些可修改属性及其说明。
+	- `color`：粒子的颜色。
+	- `map`：粒子所用的纹理，可以是一组 `sprite sheet`。
+	- `sizeAttenuation`：如果该属性设置为 `false`，那么距离摄像机的远近不影响粒子的大小，默认值为 `true`。
+	- `opacity`：该属性设置粒子的不透明度。默认值为 `1`，不透明。
+	- `blending`：该属性指定渲染粒子时所用的融合模式。
+	- `fog`：该属性决定粒子是否受场景中雾化效果影响。默认值为 `true`
+
+##### code
+```js
+    // 精灵材质
+    createSprites() {
+      for (let x = -30; x < 30; x++) {
+        for (let y = -20; y < 20; y++) {
+          for (let z = 0; z < 5; z++) {
+            const material = new THREE.SpriteMaterial({
+              transparent: true,
+              opacity: 0.5,
+              color: 0xffffff * Math.random()
+            })
+            // 精灵材质
+            const sprite = new THREE.Sprite(material)
+            sprite.position.set(x * 4, y * 4, z * 100)
+            this.scene.add(sprite)
+          }
+        }
+      }
+    },
+```
+
+####  点云Points
+
+[PointsMaterial – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=Points#api/zh/materials/PointsMaterial)
+[Points – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=Points#api/zh/objects/Points)
+
+##### 概述 
+
+一个用于显示点的类。 由[WebGLRenderer](https://threejs.org/docs/index.html#api/zh/renderers/WebGLRenderer "WebGLRenderer")渲染的点使用 [gl.POINTS](https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements)。
+
+1. 创建粒子的网格 `THREE.BufferGeometry`
+2. 创建粒子的材质 `THREE.PointsMaterial`
+3. 创建两个数组 `veticsFloat32Array` 和 `veticsColors`，用来管理粒子系统中每个粒子的位置和颜色
+4. 通过 `THREE.Float32BufferAttribute` 将它们设置为网格属性
+5. 使用 `THREE.Points` 将创建的网格和材质变为粒子系统添加到场景中。
+
+`THREE.PointsMaterial` 中所有可设置属性及其说明
+	- `color`: 粒子系统中所有粒子的颜色。将 `vertexColors` 属性设置为 `true`，并且通过颜色属性指定了几何体的颜色来覆盖该属性。默认值为 `0xFFFFFF`。
+	- `map`: 通过这个属性可以在粒子材质，比如可以使用 `canvas`、贴图等。
+	- `size`：该属性指定粒子的大小，默认值为 `1`。
+	- `sizeAnnutation`: 如果该属性设置为 `false`，那么所有的粒子都将拥有相同的尺寸，无论它们距离相机有多远。如果设置为 `true`，粒子的大小取决于其距离摄像机的距离的远近，默认值为`true`。
+	- `vertexColors`：通常 `THREE.Points` 中所有的粒子都拥有相同的颜色，如果该属性设置为 `THREE.VertexColors`，并且几何体的颜色数组也有值，那就会使用颜色数组中的值，默认值为 `THREE.NoColors`。
+	- `opacity`：该属性与 `transparent` 属性一起使用，用来设置粒子的不透明度。默认值为 `1`（完全不透明）。
+	- `transparent`：如果该属性设置为 `true`，那么粒子在渲染时会根据 `opacity` 属性的值来确定其透明度，默认值为 `false`。
+	- `blending`：该属性指定渲染粒子时的融合模式。
+	- `fog`：该属性决定粒子是否受场景中雾化效果影响，默认值为 `true`。
+
+##### code
+```js
+    // 点云
+    createPoints() {
+      const geom = new THREE.BufferGeometry()
+      const material = new THREE.PointsMaterial({
+        size: 2,
+        vertexColors: true, //是否使用顶点着色,此引擎支持RGB或者RGBA两种顶点颜色，取决于缓冲 attribute 使用的是三分量（RGB）还是四分量（RGBA）。
+        color: 0xffffff,
+        // map: // 添加纹理
+      })
+      const positions = []
+      const colors = []
+      for (let x = -30; x < 30; x++) {
+        for (let y = -20; y < 20; y++) {
+          for (let z = 0; z < 50; z++) {
+            positions.push(x * 4, y * 4, z * 10)
+            const clr = new THREE.Color(Math.random() * 0xffffff)
+            colors.push(clr.r, clr.g, clr.b)
+          }
+        }
+      }
+      geom.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
+      geom.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3))
+      const cloud = new THREE.Points(geom, material)
+      this.scene.add(cloud)
+    },
+```
+##### example
+
+###### 下雨效果
+
+```JS
+// 雨滴效果
+    rain() {
+      const geom = new THREE.BufferGeometry()
+      const material = new THREE.PointsMaterial({
+        size: 2,
+        vertexColors: true,
+        transparent: true,
+        opacity: 0.6,
+        blending: THREE.AdditiveBlending, // 混合模式：在画新像素时，背景像素的颜色会被添加到新像素上
+        setAttenuation: true, // 每个雨滴粒子是否远小近大
+        color: 0xffffff,
+        //  index.html相对于目标资源的路径
+        map: preThree.getTexture('./static/images/rain.png'), // 添加纹理
+        depthWrite:false,
+      })
+      const positions = []
+      const colors = []
+      const range = 200
+      const velocities = [] // 雨滴下落
+      for (let x = 0; x < 10000; x++) {
+        positions.push(Math.random() * range - range / 2,
+          Math.random() * range - range / 2,
+          Math.random() * range - range / 2)
+          // vertexColors: true 时，显示此效果
+        velocities.push((Math.random() - 0.5) / 3, Math.random() / 5 + 0.1)
+        const color = new THREE.Color(0x00eeee)
+        const asHSL = {}
+        // 明暗度变换
+        color.getHSL(asHSL)
+        color.setHSL(asHSL.h, asHSL.s, asHSL.l * Math.random())
+        colors.push(color.r, color.g, color.b)
+      }
+      geom.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
+      geom.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3))
+      // 自定义属性
+      geom.setAttribute('velocity', new THREE.Float32BufferAttribute(velocities, 2))
+      this.cloud = new THREE.Points(geom, material)
+      this.cloud.name = 'cloud'
+      this.scene.add(this.cloud)
+      this.render()
+    }
+```
+
+```JS
+   render() {
+      // 下雨动画
+      const pos_BufferAttr = this.cloud.geometry.getAttribute('position')
+      const vel_BufferAttr = this.cloud.geometry.getAttribute('velocity')
+      for (let i = 0; i < pos_BufferAttr.count; i++) {
+        let pos_x = pos_BufferAttr.getX(i)
+        let pos_y = pos_BufferAttr.getY(i)
+        let vel_x = vel_BufferAttr.getX(i)
+        let vel_y = vel_BufferAttr.getY(i)
+        pos_x = pos_x - vel_x
+        pos_y = pos_y - vel_y
+        // 边界矫正
+        if (pos_x <= -20 || pos_x > 20) vel_x = vel_x * -1
+        if (pos_y <= 0) pos_y = 60
+        pos_BufferAttr.setX(i, pos_x)
+        pos_BufferAttr.setY(i, pos_y)
+        vel_BufferAttr.setX(i, vel_x
+      }
+      pos_BufferAttr.needsUpdate = true
+      vel_BufferAttr.needsUpdate = true
+      // other code ...
+    },
+```
+
 ### 后处理
+
+### tools
+
+[Three.js - dat.GUI库的使用详解 - 615 - 博客园 (cnblogs.com)](https://www.cnblogs.com/wuqun/p/14366057.html)
 
 #### OutlinePass.js 高亮发光描边
 ![[Pasted image 20230816165030.png]]
-
-![[Pasted image 20230816165332.png]]
-## application
-
-[threejs+vue/01 glb模型导入，改变汽车车身颜色 - 掘金 (juejin.cn)](https://juejin.cn/post/7122000200851259429)
-
-[Three.js实现汽车3D展示/开关门/变色/运动/视角切换/波动热点/汽车模型_threejs 车轮模型车灯打开的效果_左本Web3D的博客-CSDN博客](https://blog.csdn.net/baidu_29701003/article/details/125334202)
-
-
-[Three.js三维模型几何体旋转、缩放和平移_three 旋转_Naive》的博客-CSDN博客](https://blog.csdn.net/qq_34568700/article/details/117703695)
-
-[threejs+tweenjs实现3d场景动画 - 掘金 (juejin.cn)](https://juejin.cn/post/7028780379649605646#heading-3)
-
-[three.js聚光灯SpotLight使用，调整聚光灯颜色、位置、角度、强度、距离、衰减指数、方向、可见性、是否产生阴影属性(vue中使用three.js09)_threejs spotlight_点燃火柴的博客-CSDN博客](https://blog.csdn.net/qw8704149/article/details/108541970)
-###### target
-
-1. 轮子的转动 number
-2. 发动机转速 number
-3. 车是否启动  Boolean
-4. 
-```js
-
-open{
-	type:
-	status:
-}
-```
-5. 灯光、转向灯  
-6. 车门 、车窗  
-	开关门交互：3D建模的时候，保证每个车门是一个Group，在3D软件中，让本地坐标轴和车门旋转轴重合，然后代码根据车门节点名称，获取车group，然后最后tweenjs生成开关门动画
-```js
-{
-type: window||door , //string
-windiow/door: left||right , //string
-status: Boolean 
-}
-```
-1. 尾气
-2. 档位
-
-
-
-1，2，5 group+rotation
-3 material+color
-4 盒子+点光源
-8 postion + tween
-
-注意：需要操作的对象，单个成为一个完整的组或者mesh。其位置的
-
-![[Pasted image 20230811163807.png]]
-设置发光材质
-![[Pasted image 20230811163947.png]]
-
-### 车门开启、关闭
-
-
-```
-door ：left || right
-xxxDoor ：此门的group ,在import3D中获取
-xxxDoorStatus: Boolean ,true 表示开启，false 表示关闭
-
-```
-```js
-    
-    door(door) {
-
-      if (door === "left") {
-
-        const rotation = this.leftDoor.rotation;
-
-        const z = this.leftDoorStatus ? 0 : Math.PI / 3
-
-        const tween = new TWEEN.Tween(rotation);
-
-        tween.to({ z }, 1000);
-
-        tween.start();
-
-        this.leftDoorStatus = !this.leftDoorStatus
-
-      }
-
-      if (door === "right") {
-
-        const rotation = this.rightDoor.rotation;
-
-        const z = this.rightDoorStatus ? 0 : -Math.PI / 3
-
-        const tween = new TWEEN.Tween(rotation);
-
-        tween.to({ z }, 1000);
-
-        tween.start();
-
-        this.rightDoorStatus = !this.rightDoorStatus
-
-      }
-
-    },
-    
-   render() {
-      ...
-      TWEEN.update();
-      ...
-    },
-```
-
-
-使用光线投射技术，点击车门开启、关闭车门
-```JS
-    onMouseClick(event) {
-
-      this.raycaster = new THREE.Raycaster();
-
-      this.mouse = new THREE.Vector2();
-
-      //通过鼠标点击的位置计算出raycaster所需要的点的位置，以屏幕中心为原点，值的范围为-1到1.
-
-      this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-
-      this.mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
-
-      this.raycaster.setFromCamera(this.mouse, this.camera);
-
-      const intersectsRight = this.raycaster.intersectObjects(this.rightDoor.children);
-
-      const intersectsLeft = this.raycaster.intersectObjects(this.leftDoor.children);
-
-      if (intersectsRight.length) {
-
-        this.door("right")
-
-      }
-
-      if(intersectsLeft.length){
-
-        this.door("left")
-
-      }
-
-      this.renderer.render( this.scene, this.camera );
-
-    },
-```
-
-在mounted中绑定点击事件
-
-```JS
-  mounted() {
-
-    window.addEventListener('click', this.onMouseClick, false)
-
-  },
-```
-
-
-### 车窗开启、关闭
-
-```
-zz: {
-
-        open: {
-
-          type: "open",
-
-          status: Boolean //true 开启 false 关闭
-
-        },
-
-        wheelsVelocity: {
-
-          type: "velocity",
-
-          velocity: Number,
-
-        },
-
-        motorVelocity: {
-
-          type: 'motorVelocity',
-
-          velocity: Number
-
-        },
-
-        window: {
-
-          type: "window",
-
-          windiow: "left" || "right", //string
-
-          status: Boolean//true 开启 false 关闭
-
-        },
-
-        door: {
-
-          type: "door",
-
-          door: "left" || "right", //string
-
-          status: Boolean//true 开启 false 关闭
-
-        },
-
-        turnSignals: {
-
-          type: "turnSignals",
-
-          signal: "left" || "right", //string
-
-          status: Boolean//true 开启 false 关闭
-
-  
-
-        },
-
-        light: {
-
-          type: "light",
-
-          status: Boolean//true 开启 false 关闭
-
-        }
-
-      }
-      
-```
-
-### 车门开启、关闭. 
-### 启动时发动机闪烁
-
->[!question] 改变一个物体材料，其他的也跟着变？
->
->threejs中的网格物体对材质的是引用传递，不是值传递，如果material1 被 mesh1和mesh2用到了，改变 mesh1.material.color，则mesh2的材质颜色也改了。解决方法：赋予一个新的材质
-
-
-### updata
-[threejs单击选中模型高亮显示/选中模型发光_threejs模型轮廓发光_冉冉胜起的博客-CSDN博客](https://blog.csdn.net/qq_15023917/article/details/114366480)
-
-
-
-[一次Three.js加载obj模型引出的，点击改变模型颜色的问题_人中伊布的博客-CSDN博客](https://blog.csdn.net/darkproc/article/details/80015901)
-
-模型需求：
-1. 车窗颜色加深（看到开关车窗效果）
-2. 发动机名字（要更改发动机材料属性）
-3. 挡位相关问题
-4. 车外壳整理，可以一件改变车颜色（先不弄这个，等做完其他功能有时间再说）

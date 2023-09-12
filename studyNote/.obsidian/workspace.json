@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "464817a9ab726d1a",
+        "id": "588df896ffeb6b50",
         "type": "tabs",
         "children": [
           {
-            "id": "89485f850fd6258d",
+            "id": "8e9d73a9acd70ae5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/Three.js/threeJS.md",
+                "file": "study/node后端/Koa框架.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scoped",
+                "query": "git ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -105,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/Three.js/threeJS.md"
+                "file": "study/node后端/Koa框架.md"
               }
             }
           },
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/Three.js/threeJS.md",
+                "file": "study/node后端/Koa框架.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/Three.js/threeJS.md",
+                "file": "study/node后端/Koa框架.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,64 +150,67 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5
+    "width": 1027.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
+      "graph:查看关系图谱": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "89485f850fd6258d",
+  "active": "8e9d73a9acd70ae5",
   "lastOpenFiles": [
-    "study/workTools/前端环境安装/前端环境安装.md",
-    "study/0-directory.md",
-    "Pasted image 20230816165030.png",
-    "Pasted image 20230816165332.png",
-    "Pasted image 20230817160423.png",
-    "Pasted image 20230817160448.png",
-    "Pasted image 20230817160527.png",
+    "study/node后端/node.md",
+    "study/node后端/Koa框架.md",
+    "study/node后端/未命名",
+    "study/node后端/readme.md",
+    "booklog/2023-W35.md",
+    "my/readme.md",
+    "study/Three.js/application.md",
+    "study/node后端",
+    "study/z其他/未命名",
+    "study/前端基础/未命名",
     "study/Three.js/threeJS.md",
+    "study/前端基础/z-other/Promise/99大佬/06async 与 await.md",
+    "study/前端基础/z-other/Promise/02关键问题.md",
+    "study/前端基础/z-other/Promise/01前置准备.md",
+    "study/前端基础/z-other/Promise/00 promise基础.md",
+    "study/前端基础/TypeScript/note.md",
+    "study/前端基础/vue/积累与疑惑.md",
+    "study/前端基础/TypeScript/images",
+    "study/workTools/前端环境安装/前端环境安装.md",
+    "study/前端基础/TypeScript",
     "天行健/readme.md",
-    "booklog/2023-W32.md",
-    "booklog",
-    "2023-08-07.md",
-    "2023-08-15.md",
-    "2023-08-09.md",
-    "2023-08-08.md",
-    "study/前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
-    "study/前端基础/z-other/Node.js/00 node.js基础.md",
-    "study/手机端/uniapp/uniapp.md",
-    "study/z其他/notes-master/vue&vue-router&vuex/vue.md",
-    "study/前端基础/vue/vue_cli.md",
-    "study/前端基础/vue/vue项目/后台管理项目.md",
-    "study/前端基础/HTML+CSS/CSS/02复合选择器.md",
-    "study/手机端/uniapp/images/Pasted image 20230808161310.png",
     "天行健/logBook.md",
-    "未命名.md",
-    "study/workTools/Echart/Echart.md",
-    "study/Three.js/练习笔记.md",
+    "study/0-directory.md",
+    "booklog/images/Pasted image 20230831103454.png",
     "study/workTools/git.md",
-    "z-logBook/2023-08-05.md",
-    "study",
-    "天行健",
+    "study/前端基础/vue/vue_cli.md",
+    "study/workTools/Tips/Tips.md",
+    "study/workTools/前端环境安装/images/348c76c01f14b023a3b93bb057f698d.jpg",
     "study/内部组件开发/Note.md",
-    "study/workTools/Tips/代码细节.md",
-    "study/workTools/Tips",
-    "study/z其他/梦诚/images/b0ae295d30a528e9e815c05d945156a.png",
-    "study/z其他/梦诚/images/Pasted image 20230412153001.png",
-    "study/z其他/梦诚/images/Pasted image 20230412165846.png",
-    "study/z其他/梦诚/images/Pasted image 20230412170538.png",
-    "study/z其他/梦诚.7z",
-    "z-logBook",
-    "study/workTools/Echart",
-    "images",
-    "study/手机端/uniapp/images",
-    "study/手机端/vx小程序",
+    "study/workTools/前端环境安装/images/Pasted image 20230904105909.png",
+    "study/workTools/前端环境安装/images/Pasted image 20230725102213.png",
+    "study/z其他/梦诚/tip.md",
+    "study/前端基础/z-other/files/预览下载.md",
+    "study/前端基础/z-other/files/images/Pasted image 20230901151227.png",
+    "study/前端基础/z-other/files/images/Pasted image 20230901160126.png",
+    "study/前端基础/z-other/files/images/Pasted image 20230901160801.png",
+    "Pasted image 20230901160110.png",
+    "Pasted image 20230901160106.png",
+    "study/前端基础/z-other/files/images",
+    "study/前端基础/z-other/files",
+    "study/z其他/notes-master/vue&vue-router&vuex/vue.md",
+    "study/前端基础/HTML+CSS/sass/sass.md",
+    "study/前端基础/HTML+CSS/CSS/01基础选择器.md",
+    "study/前端基础/HTML+CSS/sass",
+    "study/workTools/前端环境安装/hosts",
+    "df812778543be2242d739c37fe7b721.png",
     "未命名.canvas",
     "未命名 1.canvas",
     "未命名 3.canvas",

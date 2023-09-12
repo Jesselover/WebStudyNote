@@ -24,6 +24,7 @@ command line interface
 	├── package-lock.json：包版本控制文件
 	
 #### 初始化脚手架
+
 1. 全局安装@vue/cli（仅第一次执行）
 	`npm install -g @vue/cli`
 
@@ -69,12 +70,13 @@ command line interface
     2. 获取：```this.$refs.xxx```
 
 ## 02props配置项
-<!-- 数据存在组建的实例对象vc中 -->
-<!--todo 若props声明的变量未传参，默认undefined -->
-<!--todo 传数据的时候不要用关键字或者保留字 -->
-<!--todo 备注：props是只读的，Vue底层会监测你对props的修改，如果进行了修改，就会发出警告。-->
-<!--todo 若业务需求确实需要修改，那么请复制props的内容到data中一份，然后去修改data中的数据（props内的数据优先级高于data，同时设置相同属性会报错）。 -->
-<!-- //在data中设置一个新的属性去接props中要修改的数据eg: -->
+
+1. 数据存在组建的实例对象vc中
+2. 若props声明的变量未传参，默认undefined
+3. 传数据的时候不要用关键字或者保留字
+备注：
+	1. props是只读的，Vue底层会监测你对props的修改，如果进行了修改，就会发出警告
+	2. 若业务需求确实需要修改，那么请复制props的内容到data中一份，然后去修改data中的数据（props内的数据优先级高于data，同时设置相同属性会报错）。在data中设置一个新的属性去接props中要修改的数据
 
 1. 功能：让组件接收外部传过来的数据
 
@@ -113,6 +115,7 @@ command line interface
 	[[vue_router 路由#7.路由的props配置]]
 	
 ## 03mixin(混入)   
+
 1. 功能：
 可以把多个组件共用的配置提取成一个混入对象
 2. 使用方式：
@@ -530,14 +533,23 @@ fetch,xhr可以直接用,不用引入,promise风格.但fetch会包两层promise
 - 发送AJAX请求的库
 ## 15 插槽
 
+[插槽 — Vue.js (vuejs.org)](https://v2.cn.vuejs.org/v2/guide/components-slots.html)
+
+
 1. 作用：让父组件可以向子组件指定位置插入html结构，也是一种组件间通信的方式，适用于 <strong style="color:red">父组件 ===> 子组件</strong> 。
 
 2. 分类：默认插槽、具名插槽、作用域插槽
 
-3. 使用方式：
+3. 使用方式：默认、具名、作用域
+
+>[!TIP] 1. 父级模板里的所有内容都是在父级作用域中编译的；子模板里的所有内容都是在子作用域中编译的。
+>2. 具名插槽和作用域插槽建议统一语法： `v-slot` 。%%取代了 `slot` 和 `slot-scope` 这两个目前已被废弃但未被移除%%
+
+
 
 ### 1. 默认插槽：
 1. 父组件直接在在子组件标签里写内容，子组件内用`<slot>`确定要插入的地方.默认会获取子组件标签内所有内容
+2. 插槽默认内容：当父组件未给插槽传入任何内容是，显示插槽默认内容
 
       ```vue
       父组件中：
@@ -555,48 +567,80 @@ fetch,xhr可以直接用,不用引入,promise风格.但fetch会包两层promise
       ```
 
 ### 2. 具名插槽：
-1. 父组件:`<标签名 slot='xxx'>`  eg:`<a slot='xxx'>`
+1. 父组件:`<标签名 slot='xxx'>` `<template v-slot:xxxr>` eg:`<template v-slot:footer>`
 2. 子组件中`<slot name='xxx'>`  
-3. ` v-slot:xxx`专门用于`<template>`
-4. %%建议使用template标签%%
+3. ` v-slot:xxx` 专门用于`<template>`
+4. %%建议使用template标签 ，slot已被废弃%%
 
       ```vue
       父组件中：
-              <Category>
-                  <template slot="center">
-                    <div>html结构1</div>
-                  </template>
-      
-                  <template v-slot:footer>
-                     <div>html结构2</div>
-                  </template>
-              </Category>
+	<div class="container">  
+		<header>  
+			<slot name="header"></slot>  
+		</header>  
+		<main>  
+			<slot></slot>  
+		</main>  
+		<footer>  
+			<slot name="footer"></slot>  
+		</footer>  
+	</div>
       子组件中：
-              <template>
-                  <div>
-                     <!-- 定义插槽 -->
-                     <slot name="center">插槽默认内容...</slot>
-                     <slot name="footer">插槽默认内容...</slot>
-                  </div>
-              </template>
+	<base-layout>  
+		<template v-slot:header>  
+			<h1>Here might be a page title</h1>  
+		</template>  
+		  
+		<p>A paragraph for the main content.</p>  
+		<p>And another one.</p>  
+		
+  <!-- <template v-slot:default>
+            <p>A paragraph for the main content.</p>
+            <p>And another one.</p>
+        </template> -->
+		  
+		<template v-slot:footer>  
+			<p>Here's some contact info</p>  
+		</template>  
+	</base-layout>
+		渲染结果：
+	<div class="container">  
+		<header>    
+			<h1>Here might be a page title</h1>  
+		</header>  
+		<main>    
+			<p>A paragraph for the main content.</p>   
+			<p>And another one.</p>  
+		</main>  
+		<footer>    
+			<p>Here's some contact info</p>
+		</footer>
+	</div>
       ```
 
 ### 3. 作用域插槽：
-1. 理解：<span style="color:red">数据在组件的自身，但根据数据生成的结构需要组件的使用者来决定。</span>（games数据在Category组件中，但使用数据所遍历出来的结构由App组件决定）%%插槽向插槽的使用者传递数据%%
+1. 理解：<span style="color:red">数据在组件的自身，但根据数据生成的结构需要组件的使用者来决定。</span>（games数据在Category组件中，但使用数据所遍历出来的结构由App组件决定）%%各个模板的内容在各个模板内编译，父模板要使用子模板的数据%%
 2. 注意：
-  - 在子组件的`<slot>` 中绑定数据
-  - 在父组件中,**必需**用`<tamplate>`包裹起来,用`scope` 或者 `slot-scope` 接收数据.可以传递多个数据，接受的时候以对象形式接受。支持解构赋值
+  - 在子组件中，使用` v-build:xxx = 'xxx' `将数据作为 `<slot>` 元素的一个 attribute 绑定上去，绑定在 `<slot>` 元素上的 attribute 被称为**插槽 prop**
+  - 在父组件中,**必需**用`<tamplate>`包裹起来,用 `v-slot`,`scope` 或者 `slot-scope` 接收数据.可以传递多个数据，接受的时候以对象形式接受。支持解构赋值
   - 作用域插槽也可以有名字
 
 3. 具体编码：
-
 ```vue
  父组件中：
+ 		<Category>
+	 		<!-- v-slot:default="scopeData"也可以写作v-slot="scopeData",对应默认插槽 --> 
+	 		<!-- 但缩写方式不能与具名插槽混用，会导致作用域不明确 --> 
+			<template v-slot:default="scopeData">
+				<!-- 生成的是h4标题 -->
+				<h4 v-for="g in scopeData.games" :key="g">{{g}}</h4>
+			</template>
+		</Category>
 		<Category>
 		// 子组件使用slot传递数据时,这里必须用template包
 			<template scope="scopeData">
 			// scope='xxx' ,也可以写成解构赋值
-			// <template scope={games}>,在使用时直接使用games
+			<!--  <template scope={games}>--> 在使用时直接使用games
 				<!-- 生成的是ul列表 -->
 				<ul>
 					<li v-for="g in scopeData.games" :key="g">{{g}}</li>
@@ -631,6 +675,30 @@ fetch,xhr可以直接用,不用引入,promise风格.但fetch会包两层promise
 			 }
 		 </script>
 ```
+#### 独占默认插槽的缩写语法
+
+在上述情况下，当被提供的内容只有默认插槽时，组件的标签才可以被当作插槽的模板来使用。这样我们就可以把 `v-slot` 直接用在组件上 %%省略`<template>`%%：
+```JS
+ <!-- 省略`<template>` -->
+<current-user v-slot:default="slotProps">  
+{{ slotProps.user.firstName }}  
+</current-user>
+
+ <!-- 省略default -->
+<current-user v-slot="slotProps"> 
+{{ slotProps.user.firstName }}
+</current-user>
+```
+
+>1. 默认插槽的缩写语法**不能**和具名插槽混用，因为它会导致作用域不明确
+>2. 只要出现多个插槽，请始终为_所有的_插槽使用完整的基于 `<template>` 的语法
+
+#### 解构插槽 Prop
+
+
+
+### 4. other
+
 
 
 
