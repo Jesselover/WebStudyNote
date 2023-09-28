@@ -24,17 +24,49 @@ nodemon：热部署 （解决node需要重启服务器才能显示新内容的�
 - `resolve`: 解析为绝对路径
 - `isAbsolute`: 检查path是否为绝对路径
 
+```js
+console.log(path.normalize("a/b/c///d\\e"), "normalize"); //a\b\c\d\e normalize
+console.log(path.join("a", "b", "../c/d"), "join"); //a\c\d join
+console.log(path.resolve("a/b/c"), "resolve"); //F:\UNIAPP\Tips\NODE\a\b\c resolve
+console.log(path.isAbsolute("a/b/c"), "isAbsolute"); //false isAbsolute
+console.log(path.isAbsolute("/a/b/c"), "isAbsolute"); //true isAbsolute
+```
 #### 文件相关
 
 - `basename`: 返回路径中最后一部分的文件名
 - `extname`: 返回路径最后文件的扩展名
 - `dirname`: 返回path路径中的文件名
 
+```js
+console.log(path.basename("../Blob/blob01.html"), "basename"); //blob01.html basename
+console.log(path.extname("../Blob/blob01.html"), "extname"); //.html extname
+console.log(path.dirname("../Blob/blob01.html"), "dirname"); //../Blob dirname
+```
+
 #### 路径解析
+
 - `parse`: 返回一个对象，其属性表示path有效元素
 - `format`: 把对象转为一个路径字符串 
-
-
+```js
+console.log(path.parse("../Blob/blob01.html"), "parse");
+/**
+ * {
+      root: '', //根目录
+      dir: '../Blob', //dirname
+      base: 'blob01.html', //basename
+      ext: '.html',
+      name: 'blob01'****
+    } parse
+ */
+var path01 = {
+  root: "/", //根目录
+  dir: "../Blob", //dirname
+  base: "blob01.html", //basename
+  ext: ".html",
+  name: "blob01",
+};
+console.log(path.format(path01), "format"); //../Blob\blob01.html format
+```
 ### buffer 模块
 
 - buffer是一个全局变量 %% 无需引入，直接使用 %%

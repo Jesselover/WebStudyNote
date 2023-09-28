@@ -48,9 +48,11 @@ https://blog.csdn.net/xx820702/article/details/126123533
 3. 每个组件都有自己的```$route```属性，里面存储着自己的路由信息。
 
 4. 整个应用只有一个router，可以通过组件的```$router```属性获取到。
+
 | $route | $router|
-|-----|------|
+|--------|--------|
 |自己的路由信息|整个应用的都一样|
+
 
 
 ### 2.基本使用
@@ -449,6 +451,8 @@ props:['id','title'],
    ```
 
 #### 组件内守卫
+[导航守卫 | Vue Router (vuejs.org)](https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E7%BB%84%E4%BB%B6%E5%86%85%E7%9A%84%E5%AE%88%E5%8D%AB)
+
 6. 组件内想写一些单独的功能
 	- 不通过路由规则无法调用（eg：直接进去）
 	- 进入守卫，离开守卫一定要写next（），不写next（）无法继续向下跳转

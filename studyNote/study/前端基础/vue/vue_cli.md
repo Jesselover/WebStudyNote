@@ -1,4 +1,4 @@
-command line interface
+**command** line interface
 # vue2
 ## 00结构、版本、配置文件
 ### 1、脚手架文件结构

@@ -35,3 +35,13 @@ user.email  2864380034@qq.com
 在云仓库中添加新的ssh，建立连接
 
 
+
+
+# TIPS 
+
+ `npm i` 之后，若无法启动
+ ` npm install --save core-js`
+ 若还无法启动
+ 将node_modules 删除 先 ` npm install --save core-js` 再 `npm i`
+
+
