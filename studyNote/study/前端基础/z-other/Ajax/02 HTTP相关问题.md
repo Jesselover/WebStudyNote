@@ -93,7 +93,8 @@ REST API: restful （Representational State Transfer (资源)表现层状态转�
 (1) 请求方式不决定请求的CRUD 操作
 (2) 一个请求路径只对应一个操作
 (3) 一般只有GET/POST
-2.9 区别 一般http请求 与 ajax请求
+
+### 2.9 区别 一般http请求 与 ajax请求
 ajax请求 是一种特别的 http请求
 对服务器端来说, 没有任何区别, 区别在浏览器端
 浏览器端发请求: 只有XHR 或fetch 发出的才是ajax 请求, 其它所有的都是非ajax 请求

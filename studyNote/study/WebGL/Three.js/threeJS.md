@@ -69,14 +69,12 @@ import * as THREE from 'three';
 
 > 1. 场景背景颜色不设置，默认为黑色，在没开灯的情况下，某些材质也是黑色，可能会导致模型加载出来了但是看不见
 
->[!QUESTION] 环境光颜色？
-
-#### 创建相机？？
+#### 创建相机
  
 - 透视相机 PerspectiveCamera：进大远小，模拟人眼
 - 正交相机：视锥体就是一个立方体，无近大远小，永远渲染2d场景或者ui元素
 
-设置合适的相机参数？
+设置合适的相机参数
 
 
 ```js
@@ -197,9 +195,6 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
     },
 ```
-
->[!question] 设置画面颜色？
-
 #### 加载
 
 ```js
@@ -309,9 +304,6 @@ directionaLight.shadow.camera.updateProjectionMatrix()
 ### TWEEN
 [tween.js 用户指南 | tween.js (tweenjs.github.io)](https://tweenjs.github.io/tween.js/docs/user_guide_zh-CN.html)
 
-
-
-
 ### 光线投射技术
 
 [Three.js - Group 组合对象_group和object3d有什么区别_「已注销」的博客-CSDN博客](https://blog.csdn.net/ithanmang/article/details/80965712?spm=1001.2014.3001.5501)
@@ -356,11 +348,6 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 >[!tip] blender 导出的部分纹理，threejs可能无法加载出
 
 如：颜色渐变等 
-
-
-
-
-
 
 > 载入模型后，记得根据模型调节相机参数
 ### Object3D
