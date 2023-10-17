@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "studyNote/study/workTools/前端环境安装/前端环境安装.md",
+                "file": "studyNote/天行健/tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "studyNote/study/workTools/前端环境安装/前端环境安装.md",
+                "file": "studyNote/天行健/tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "studyNote/study/workTools/前端环境安装/前端环境安装.md",
+                "file": "studyNote/天行健/tips.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "studyNote/study/workTools/前端环境安装/前端环境安装.md"
+                "file": "studyNote/天行健/tips.md"
               }
             }
           },
@@ -164,8 +164,8 @@
   },
   "active": "0f3a0566da6715fe",
   "lastOpenFiles": [
-    "studyNote/study/前端基础/vue/vue_cli.md",
     "studyNote/study/workTools/前端环境安装/前端环境安装.md",
+    "studyNote/study/前端基础/vue/vue_cli.md",
     "studyNote/天行健/readme.md",
     "studyNote/study/workTools/git.md",
     "studyNote/天行健/logBook.md",
