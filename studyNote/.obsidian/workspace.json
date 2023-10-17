@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8c9841da61a13637",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "天行健/booklog/渣土车重构.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "天行健/tips.md"
+                "file": "天行健/booklog/渣土车重构.md"
               }
             }
           },
@@ -122,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "天行健/tips.md",
+                "file": "天行健/booklog/渣土车重构.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "天行健/tips.md",
+                "file": "天行健/booklog/渣土车重构.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,16 +185,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "01eaf850c68964eb",
+  "active": "8c9841da61a13637",
   "lastOpenFiles": [
+    "天行健/readme.md",
+    "天行健/booklog/渣土车重构.md",
+    "天行健/tips.md",
+    "天行健/booklog/images/Pasted image 20230831103454.png",
     "天行健/booklog/渣土车.md",
+    "天行健/booklog/2023-W35.md",
+    "天行健/tools.md",
+    "天行健/booklog/images/Pasted image 20230928151745.png",
+    "天行健/booklog/images/Pasted image 20230928170829.png",
+    "天行健/booklog/images/Pasted image 20230928154927.png",
+    "天行健/booklog/images/Pasted image 20230928154920.png",
+    "my/readme.md",
     "study/WebGL/Three.js/threeJS.md",
     "study/WebGL/Three.js/01 基础.md",
     "study/workTools/git.md",
     "study/workTools/Tips/Tips.md",
-    "天行健/tools.md",
-    "天行健/tips.md",
-    "天行健/booklog/2023-W35.md",
     "study/前端基础/HTML+CSS/CSS/03盒子模型.md",
     "study/前端基础/HTML+CSS/CSS/02复合选择器.md",
     "study/前端基础/HTML+CSS/CSS/01基础选择器.md",
@@ -198,16 +219,9 @@
     "study/前端基础/z-other/Promise/99大佬/02Promise 的理解和使用.md",
     "study/node后端/Koa框架.md",
     "study/前端基础/z-other/Ajax/03 Express.md",
-    "study/前端基础/z-other/Ajax/02 HTTP相关问题.md",
-    "study/前端基础/z-other/Ajax/01 概述.md",
     "study/WebGL/Three.js/images",
     "study/WebGL/Three.js/images/Pasted image 20231009103105.png",
-    "study/前端基础/z-other/Ajax/05跨域.md",
     "my/未命名",
-    "天行健/booklog/images/Pasted image 20230928170829.png",
-    "天行健/booklog/images/Pasted image 20230928151745.png",
-    "天行健/booklog/images/Pasted image 20230928154927.png",
-    "天行健/booklog/images/Pasted image 20230928154920.png",
     "study/workTools/前端环境安装/images/Pasted image 20230725102213.png",
     "study/workTools/前端环境安装/images/Pasted image 20230904105909.png",
     "study/node后端/未命名",
@@ -216,7 +230,6 @@
     "study/前端基础/未命名",
     "study/前端基础/TypeScript/images",
     "study/前端基础/TypeScript",
-    "天行健/booklog/images/Pasted image 20230831103454.png",
     "study/workTools/前端环境安装/images/348c76c01f14b023a3b93bb057f698d.jpg",
     "study/前端基础/z-other/files/images/Pasted image 20230901151227.png",
     "study/前端基础/z-other/files/images",
