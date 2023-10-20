@@ -1,4 +1,4 @@
-安装路由：npm i vue-router@3
+**安装路由**：npm i vue-router@3
    2022年2月7日以后，vue-router的默认版本为4版本，vue-router4只能在vue3中使用，
    vue-router3才能在vue2中使用
    使用vue2要npm i vue-router@3
@@ -6,7 +6,7 @@
 https://blog.csdn.net/xx820702/article/details/126123533
 ### 1. 概念 
 
-#### 路由
+#### **路由**
  1. 理解： 
 	 - 一个路由（route）就是一组映射关系（key - value）
 	 - 多个路由需要路由器（router）进行管理。
@@ -56,9 +56,9 @@ https://blog.csdn.net/xx820702/article/details/126123533
 
 
 ### 2.基本使用
-#### 搭建环境
+#### **搭建环境**
 
-1. 安装vue-router，命令：```npm i vue-router``` 插件库
+1. 安装vue-router，命令：```npm i vue-router@3``` 插件库
 2. 在`pages`文件夹中写路由组件。路由组件通常存放在```pages```（与components同级）文件夹，一般组件通常存放在```components```文件夹。（路由组件：靠路由规则匹配出来，由路由器渲染的组件。一般不需要自己写标签，一般组件要）
 3. 应用插件：（在`main.js`中）
 	1. `import VueRouter from "vue-router"`
