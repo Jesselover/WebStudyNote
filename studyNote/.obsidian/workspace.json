@@ -4,16 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "c31f799e4dafd49d",
+        "id": "96ab17b312ee9c97",
         "type": "tabs",
         "children": [
           {
-            "id": "4399fb3ada756f38",
+            "id": "8a040cd411ab098c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "天行健/supermap.md",
+                "file": "天行健/booklog/东庄水利.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f8e160b3deb5197c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "219fc56da771c4ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "study/前端基础/vue/总结.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scss",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -105,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "天行健/supermap.md"
+                "file": "study/前端基础/vue/总结.md"
               }
             }
           },
@@ -123,8 +140,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "天行健/supermap.md",
-                "collapseAll": false,
+                "file": "study/前端基础/vue/总结.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -140,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "天行健/supermap.md",
+                "file": "study/前端基础/vue/总结.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +178,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5,
+    "width": 280.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -174,54 +191,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4399fb3ada756f38",
+  "active": "219fc56da771c4ba",
   "lastOpenFiles": [
-    "study/前端基础/vue/目录.md",
+    "天行健/booklog/东庄水利.md",
     "study/前端基础/vue/总结.md",
-    "study/前端基础/vue/vue_router 路由.md",
-    "study/前端基础/vue/vue_x.md",
-    "study/前端基础/vue/vue_cli.md",
-    "天行健/supermap.md",
-    "天行健/WebSocket.md",
-    "天行健/tips.md",
-    "study/node后端/images/Pasted image 20231017114552.png",
     "天行健/readme.md",
-    "study/z其他/后端/MySQL/ch03 查询.md",
-    "study/z其他/后端/MySQL/ch02 MySQL的安装与使用.md",
-    "study/z其他/后端/MySQL/ch01 数据库和SQL概述.md",
-    "未命名",
-    "study/node后端/images/Pasted image 20231017113421.png",
-    "study/node后端/images",
-    "study/node后端/images/Pasted image 20231017114239.png",
-    "study/前端基础/TypeScript/note.md",
+    "study/前端基础/z-other/Ajax/axios.md",
+    "study/前端基础/z-other/Ajax/05跨域.md",
+    "study/前端基础/z-other/Ajax/04 JQuery与Ajax.md",
+    "study/前端基础/z-other/Ajax/03 Express.md",
+    "study/前端基础/z-other/Ajax/02 HTTP相关问题.md",
+    "study/前端基础/z-other/Ajax/01 概述.md",
+    "study/前端基础/vue/硅谷甄选项目笔记.md",
+    "study/前端基础/vue/vue3快速上手.md",
+    "study/前端基础/z-other/Ajax/Axios/01axios使用.md",
+    "study/前端基础/z-other/Ajax/Axios/00预备知识.md",
+    "study/前端基础/vue/tips/vue 组件间通信.md",
+    "study/前端基础/vue/tips/积累与疑惑.md",
+    "study/前端基础/vue/tips",
+    "study/前端基础/vue/vue项目/yarn和npm对比.md",
+    "study/前端基础/vue/vue项目/vue 项目.md",
+    "study/前端基础/vue/vue项目/后台管理项目.md",
+    "study/前端基础/vue/vue_router 路由.md",
+    "天行健/WebSocket.md",
+    "天行健/booklog/map/supermap.md",
+    "天行健/booklog/map/img/Pasted image 20231123112838.png",
+    "天行健/booklog/map/img/Pasted image 20231123114137.png",
+    "天行健/booklog/map/img/Pasted image 20231123114140.png",
+    "天行健/booklog/map/巡航器.md",
+    "Pasted image 20231123111228.png",
+    "天行健/tips.md",
     "my/readme.md",
-    "study/前端基础/JavaScript 1/A_JavaScript进阶学习笔记.md",
-    "study/前端基础/HTML+CSS/Web页面.md",
-    "study/前端基础/HTML+CSS/HTML/02HTML 标签（上）.md",
-    "study/前端基础/HTML+CSS/HTML/01HTML简介.md",
-    "study/前端基础/HTML+CSS/sass/sass.md",
-    "study/前端基础/HTML+CSS/flex布局.md",
-    "study/前端基础/HTML+CSS/移动端/移动端.md",
-    "study/node后端/Kafka.md",
-    "study/node后端/Koa框架.md",
-    "study/前端基础/JavaScript 1/ECMAScript6+/ch07.md",
-    "study/前端基础/JavaScript 1/ECMAScript6+/ch06.md",
-    "study/前端基础/JavaScript 1/ECMAScript6+/ch04.md",
-    "天行健/booklog/images/Pasted image 20230831103454.png",
-    "天行健/booklog/images/Pasted image 20230928151745.png",
-    "天行健/booklog/images/Pasted image 20230928170829.png",
-    "天行健/booklog/images/Pasted image 20230928154927.png",
-    "天行健/booklog/images/Pasted image 20230928154920.png",
+    "study/workTools/前端环境安装/images/348c76c01f14b023a3b93bb057f698d.jpg",
+    "study/workTools/前端环境安装/前端环境安装.md",
+    "study/内部组件开发/Note.md",
+    "Pasted image 20231108112224.png",
+    "天行健/booklog/map/img/Pasted image 20231116140631.png",
+    "天行健/booklog/map/aba9f547112644e64a4eec6599e3d59.png",
+    "天行健/booklog/map/img/5415145db39f0f097263727e71ac2ad.png",
+    "天行健/booklog/map/img/Pasted image 20231031173129.png",
+    "天行健/booklog/map/img",
+    "天行健/booklog/map",
+    "未命名",
+    "study/node后端/images",
     "study/WebGL",
     "study/WebGL/Three.js/images",
-    "study/WebGL/Three.js/images/Pasted image 20231009103105.png",
     "my/未命名",
-    "study/workTools/前端环境安装/images/Pasted image 20230725102213.png",
     "study/node后端",
     "study/z其他/未命名",
-    "study/前端基础/未命名",
-    "study/前端基础/TypeScript/images",
-    "study/前端基础/TypeScript",
     "未命名.canvas",
     "未命名 1.canvas",
     "未命名 3.canvas",

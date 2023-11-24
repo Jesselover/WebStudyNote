@@ -1,11 +1,32 @@
 # TiPS
 
+## js
+1. array.concat() 不改变原数组，返回一个新的数组
+```js
+//concat()把两个或者多个数组连接在一起，但是不改变已经存在的数组
+//而是返回一个连接之后的新数组
+var a = [1,2,3];
+a.concat([4,5]);
+console.log(a);
+//此处输出为 [1, 2, 3]
+
+var a = [1,2,3];
+a = a.concat([4,5]);
+console.log(a);
+//此处输出为 [1, 2, 3 ,4 ,5]
+```
+Similar ：`arr1.push(...arr2)`
+
 ## vue
 
 ### tip
 [使用this.$nextTick()获取不到数据更新后的this.$refs.xxx._this.$refs获取不到-CSDN博客](https://blog.csdn.net/Rised/article/details/128437042
 [看完这篇nextTick就别再问别人了 - 掘金 (juejin.cn)](https://juejin.cn/post/7266374711823171636?searchId=20230928173417F9D75B5E5F12B1CF5A9E)
 
+[解决Vue项目中img的:src动态加载图片不成功_vue img :src-CSDN博客](https://blog.csdn.net/weixin_46074961/article/details/115522372#:~:text=%E5%8E%9F%E5%9B%A0%EF%BC%9A%E5%8A%A8%E6%80%81%E5%9C%B0%E5%9D%80%EF%BC%8C%E8%B7%AF%E5%BE%84%E8%A2%AB%E5%8A%A0%E8%BD%BD%E5%99%A8%E8%A7%A3%E6%9E%90%E4%B8%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%8C%E6%89%80%E4%BB%A5%E5%9B%BE%E7%89%87%E6%89%BE%E4%B8%8D%E5%88%B0,%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%9A%20%E8%AE%BE%E7%BD%AE%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E6%88%96%E8%80%85%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E6%98%AF%E6%94%B9%E4%B8%BA%E7%94%A8require%E5%BC%95%E5%85%A5%E6%89%8D%E8%83%BD%E6%88%90%E5%8A%9F%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E5%8A%A8%E6%80%81%E4%BD%BF%E7%94%A8%E4%BA%86%E3%80%82)
+原因：动态地址，路径被加载器解析为字符串，所以图片找不到  
+解决方法：  
+设置绝对路径或者相对路径是改为用require引入才能成功，就可以动态使用了。
 ## element ui
 
 ### tip

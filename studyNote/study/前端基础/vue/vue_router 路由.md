@@ -488,6 +488,7 @@ deactivated
    1. 地址干净，美观 。
    2. 兼容性和hash模式相比略差。
    3. 应用部署上线时需要后端人员支持，解决刷新页面服务端404的问题（node.js的中间件：connect-history 。引入后使用，在静态页面使用之前）。（一刷新可能会把history模式全部认成地址）
+5. **vue默认为hash模型**
 
 # 总结
 #### 1.#router
@@ -529,3 +530,29 @@ this.$route.params.title
 
 
 
+
+
+# Tips
+
+#### vue-router 设置"path：'/'"无效
+
+[解决Vue配置路由不生效，自动跳转到首页_vue路由不起作用-CSDN博客](https://blog.csdn.net/qq_43948440/article/details/110560205)
+
+vue路由跳转默认为hash模式，需要在访问路径下添加#再加路由的path值。
+解决方案：添加 `mode:"history"`
+
+```js
+const router = new VueRouter({
+  mode:'history',
+  routes: [
+    {
+      path:"/",
+      component:SuperMap,
+    },
+    {
+      path: "/LeafletMap",
+      component: LeafletMap,
+    },
+  ],
+});
+```

@@ -1,6 +1,6 @@
 HTTP: 服务端不能主动向客户端推送消息
 WebSocket：h5开始提供的在单个tcp连接上进行的 **全双工** 通信协议
-
+open close error message (connection(后端))
 ## 实现方式
 
 WebSocket 需要和tcp一样， 先建立链接， 客户端、服务端握手链接， 连接成功后才能相互通信

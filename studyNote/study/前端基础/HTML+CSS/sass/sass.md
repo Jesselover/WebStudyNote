@@ -9,6 +9,9 @@ css预处理器：sass，less，stylus
 
 sass与scss关系：sass3是scss
 
+### 使用
+
+#### vue2
 
 
  `&` 代表嵌套规则外层的父选择器。
