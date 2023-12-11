@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "96ab17b312ee9c97",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8a040cd411ab098c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "天行健/booklog/东庄水利.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "f8e160b3deb5197c",
         "type": "tabs",
         "children": [
@@ -31,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/前端基础/vue/总结.md",
+                "file": "天行健/booklog/东庄水利.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/前端基础/vue/总结.md"
+                "file": "天行健/booklog/东庄水利.md"
               }
             }
           },
@@ -140,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/前端基础/vue/总结.md",
+                "file": "天行健/booklog/东庄水利.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/前端基础/vue/总结.md",
+                "file": "天行健/booklog/东庄水利.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +175,16 @@
   },
   "active": "219fc56da771c4ba",
   "lastOpenFiles": [
+    "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
     "天行健/booklog/东庄水利.md",
+    "天行健/booklog/渣土车重构.md",
+    "study/前端基础/vue/vue_router 路由.md",
+    "天行健/booklog/map/supermap.md",
+    "study/前端基础/vue/vue_x.md",
+    "study/前端基础/vue/vue3快速上手.md",
+    "study/前端基础/vue/vue_cli.md",
+    "天行健/booklog/map/aba9f547112644e64a4eec6599e3d59.png",
+    "天行健/booklog/map/巡航器.md",
     "study/前端基础/vue/总结.md",
     "天行健/readme.md",
     "study/前端基础/z-other/Ajax/axios.md",
@@ -203,7 +194,6 @@
     "study/前端基础/z-other/Ajax/02 HTTP相关问题.md",
     "study/前端基础/z-other/Ajax/01 概述.md",
     "study/前端基础/vue/硅谷甄选项目笔记.md",
-    "study/前端基础/vue/vue3快速上手.md",
     "study/前端基础/z-other/Ajax/Axios/01axios使用.md",
     "study/前端基础/z-other/Ajax/Axios/00预备知识.md",
     "study/前端基础/vue/tips/vue 组件间通信.md",
@@ -212,22 +202,14 @@
     "study/前端基础/vue/vue项目/yarn和npm对比.md",
     "study/前端基础/vue/vue项目/vue 项目.md",
     "study/前端基础/vue/vue项目/后台管理项目.md",
-    "study/前端基础/vue/vue_router 路由.md",
     "天行健/WebSocket.md",
-    "天行健/booklog/map/supermap.md",
     "天行健/booklog/map/img/Pasted image 20231123112838.png",
     "天行健/booklog/map/img/Pasted image 20231123114137.png",
     "天行健/booklog/map/img/Pasted image 20231123114140.png",
-    "天行健/booklog/map/巡航器.md",
     "Pasted image 20231123111228.png",
-    "天行健/tips.md",
-    "my/readme.md",
     "study/workTools/前端环境安装/images/348c76c01f14b023a3b93bb057f698d.jpg",
-    "study/workTools/前端环境安装/前端环境安装.md",
-    "study/内部组件开发/Note.md",
     "Pasted image 20231108112224.png",
     "天行健/booklog/map/img/Pasted image 20231116140631.png",
-    "天行健/booklog/map/aba9f547112644e64a4eec6599e3d59.png",
     "天行健/booklog/map/img/5415145db39f0f097263727e71ac2ad.png",
     "天行健/booklog/map/img/Pasted image 20231031173129.png",
     "天行健/booklog/map/img",
