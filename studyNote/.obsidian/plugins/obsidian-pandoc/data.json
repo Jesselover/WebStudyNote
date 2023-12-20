@@ -1,5 +1,5 @@
 {
-  "showCLICommands": true,
+  "showCLICommands": false,
   "addExtensionsToInternalLinks": "html",
   "injectAppCSS": "dark",
   "injectThemeCSS": false,
@@ -7,9 +7,9 @@
   "displayYAMLFrontmatter": false,
   "linkStrippingBehaviour": "text",
   "highDPIDiagrams": true,
-  "pandoc": "C:\\Users\\Administraror\\AppData\\Local\\Pandoc\\pandoc.exe",
+  "pandoc": "C:\\Users\\Administraror\\ApData\\Local\\Pandoc\\pandoc.exe",
   "pdflatex": "",
-  "outputFolder": "D:\\dtf\\obsidianExport",
+  "outputFolder": "",
   "extraArguments": "",
   "exportFrom": "md"
 }

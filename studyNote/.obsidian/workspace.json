@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "天行健/booklog/东庄水利.md",
+                "file": "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "天行健/booklog/东庄水利.md"
+                "file": "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "天行健/booklog/东庄水利.md",
+                "file": "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "天行健/booklog/东庄水利.md",
+                "file": "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,49 +160,48 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5,
-    "collapsed": true
+    "width": 280.5
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
-      "graph:查看关系图谱": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false
     }
   },
   "active": "219fc56da771c4ba",
   "lastOpenFiles": [
-    "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
-    "天行健/booklog/东庄水利.md",
     "天行健/booklog/渣土车重构.md",
+    "天行健/tips.md",
+    "study/WebGL/Three.js/application.md",
+    "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
+    "天行健/readme.md",
+    "天行健/WebSocket.md",
+    "study/前端基础/代码规范.md",
+    "天行健/booklog/map/巡航器.md",
+    "天行健/booklog/东庄水利.md",
+    "study/workTools/前端环境安装/前端环境安装.md",
+    "study/前端基础/z-other/WebSocket.md",
     "study/前端基础/vue/vue_router 路由.md",
+    "study/内部组件开发/Note.md",
+    "study/0-directory.md",
+    "study/前端基础/z-other/Promise/00 promise基础.md",
+    "study/前端基础/z-other/Promise/99大佬/02Promise 的理解和使用.md",
+    "study/workTools/git.md",
     "天行健/booklog/map/supermap.md",
     "study/前端基础/vue/vue_x.md",
     "study/前端基础/vue/vue3快速上手.md",
     "study/前端基础/vue/vue_cli.md",
     "天行健/booklog/map/aba9f547112644e64a4eec6599e3d59.png",
-    "天行健/booklog/map/巡航器.md",
     "study/前端基础/vue/总结.md",
-    "天行健/readme.md",
     "study/前端基础/z-other/Ajax/axios.md",
     "study/前端基础/z-other/Ajax/05跨域.md",
     "study/前端基础/z-other/Ajax/04 JQuery与Ajax.md",
     "study/前端基础/z-other/Ajax/03 Express.md",
-    "study/前端基础/z-other/Ajax/02 HTTP相关问题.md",
-    "study/前端基础/z-other/Ajax/01 概述.md",
-    "study/前端基础/vue/硅谷甄选项目笔记.md",
-    "study/前端基础/z-other/Ajax/Axios/01axios使用.md",
-    "study/前端基础/z-other/Ajax/Axios/00预备知识.md",
-    "study/前端基础/vue/tips/vue 组件间通信.md",
-    "study/前端基础/vue/tips/积累与疑惑.md",
     "study/前端基础/vue/tips",
-    "study/前端基础/vue/vue项目/yarn和npm对比.md",
-    "study/前端基础/vue/vue项目/vue 项目.md",
-    "study/前端基础/vue/vue项目/后台管理项目.md",
-    "天行健/WebSocket.md",
     "天行健/booklog/map/img/Pasted image 20231123112838.png",
     "天行健/booklog/map/img/Pasted image 20231123114137.png",
     "天行健/booklog/map/img/Pasted image 20231123114140.png",

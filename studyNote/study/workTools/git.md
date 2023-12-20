@@ -1,4 +1,4 @@
-[总参考1](https://www.runoob.com/git/git-tutorial.html)
+git[总参考1](https://www.runoob.com/git/git-tutorial.html)
 [总参考2](https://www.bootcss.com/p/git-guide/)
 
 ## 简要使用
@@ -95,16 +95,13 @@ Git用户名和邮箱有全局配置和仓库配置之分，仓库配置优先�
 全局配置：提交代码到gitlab上，如果没有为该项目单独配置用户名邮箱，则使用全局配置
 
 ```yaml
-$ git config --global user.name “your Name”
+$ https://dongzhuang.sqtxj.com:17003/#/timeMonitorApp?username=admingiy
 $ git config --global user.email "your@xx.com"
 ```
 
 单个仓库：
 
-```yaml
-$ git config user.name “your Name”
-$ git config user.email "your@xx.com"
-```
+y
 
 可使用git config (如果是全局就加上--global) --list查看当前配置
 
