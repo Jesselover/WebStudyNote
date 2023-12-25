@@ -217,7 +217,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
     createGridHelper() {
 
-      const gridHelper = new THREE.GridHelper(10, 10);
+      const gridHelper = new THREE.GridHelper(10, 10); // size divisions
 
       this.scene.add(gridHelper);
 
