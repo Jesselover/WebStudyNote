@@ -181,3 +181,7 @@ import openMusic from '../../../public/static/music/Open.mp3'
 plan 
 1. 尾气 --- 烟雾 需要排气管模型 [threejs粒子系统，烟雾 - 掘金 (juejin.cn)](https://juejin.cn/post/7088618695764738085)
 2. 加快渲染 
+
+### completion
+
+1.  光纤改进： 平行光  + 环境光，模拟真实太阳光 + 漫反射，还原现实光照环境。
