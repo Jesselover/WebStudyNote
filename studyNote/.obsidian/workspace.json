@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -161,8 +160,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5,
-    "collapsed": true
+    "width": 280.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,9 +174,9 @@
   },
   "active": "219fc56da771c4ba",
   "lastOpenFiles": [
-    "天行健/readme.md",
-    "study/WebGL/Three.js/threeJS.md",
     "study/WebGL/Three.js/application.md",
+    "study/WebGL/Three.js/threeJS.md",
+    "天行健/readme.md",
     "天行健/booklog/渣土车重构.md",
     "天行健/booklog/东庄水利.md",
     "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
