@@ -23,9 +23,11 @@
             "id": "d6d6445b230b84c3",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.5.3"
+                "file": "study/WebGL/Three.js/threeJS.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -115,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/WebGL/Three.js/01 基础.md"
+                "file": "study/WebGL/Three.js/threeJS.md"
               }
             }
           },
@@ -133,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/WebGL/Three.js/01 基础.md",
+                "file": "study/WebGL/Three.js/threeJS.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/WebGL/Three.js/01 基础.md",
+                "file": "study/WebGL/Three.js/threeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,8 +189,10 @@
   },
   "active": "d6d6445b230b84c3",
   "lastOpenFiles": [
-    "study/WebGL/Three.js/threeJS.md",
+    "study/WebGL/Three.js/01 基础.md",
     "study/WebGL/Three.js/application.md",
+    "study/WebGL/WebGL.md",
+    "study/WebGL/Three.js/threeJS.md",
     "天行健/readme.md",
     "天行健/booklog/渣土车重构.md",
     "天行健/booklog/东庄水利.md",
@@ -211,8 +215,6 @@
     "study/前端基础/z-other/Promise/99大佬/02Promise 的理解和使用.md",
     "天行健/booklog/map/supermap.md",
     "study/前端基础/vue/vue_x.md",
-    "study/前端基础/vue/vue3快速上手.md",
-    "study/前端基础/vue/vue_cli.md",
     "天行健/booklog/map/aba9f547112644e64a4eec6599e3d59.png",
     "study/前端基础/vue/tips",
     "天行健/booklog/map/img/Pasted image 20231123112838.png",
