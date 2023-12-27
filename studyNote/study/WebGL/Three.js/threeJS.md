@@ -72,6 +72,8 @@ import * as THREE from 'three';
       this.scene.add(this.camera);
     },
 ```
+
+
 #### 创建轨道控制器
 
 Orbit controls（轨道控制器）可以使得相机围绕目标进行轨道运动。
@@ -160,22 +162,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       this.container.appendChild(this.renderer.domElement);
 
     },
-```
-#### 加载
-
-```js
-    // 加载
-
-    render() {
-
-      this.renderer.render(this.scene, this.camera);
-
-      this.controls && this.controls.update(); //使用控制器后，必须在加载的时候update
-
-      requestAnimationFrame(this.render);
-
-    },
-```
+````
 #### 创建网格地面
 
 ```js
