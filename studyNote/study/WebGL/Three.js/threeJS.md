@@ -3,8 +3,6 @@
 
 [创建一个场景 – three.js docs (threejs.org)](https://threejs.org/docs/index.html#manual/zh/introduction/Creating-a-scene)
 
-
-
 ## summary
 
 [Three.js中文网 (webgl3d.cn)](http://www.webgl3d.cn/)
@@ -14,6 +12,9 @@
 介绍： 主要总结threeJs在vue中的使用
 
 安装引入
+
+>[!TIP] 最好确定版本号，以免three更新造成版本不兼容问题
+
 ```SHELL
 npm install three
 ```
@@ -21,31 +22,24 @@ npm install three
 import * as THREE from 'three';
 ```
 
-> 使用轨道控制器、加载器等时，还需要重新引入
+> 使用轨道控制器、加载器等时，还需要另行引入
 
 #### 数据初始化
 
 1. 全局变量准备
 ```js
       scene: null,
-
       camera: null,
-
       renderer: null,
-
       controls: null,
-
       container: null,  // 也可以设置为局部变量
 ```
 
 2. 容器准备
 ```js
     // 数据初始化
-
     initData() {
-
       this.container = this.$refs.three; //容器
-
     },
 ```
 
@@ -55,13 +49,8 @@ import * as THREE from 'three';
    // 创建场景
 
     createScene() {
-
       this.scene = new THREE.Scene();
-
       this.scene.background = new THREE.Color("#ccc"); // 设置场景背景颜色
-
-      //   ? 环境光
-
       this.scene.environment = new THREE.Color("green"); // 设置环境光颜色
 
     },
