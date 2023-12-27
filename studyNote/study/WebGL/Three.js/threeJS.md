@@ -105,11 +105,8 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
     // 加载
 
     render() {
-
       this.renderer.render(this.scene, this.camera);
-
       this.controls && this.controls.update(); //使用控制器后，必须在加载的时候update
-
       requestAnimationFrame(this.render);
 
     },
