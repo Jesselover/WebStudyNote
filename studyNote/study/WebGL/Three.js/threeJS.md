@@ -12,17 +12,14 @@
 介绍： 主要总结threeJs在vue中的使用
 
 安装引入
-
->[!TIP] 最好确定版本号，以免three更新造成版本不兼容问题
-
 ```SHELL
 npm install three
-```
-```js
+``````js
 import * as THREE from 'three';
 ```
 
-> 使用轨道控制器、加载器等时，还需要另行引入
+> 1. 最好确定版本号，以免three更新造成版本不兼容问题
+> 2. 使用轨道控制器、加载器等时，还需要另行引入
 
 #### 数据初始化
 
@@ -31,8 +28,7 @@ import * as THREE from 'three';
       scene: null,
       camera: null,
       renderer: null,
-      controls: null,
-      container: null,  // 也可以设置为局部变量
+      objects: null,
 ```
 
 2. 容器准备
@@ -45,18 +41,14 @@ import * as THREE from 'three';
 
 #### 创建场景
 
+[Scene – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=scene#api/zh/scenes/Scene)
 ```js
    // 创建场景
-
     createScene() {
       this.scene = new THREE.Scene();
-      this.scene.background = new THREE.Color("#ccc"); // 设置场景背景颜色
-      this.scene.environment = new THREE.Color("green"); // 设置环境光颜色
-
+      this.scene.environment =  环境贴图 ; //若该值不为null，则该纹理贴图将会被设为场景中所有物理材质的环境贴图。
     },
 ```
-
-> 1. 场景背景颜色不设置，默认为黑色，在没开灯的情况下，某些材质也是黑色，可能会导致模型加载出来了但是看不见
 
 #### 创建相机
  
@@ -64,35 +56,20 @@ import * as THREE from 'three';
 - 正交相机：视锥体就是一个立方体，无近大远小，永远渲染2d场景或者ui元素
 
 设置合适的相机参数
-
-
 ```js
     // 创建相机
-
     createCamera() {
-
       this.camera = new THREE.PerspectiveCamera(
-
         75,
-
         window.innerWidth / window.innerHeight,
-
         0.9,
-
         100
-
       );
-      
       // 相机位置
-
-      this.camera.position.set(0, 2, 10);
-      
+      this.camera.position.set(0, 2, 10);     
       // 观察目标点的坐标
-
       this.camera.lookAt(this.scene.position);
-
-      //   this.scene.add(this.camera);
-
+      this.scene.add(this.camera);
     },
 ```
 #### 创建轨道控制器
