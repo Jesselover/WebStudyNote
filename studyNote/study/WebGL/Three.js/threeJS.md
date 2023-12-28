@@ -109,39 +109,25 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
     // 创建渲染器
 
     createRenderer() {
-
       this.renderer = new THREE.WebGL1Renderer();
-
       this.renderer.setSize(
-
         this.container.clientWidth,
-
         this.container.clientHeight
-
       );
       this.renderer.antialisa = true; // 抗锯齿
-
       //   this.renderer.setClearColor("pink"); // 设置画面颜色
-
       this.container.appendChild(this.renderer.domElement);
-
     },
 ````
 #### 创建网格地面
 
 ```js
     // 创建网格地面
-
     createGridHelper() {
-
       const gridHelper = new THREE.GridHelper(10, 10); // size divisions
-
       this.scene.add(gridHelper);
-
       //   gridHelper.material.transparent = true;
-
       //   gridHelper.material.opacity = 0.5;
-
     },
 ```
 
@@ -150,17 +136,11 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 ```JS
     // 创建坐标轴辅助器
-
     createAxesHelper() {
-
       const axesHelper = new THREE.AxesHelper(5);
-
       this.scene.add(axesHelper);
-
     },
 ```
-
-
 ### 灯光与阴影
 
 材质：有些材质受光照影响（eg. MeshLamBerMaterial），有些不受光照影响(eg. MeshBasicMaterial)
@@ -242,6 +222,9 @@ directionaLight.shadow.camera.updateProjectionMatrix()
 
 
 ### 请求动画帧 window.requestAnimationFrame
+
+https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame
+
 ### TWEEN
 [tween.js 用户指南 | tween.js (tweenjs.github.io)](https://tweenjs.github.io/tween.js/docs/user_guide_zh-CN.html)
 
