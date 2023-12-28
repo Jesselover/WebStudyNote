@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/node后端/node.md",
+                "file": "study/WebGL/Three.js/threeJS.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -105,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/node后端/node.md"
+                "file": "study/WebGL/Three.js/threeJS.md"
               }
             }
           },
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/node后端/node.md",
+                "file": "study/WebGL/Three.js/threeJS.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/node后端/node.md",
+                "file": "study/WebGL/Three.js/threeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,6 +177,7 @@
   },
   "active": "219fc56da771c4ba",
   "lastOpenFiles": [
+    "study/node后端/node.md",
     "study/WebGL/Three.js/threeJS.md",
     "study/WebGL/Three.js/01 基础.md",
     "study/WebGL/Three.js/application.md",
@@ -203,7 +203,6 @@
     "study/前端基础/z-other/Promise/00 promise基础.md",
     "study/前端基础/z-other/Promise/99大佬/02Promise 的理解和使用.md",
     "天行健/booklog/map/supermap.md",
-    "study/前端基础/vue/vue_x.md",
     "天行健/booklog/map/aba9f547112644e64a4eec6599e3d59.png",
     "study/前端基础/vue/tips",
     "天行健/booklog/map/img/Pasted image 20231123112838.png",

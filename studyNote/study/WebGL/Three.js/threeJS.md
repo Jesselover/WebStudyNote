@@ -61,7 +61,7 @@ import * as THREE from 'three';
     createCamera() {
       this.camera = new THREE.PerspectiveCamera(
         75,
-        window.innerWidth / window.innerHeight,
+        window.innerWidth / window.innerHeight,  // 一般设置为canvas画布宽高比
         0.9,
         100
       );
