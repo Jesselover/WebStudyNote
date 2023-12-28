@@ -76,39 +76,31 @@ import * as THREE from 'three';
 
 #### 创建轨道控制器
 
-Orbit controls（轨道控制器）可以使得相机围绕目标进行轨道运动。
+1. Orbitcontrols（轨道控制器）可以使得相机围绕目标进行轨道运动。
+2. threeJs 扩展库。
+3. 本质：改变相机位置
 
 > 轨道控制器会影响lookAt的设置，注意手动修改`control`
 ```js
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 ```
-
 ```js
     // 创建控制器
-
     createOrbitControls() {
-
       this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-
       this.controls.enableDamping = true; // 启用阻尼
-
       this.controls.minPolarAngle = 0.5; // 最小绕y轴角度
-
       this.controls.maxPolarAngle = 1.35; // 最大绕y轴角度
-
       this.controls.zoomSpeed = 0.3; // 放慢缩放速度
-
     },
 ```
 
 ```js
     // 加载
-
     render() {
       this.renderer.render(this.scene, this.camera);
       this.controls && this.controls.update(); //使用控制器后，必须在加载的时候update
       requestAnimationFrame(this.render);
-
     },
 ```
 
@@ -199,21 +191,16 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 1. 材质：有些材质受光照影响（eg. MeshLamBerMaterial），有些不受光照影响(eg. MeshBasicMaterial)
 
 #### 常见属性与方法
-1. `decay` 是否随着距离衰减，默认2.0，0.0表示不衰减
 #### 聚光灯
 [SpotLight – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=spo#api/zh/lights/SpotLight)
 
 ```js
       light1.angle = Math.PI / 10;
-
-      light1.distance = 40;
-
+      light1.distance = 40; // 光源照射的最大距离
       // light1.target = this.cube;
-      
-      light1.penumbra = 0.5;
-
+      light1.penumbra = 0.5; //聚光锥的半影缩减百分比
       //  this.renderer.physicalCorrectLights = true;
-      light1.decay = 0.5;
+      light1.decay = 0.5; // `decay` 是否随着距离衰减，默认2.0，0.0表示不衰减
 ```
 ####  点光源
 #### 阴影
