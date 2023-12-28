@@ -7,6 +7,9 @@
 
 [Three.js中文网 (webgl3d.cn)](http://www.webgl3d.cn/)
 
+### threeJs 语法总结
+
+
 ### 初始化
 
 介绍： 主要总结threeJs在vue中的使用
@@ -116,6 +119,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       ); // 
       this.renderer.antialisa = true; // 抗锯齿
       this.renderer.setPixelRatio(window.devicePixelRatio) // 如果你遇到canvas画布输出模糊问题，注意设置设备像素比
+      
       //   this.renderer.setClearColor("pink"); // 设置画面颜色
       this.container.appendChild(this.renderer.domElement);
     },
