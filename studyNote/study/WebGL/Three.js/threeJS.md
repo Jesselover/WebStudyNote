@@ -196,6 +196,8 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 ### 灯光与阴影
 
+有些材质受光照影响（eg. MeshLamBerMaterial），有些不受光照影响(eg. MeshBasicMaterial)
+
 #### 阴影
 
 1. 材质对光照有反应
