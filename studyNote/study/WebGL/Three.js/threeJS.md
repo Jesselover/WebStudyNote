@@ -180,7 +180,6 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 ```
 #### 聚光灯
 [SpotLight – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=spo#api/zh/lights/SpotLight)
-
 ```js
       light1.angle = Math.PI / 10;
       light1.distance = 40; // 光源照射的最大距离
@@ -190,6 +189,18 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       light1.decay = 0.5; // `decay` 是否随着距离衰减，默认2.0，0.0表示不衰减
 ```
 ####  点光源
+
+#### 平行光
+```js      
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
+      directionalLight.position.set(1000, 1000, 1000);
+      directionalLight.target = this.truck
+      this.scene.add(directionalLight);
+      const dirLightHelper = new THREE.DirectionalLightHelper(directionalLight, 5, 0xff0000); // 可视化平行光
+      this.scene.add(dirLightHelper)
+
+```
+
 #### 阴影
 
 1. 材质对光照有反应
@@ -229,6 +240,8 @@ directionaLight.shadow.camera.near = 0.5
 directionaLight.shadow.camera.updateProjectionMatrix()
 ```
 
+
+### 请求动画帧 window.requestAnimationFrame
 ### TWEEN
 [tween.js 用户指南 | tween.js (tweenjs.github.io)](https://tweenjs.github.io/tween.js/docs/user_guide_zh-CN.html)
 
