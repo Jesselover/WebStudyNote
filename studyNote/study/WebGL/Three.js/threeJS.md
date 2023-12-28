@@ -113,8 +113,9 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       this.renderer.setSize(
         this.container.clientWidth,
         this.container.clientHeight
-      );
+      ); // 
       this.renderer.antialisa = true; // 抗锯齿
+      this.renderer.setPixelRatio(window.devicePixelRatio) // 如果你遇到canvas画布输出模糊问题，注意设置设备像素比
       //   this.renderer.setClearColor("pink"); // 设置画面颜色
       this.container.appendChild(this.renderer.domElement);
     },
