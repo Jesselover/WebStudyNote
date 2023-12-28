@@ -196,8 +196,26 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 ### 灯光与阴影
 
-有些材质受光照影响（eg. MeshLamBerMaterial），有些不受光照影响(eg. MeshBasicMaterial)
+1. 材质：有些材质受光照影响（eg. MeshLamBerMaterial），有些不受光照影响(eg. MeshBasicMaterial)
 
+#### 常见属性与方法
+1. `decay` 是否随着距离衰减，默认2.0，0.0表示不衰减
+#### 聚光灯
+[SpotLight – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=spo#api/zh/lights/SpotLight)
+
+```js
+      light1.angle = Math.PI / 10;
+
+      light1.distance = 40;
+
+      // light1.target = this.cube;
+      
+      light1.penumbra = 0.5;
+
+      //  this.renderer.physicalCorrectLights = true;
+      light1.decay = 0.5;
+```
+####  点光源
 #### 阴影
 
 1. 材质对光照有反应
@@ -237,22 +255,6 @@ directionaLight.shadow.camera.near = 0.5
 directionaLight.shadow.camera.updateProjectionMatrix()
 ```
 
-#### 聚光灯
-[SpotLight – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=spo#api/zh/lights/SpotLight)
-
-```js
-      light1.angle = Math.PI / 10;
-
-      light1.distance = 40;
-
-      // light1.target = this.cube;
-      
-      light1.penumbra = 0.5;
-
-      //  this.renderer.physicalCorrectLights = true;
-      light1.decay = 0.5;
-```
-####  点光源
 ### TWEEN
 [tween.js 用户指南 | tween.js (tweenjs.github.io)](https://tweenjs.github.io/tween.js/docs/user_guide_zh-CN.html)
 
