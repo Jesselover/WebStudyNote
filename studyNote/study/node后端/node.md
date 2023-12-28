@@ -45,7 +45,7 @@ console.log(path.dirname("../Blob/blob01.html"), "dirname"); //../Blob dirname
 
 #### 路径解析
 
-- `parse`: 返回一个对象，其属性表示path有效元素
+- `parse`: 返回一个对象，**其属性表示path有效元素**
 - `format`: 把对象转为一个路径字符串 
 ```js
 console.log(path.parse("../Blob/blob01.html"), "parse");
