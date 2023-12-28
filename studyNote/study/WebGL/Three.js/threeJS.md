@@ -103,31 +103,6 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       requestAnimationFrame(this.render);
     },
 ```
-
-#### 创建灯光
-
-- 环境光ambient：环境光会均匀的照亮场景中所有物体，环境光不能用来投射阴影，因为它没有方向。
-- 平行光directionalLight ：类似于太阳光
-- 点光源pointLight：类似于灯泡
-- 聚光灯spotlight：类似于手电筒 
-
-```js
-  
-
-    // 添加燈光
-
-    createLight() {
-
-      let light1 = new THREE.DirectionalLight(0xffffff, 1); // 创建一个方向光，参数为光的颜色和强度
-
-      light1.position.set(0, 0, 10);
-
-      this.scene.add(light1);
-
-    },
-```
-
-
 #### 创建渲染器
 
 ```js
@@ -188,9 +163,21 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 ### 灯光与阴影
 
-1. 材质：有些材质受光照影响（eg. MeshLamBerMaterial），有些不受光照影响(eg. MeshBasicMaterial)
+材质：有些材质受光照影响（eg. MeshLamBerMaterial），有些不受光照影响(eg. MeshBasicMaterial)
 
-#### 常见属性与方法
+- 环境光ambient：环境光会均匀的照亮场景中所有物体，环境光不能用来投射阴影，因为它没有方向。
+- 平行光directionalLight ：类似于太阳光
+- 点光源pointLight：类似于灯泡
+- 聚光灯spotlight：类似于手电筒 
+
+```js
+    // 添加燈光
+    createLight() {
+      let light1 = new THREE.DirectionalLight(0xffffff, 1); // 创建一个方向光，参数为光的颜色和强度
+      light1.position.set(0, 0, 10);
+      this.scene.add(light1);
+    },
+```
 #### 聚光灯
 [SpotLight – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=spo#api/zh/lights/SpotLight)
 
