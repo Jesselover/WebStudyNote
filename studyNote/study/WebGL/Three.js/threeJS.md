@@ -221,9 +221,14 @@ directionaLight.shadow.camera.updateProjectionMatrix()
 ```
 
 
-### 请求动画帧 window.requestAnimationFrame
+### 请求动画帧 window.requestAnimationFrame(Fn)
 
 https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame
+
+- 理想状态下,以每秒60次的频率调用回调函数 Fn， 通常与浏览器刷新次数匹配
+- 注： 使用请求动画帧不必在`render`中 `this.controls && this.controls.update(); // 使用requestAnimationFrame 后，不在需要更新轨道/相机控制器
+      TWEEN.update();`
+
 
 ### TWEEN
 [tween.js 用户指南 | tween.js (tweenjs.github.io)](https://tweenjs.github.io/tween.js/docs/user_guide_zh-CN.html)
