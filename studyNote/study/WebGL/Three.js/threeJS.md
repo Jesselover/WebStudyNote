@@ -85,30 +85,21 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 ```js
     // 创建控制器
-
     createOrbitControls() {
-
       this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-
       this.controls.enableDamping = true; // 启用阻尼
-
       this.controls.minPolarAngle = 0.5; // 最小绕y轴角度
-
       this.controls.maxPolarAngle = 1.35; // 最大绕y轴角度
-
       this.controls.zoomSpeed = 0.3; // 放慢缩放速度
-
     },
 ```
 
 ```js
     // 加载
-
     render() {
       this.renderer.render(this.scene, this.camera);
       this.controls && this.controls.update(); //使用控制器后，必须在加载的时候update
       requestAnimationFrame(this.render);
-
     },
 ```
 
@@ -123,58 +114,37 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
   
 
     // 添加燈光
-
     createLight() {
-
       let light1 = new THREE.DirectionalLight(0xffffff, 1); // 创建一个方向光，参数为光的颜色和强度
-
       light1.position.set(0, 0, 10);
-
       this.scene.add(light1);
-
     },
 ```
-
 
 #### 创建渲染器
 
 ```js
     // 创建渲染器
-
     createRenderer() {
-
       this.renderer = new THREE.WebGL1Renderer();
-
       this.renderer.setSize(
-
         this.container.clientWidth,
-
         this.container.clientHeight
-
       );
       this.renderer.antialisa = true; // 抗锯齿
-
       //   this.renderer.setClearColor("pink"); // 设置画面颜色
-
       this.container.appendChild(this.renderer.domElement);
-
     },
 ````
 #### 创建网格地面
 
 ```js
     // 创建网格地面
-
     createGridHelper() {
-
       const gridHelper = new THREE.GridHelper(10, 10); // size divisions
-
       this.scene.add(gridHelper);
-
       //   gridHelper.material.transparent = true;
-
       //   gridHelper.material.opacity = 0.5;
-
     },
 ```
 
@@ -183,13 +153,9 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 ```JS
     // 创建坐标轴辅助器
-
     createAxesHelper() {
-
       const axesHelper = new THREE.AxesHelper(5);
-
       this.scene.add(axesHelper);
-
     },
 ```
 
@@ -213,14 +179,12 @@ sphere.castShadow = true
 plane.receiveShadow = true
 ```
 
-
 ```js
 // 阴影贴图模糊度
 light1.shadow.radius = 20; 
 // 阴影贴图分辨率
 light1.shadow.mapSize.set(2048, 2048);
 ```
-
 
 [OrthographicCamera – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=ca#api/zh/cameras/OrthographicCamera)
 ```js
@@ -240,13 +204,9 @@ directionaLight.shadow.camera.updateProjectionMatrix()
 
 ```js
       light1.angle = Math.PI / 10;
-
       light1.distance = 40;
-
       // light1.target = this.cube;
-      
-      light1.penumbra = 0.5;
-
+      light1.penumbra = 0.5; 
       //  this.renderer.physicalCorrectLights = true;
       light1.decay = 0.5;
 ```
