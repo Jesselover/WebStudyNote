@@ -307,8 +307,9 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 #### 世界坐标与局部坐标
 
 #####   局部坐标/世界坐标
-世界坐标：自己的局部坐标position与所有父对象的局部坐标position的叠加
 
+世界坐标：自己的局部坐标position与所有父对象的局部坐标position的叠加
+局部坐标/本地坐标：模型的position属性
 ```js
 const worldPosition = new THREE.Vector3()
       this.gearshift.getWorldPosition(worldPosition)
