@@ -74,7 +74,7 @@ import * as THREE from 'three';
 ```
 
 
-#### 创建轨道控制器
+#### 创建轨道控制器——控制相机
 
 Orbit controls（轨道控制器）可以使得相机围绕目标进行轨道运动。
 
@@ -251,7 +251,7 @@ directionaLight.shadow.camera.updateProjectionMatrix()
       light1.decay = 0.5;
 ```
 ####  点光源
-### TWEEN
+****### TWEEN
 [tween.js 用户指南 | tween.js (tweenjs.github.io)](https://tweenjs.github.io/tween.js/docs/user_guide_zh-CN.html)
 
 ### 光线投射技术
@@ -309,7 +309,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 #####   局部坐标/世界坐标
 
 世界坐标：自己的局部坐标position与所有父对象的局部坐标position的叠加
-局部坐标/本地坐标：模型的position属性
+局部坐标/本地坐标：模型的position
 ```js
 const worldPosition = new THREE.Vector3()
       this.gearshift.getWorldPosition(worldPosition)
