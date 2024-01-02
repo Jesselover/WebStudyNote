@@ -535,10 +535,26 @@ import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js"
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js"
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js"
 import { OutlinePass } from "three/examples/jsm/postprocessing/OutlinePass.js"
+import { GammaCorrectionShader } from 'three/examples/jsm/shaders/GammaCorrectionShader.js'
+import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js'
+```
+
+```js
+ createComposer (mesh) {
+      const composer = new EffectComposer(this.renderer)
+      const renderPass = new RenderPass(this.scene, this.camera) // 后处理通道
+      composer.addPass(renderPass)
+      // 解决发光描边后环境变暗,必须放在 composer.addPass(renderPass) 后
+      const gammaCorrectionShader = new ShaderPass(GammaCorrectionShader);
+      composer.addPass(gammaCorrectionShader);
+      // end 
+      const v2 = new THREE.Vector2(this.container.clientWidth, this.container.clientHeight)  // 与canva 画布尺寸保持一致
+      const outlinePass = new OutlinePass(v2, this.scene, this.camera)
+      outlinePass.selectedObjects = [mesh]// 发光描边得网格模型，可以写多个
+      composer.addPass(outlinePass)
+      this.composer = composer
+    },
 ```
 ### tools
 
 [Three.js - dat.GUI库的使用详解 - 615 - 博客园 (cnblogs.com)](https://www.cnblogs.com/wuqun/p/14366057.html)
-
-#### OutlinePass.js 高亮发光描边
-![[Pasted image 20230816165030.png]]
