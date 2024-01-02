@@ -346,7 +346,7 @@ props:['id','title'],
    			title:xxx
    		}
    })
-   
+
    this.$router.replace({
    	name:'xiangqing',
    	params:{
