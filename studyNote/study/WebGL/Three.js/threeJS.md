@@ -159,7 +159,49 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
     },
 ```
 
+#### 载入模型
 
+[载入3D模型 – three.js docs (threejs.org)](https://threejs.org/docs/index.html#manual/zh/introduction/Loading-3D-models)
+[GLTFLoader – three.js docs (threejs.org)](https://threejs.org/docs/index.html#examples/zh/loaders/GLTFLoader)
+
+```js
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+```
+```js
+   const loader = new GLTFLoader();
+      loader.load(
+        "path/to/model.glb",
+        (gltf) => {
+          console.log("模型加载完毕...")
+          this.scene.add(gltf.scene);
+          // 遍历模型，拿到目标子模型
+          glft.scene.traverse((child) => {
+          if (child.name === "door_right") {
+            this.rightDoor = child;
+          }
+          })
+        },
+    
+      );
+```
+
+> 1. 加载地址写打包后的相对地址，否则可能加载不出来
+> 2. blender 导出的部分纹理，threejs可能无法加载出,如：颜色渐变等 
+> 3. 载入模型后，记得根据模型调节相机参数
+
+#### 自定义mesh
+
+```js
+    createMesh () {
+      const box = new THREE.BoxGeometry(1, 1, 1);
+      // 材质：MeshStandardMaterial标准网格材质，是基于物理渲染的，能够基于物理模型处理灯光和阴影，更接近物理世界的真实场景。
+      const material = new THREE.MeshStandardMaterial({ color: 0xffff00 })
+      // 物体
+      const cube = new THREE.Mesh(box, material);
+      cube.castShadow = true; // 设置物体的投射阴影
+      this.scene.add(cube)
+    },
+```
 ### 灯光与阴影
 
 #### 阴影
@@ -218,48 +260,6 @@ directionaLight.shadow.camera.updateProjectionMatrix()
 
 [Three.js - Group 组合对象_group和object3d有什么区别_「已注销」的博客-CSDN博客](https://blog.csdn.net/ithanmang/article/details/80965712?spm=1001.2014.3001.5501)
 
-### 载入模型
-
-[载入3D模型 – three.js docs (threejs.org)](https://threejs.org/docs/index.html#manual/zh/introduction/Loading-3D-models)
-[GLTFLoader – three.js docs (threejs.org)](https://threejs.org/docs/index.html#examples/zh/loaders/GLTFLoader)
-
-```js
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-```
-
-```js
-   const loader = new GLTFLoader();
-
-      loader.load(
-
-        "path/to/model.glb",
-
-        function (gltf) {
-
-          scene.add(gltf.scene);
-
-        },
-
-        undefined,
-
-        function (error) {
-
-          console.error(error);
-
-        }
-
-      );
-```
-
->[!warning]  加载地址写打包后的相对地址
-
-否则可能加载不出来
-
->[!tip] blender 导出的部分纹理，threejs可能无法加载出
-
-如：颜色渐变等 
-
-> 载入模型后，记得根据模型调节相机参数
 ### Object3D
 
 [Object3D – three.js docs (threejs.org)](https://threejs.org/docs/index.html#api/zh/core/Object3D)
