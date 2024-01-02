@@ -556,6 +556,12 @@ import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js'
       composer.addPass(outlinePass)
       this.composer = composer
     },
+    
+    // 加载
+    render () {
+      this.composer && this.composer.render()
+    },
+    
 ```
 ### tools
 
