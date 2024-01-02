@@ -505,7 +505,7 @@ import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js"
         this.mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
         this.raycaster.setFromCamera(this.mouse, this.camera);
         // 2. 计算
-        const intersectsRight = this.raycaster.intersectObjects([this.rightDoor]);
+        const intersectsRight = this.raycaster.intersectObjects([this.rightDoor]);  
         const intersectsLeft = this.raycaster.intersectObjects([this.leftDoor]);
         // 3. 添加功能
         if (intersectsRight.length) {
