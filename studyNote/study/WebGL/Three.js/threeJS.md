@@ -488,6 +488,12 @@ obj.add( obj1 );
 
 ### 后处理
 
+1. 引入 : `
+```JS
+import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js"
+import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js"
+import { OutlinePass } from "three/examples/jsm/postprocessing/OutlinePass.js"
+```
 ### tools
 
 [Three.js - dat.GUI库的使用详解 - 615 - 博客园 (cnblogs.com)](https://www.cnblogs.com/wuqun/p/14366057.html)

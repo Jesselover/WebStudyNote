@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/前端基础/vue/vue_router 路由.md",
+                "file": "study/WebGL/Three.js/threeJS.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -104,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/前端基础/vue/vue_router 路由.md"
+                "file": "study/WebGL/Three.js/threeJS.md"
               }
             }
           },
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/前端基础/vue/vue_router 路由.md",
+                "file": "study/WebGL/Three.js/threeJS.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/前端基础/vue/vue_router 路由.md",
+                "file": "study/WebGL/Three.js/threeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 280.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,6 +178,7 @@
   },
   "active": "219fc56da771c4ba",
   "lastOpenFiles": [
+    "study/前端基础/vue/vue_router 路由.md",
     "study/前端基础/vue/vue_cli.md",
     "study/内部组件开发/Note.md",
     "study/WebGL/Three.js/threeJS.md",
@@ -187,7 +190,6 @@
     "天行健/booklog/渣土车重构.md",
     "天行健/booklog/东庄水利.md",
     "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
-    "study/前端基础/vue/vue_router 路由.md",
     "study/前端基础/vue/总结.md",
     "study/node后端/Koa框架.md",
     "study/node后端/MongoDB.md",
