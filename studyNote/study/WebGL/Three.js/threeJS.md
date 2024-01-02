@@ -359,6 +359,7 @@ obj.add( obj1 );
     },
 ```
 
+
 ####  点云Points
 
 [PointsMaterial – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=Points#api/zh/materials/PointsMaterial)
@@ -486,6 +487,47 @@ obj.add( obj1 );
     },
 ```
 
+
+### 射线 raycaster
+
+```js
+import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js"
+import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js"
+```
+```js
+    createRay () {
+      addEventListener('click', (event) => {
+        // 1. 创建
+        this.raycaster = new THREE.Raycaster();
+        this.mouse = new THREE.Vector2();
+        //通过鼠标点击的位置计算出raycaster所需要的点的位置，以屏幕中心为原点，值的范围为-1到1.
+        this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+        this.mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
+        this.raycaster.setFromCamera(this.mouse, this.camera);
+        // 2. 计算
+        const intersectsRight = this.raycaster.intersectObjects([this.rightDoor]);
+        const intersectsLeft = this.raycaster.intersectObjects([this.leftDoor]);
+        // 3. 添加功能
+        if (intersectsRight.length) {
+          this.createComposer(this.rightDoor)
+          if (this.rightDoorStatus) {
+            this.closeDoor('right')
+          } else {
+            this.openDoor('right')
+          }
+        }
+        if (intersectsLeft.length) {
+          this.createComposer(this.leftDoor)
+          if (this.leftDoorStatus) {
+            this.closeDoor('left')
+          } else {
+            this.openDoor('left')
+          }
+        }
+        this.renderer.render(this.scene, this.camera);
+      })
+    },
+```
 ### 后处理
 
 1. 引入 : `
