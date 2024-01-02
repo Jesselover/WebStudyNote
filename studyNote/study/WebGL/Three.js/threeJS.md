@@ -490,6 +490,8 @@ obj.add( obj1 );
 
 ### 射线 raycaster
 
+> 1. 射线穿透问题：把可能会碰撞的所有物体都放进去，选取第一个碰撞的物体做判断
+
 ```js
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js"
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js"
