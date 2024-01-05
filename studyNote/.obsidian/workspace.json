@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/WebGL/Three.js/threeJS.md",
+                "file": "study/前端基础/JS.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -104,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/WebGL/Three.js/threeJS.md"
+                "file": "study/前端基础/JS.md"
               }
             }
           },
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/WebGL/Three.js/threeJS.md",
+                "file": "study/前端基础/JS.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/WebGL/Three.js/threeJS.md",
+                "file": "study/前端基础/JS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 280.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,8 +178,13 @@
   },
   "active": "219fc56da771c4ba",
   "lastOpenFiles": [
-    "study/WebGL/Three.js/application.md",
+    "study/前端基础/代码规范.md",
+    "study/前端基础/JS.md",
+    "study/前端基础/JavaScript 1/JS-Advance/readme.md",
+    "study/前端基础/JavaScript 1/JS-Advance/02构造函数和原型.md",
+    "study/前端基础/JavaScript 1/JS-Advance/01avaScript 面向对象.md",
     "study/WebGL/Three.js/threeJS.md",
+    "study/WebGL/Three.js/application.md",
     "study/前端基础/vue/vue_router 路由.md",
     "study/前端基础/vue/vue_cli.md",
     "study/内部组件开发/Note.md",
@@ -196,12 +203,7 @@
     "study/workTools/前端环境安装/前端环境安装.md",
     "天行健/tips.md",
     "天行健/WebSocket.md",
-    "study/前端基础/代码规范.md",
     "天行健/booklog/map/巡航器.md",
-    "study/前端基础/z-other/WebSocket.md",
-    "study/0-directory.md",
-    "study/前端基础/z-other/Promise/00 promise基础.md",
-    "study/前端基础/z-other/Promise/99大佬/02Promise 的理解和使用.md",
     "天行健/booklog/map/aba9f547112644e64a4eec6599e3d59.png",
     "study/前端基础/vue/tips",
     "天行健/booklog/map/img/Pasted image 20231123112838.png",
