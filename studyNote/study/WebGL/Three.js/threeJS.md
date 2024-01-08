@@ -566,3 +566,5 @@ import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js'
 ### tools
 
 [Three.js - dat.GUI库的使用详解 - 615 - 博客园 (cnblogs.com)](https://www.cnblogs.com/wuqun/p/14366057.html)
+
+[了解Threejs中的Clock对象以及简单应用 - 掘金 (juejin.cn)](https://juejin.cn/post/7036927681409056805)
