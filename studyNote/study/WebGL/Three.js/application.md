@@ -13,7 +13,7 @@
 
 ###### target
 
-- [x] 轮子的转动 number
+- [x]  轮子的转动 number
 - [x] 踏板
 - [x] 车是否启动  Boolean
 - [ ]  灯光、转向灯 

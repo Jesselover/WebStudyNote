@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/WebGL/Three.js/辉光效果.md",
+                "file": "天行健/readme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5ffcb576291719da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "study/前端基础/vue/vue3快速上手.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/WebGL/Three.js/辉光效果.md"
+                "file": "study/前端基础/vue/vue3快速上手.md"
               }
             }
           },
@@ -122,8 +135,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/WebGL/Three.js/辉光效果.md",
-                "collapseAll": true,
+                "file": "study/前端基础/vue/vue3快速上手.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -139,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/WebGL/Three.js/辉光效果.md",
+                "file": "study/前端基础/vue/vue3快速上手.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,8 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5,
-    "collapsed": true
+    "width": 280.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,45 +187,45 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "219fc56da771c4ba",
+  "active": "5ffcb576291719da",
   "lastOpenFiles": [
-    "study/WebGL/Three.js/threeJS.md",
-    "study/WebGL/Three.js/辉光效果.md",
-    "study/WebGL/Blender.md",
-    "study/WebGL/Three.js/application.md",
-    "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
-    "天行健/readme.md",
-    "study/前端基础/JS.md",
-    "study/前端基础/代码规范.md",
-    "study/前端基础/JavaScript 1/JS-Advance/readme.md",
-    "study/前端基础/JavaScript 1/JS-Advance/02构造函数和原型.md",
-    "study/前端基础/JavaScript 1/JS-Advance/01avaScript 面向对象.md",
-    "study/前端基础/vue/vue_router 路由.md",
-    "study/前端基础/vue/vue_cli.md",
-    "study/内部组件开发/Note.md",
-    "study/node后端/node.md",
-    "study/WebGL/Three.js/01 基础.md",
-    "study/WebGL/WebGL.md",
-    "天行健/booklog/渣土车重构.md",
-    "天行健/booklog/东庄水利.md",
-    "study/前端基础/vue/总结.md",
-    "study/node后端/Koa框架.md",
-    "study/node后端/MongoDB.md",
-    "study/node后端/Kafka.md",
-    "study/workTools/git.md",
-    "study/workTools/前端环境安装/前端环境安装.md",
+    "study/前端基础/vue/tips/积累与疑惑.md",
     "天行健/tips.md",
+    "study/前端基础/vue/vue3快速上手.md",
+    "study/workTools/前端环境安装/前端环境安装.md",
+    "study/前端基础/vue/vue_cli.md",
+    "study/前端基础/vue/vue_router 路由.md",
+    "study/前端基础/vue/总结.md",
+    "study/前端基础/vue/硅谷甄选项目笔记.md",
+    "天行健/booklog/公司问题库.md",
+    "天行健/booklog/东庄水利.md",
+    "天行健/WebSocket.md",
+    "未命名.md",
+    "天行健/readme.md",
+    "Pasted image 20240124175910.png",
+    "Pasted image 20240202111619.png",
+    "Pasted image 20240124180008.png",
+    "Pasted image 20240124175948.png",
+    "天行健/booklog/images/Pasted image 20240202111622.png",
+    "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
+    "天行健/booklog/渣土车重构.md",
+    "study/前端基础/vue/vue_x.md",
+    "study/z其他/项目/商品汇/myNote/03 三级联动态数据、节流、路由跳转.md",
+    "study/前端基础/vue/未命名.md",
+    "study/z其他/项目/商品汇/myNote/04 Search中的TypeNav过渡动画与性能优化.md",
+    "study/前端基础/vue/目录.md",
+    "study/WebGL/Three.js/application.md",
+    "study/前端基础/z-other/Promise/99大佬/03手写 Promise.md",
+    "study/前端基础/z-other/Promise/00 promise基础.md",
+    "study/前端基础/z-other/Promise/99大佬/07异步综合面试题.md",
+    "study/前端基础/z-other/Promise/99大佬/06async 与 await.md",
+    "study/前端基础/z-other/Promise/99大佬/05Promise 相关面试题.md",
+    "Pasted image 20240125160038.png",
+    "天行健/booklog/images/Pasted image 20240124153701.png",
     "天行健/booklog/map/aba9f547112644e64a4eec6599e3d59.png",
     "study/前端基础/vue/tips",
     "天行健/booklog/map/img/Pasted image 20231123112838.png",
     "天行健/booklog/map/img/Pasted image 20231123114137.png",
-    "天行健/booklog/map/img/Pasted image 20231123114140.png",
-    "Pasted image 20231123111228.png",
-    "study/workTools/前端环境安装/images/348c76c01f14b023a3b93bb057f698d.jpg",
-    "Pasted image 20231108112224.png",
-    "天行健/booklog/map/img/Pasted image 20231116140631.png",
-    "天行健/booklog/map/img/5415145db39f0f097263727e71ac2ad.png",
-    "天行健/booklog/map/img/Pasted image 20231031173129.png",
     "天行健/booklog/map/img",
     "天行健/booklog/map",
     "未命名",
