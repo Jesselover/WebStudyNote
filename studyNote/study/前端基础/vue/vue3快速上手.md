@@ -30,7 +30,11 @@
 	%%升级了算法,让虚拟DOM的对比更快%%
 	%%webpack本身就支持Tree-Shaking%%
 
-  
+  群体的一般特征：
+1. 群体是个活的生物
+2. 构成群体的条件：每一个人个性的消失；感情与思想都关注于同一件事
+3. 群体既有共性，也有不同
+4. 
 ### 3.拥抱TypeScript
 
 - Vue3可以更好的支持TypeScript
@@ -129,8 +133,15 @@ new Vue({
     render: h => h(App)
 }).$mount('#app')
 ```
-2.**组件中模板结构可以没有根标签**
+2. 记得在vue.config.js 中关闭掉烦人的语法检查
+```js
+const { defineConfig } = require("@vue/cli-service");
+module.exports = defineConfig({
+  transpileDependencies: true,
+  lintOnSave: false, // 关闭语法检查
+});
 
+```
 # 二、常用 Composition API
 
 官方文档: https://v3.cn.vuejs.org/guide/composition-api-introduction.html

@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "f8e160b3deb5197c",
+        "id": "1b614415bc46bf34",
         "type": "tabs",
         "children": [
           {
-            "id": "219fc56da771c4ba",
+            "id": "7aa5186c98c34417",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "天行健/readme.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5ffcb576291719da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "study/前端基础/vue/vue3快速上手.md",
+                "file": "天行健/booklog/map/AMap.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 588.8000000000001
   },
   "right": {
     "id": "2a9d8a71c1324fe1",
@@ -117,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/前端基础/vue/vue3快速上手.md"
+                "file": "天行健/booklog/map/AMap.md"
               }
             }
           },
@@ -135,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/前端基础/vue/vue3快速上手.md",
+                "file": "天行健/booklog/map/AMap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/前端基础/vue/vue3快速上手.md",
+                "file": "天行健/booklog/map/AMap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +162,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 280.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,54 +175,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5ffcb576291719da",
+  "active": "7aa5186c98c34417",
   "lastOpenFiles": [
-    "study/前端基础/vue/tips/积累与疑惑.md",
-    "天行健/tips.md",
+    "study/WebGis/WebGis.md",
+    "study/WebGL/Three.js/01 基础.md",
+    "study/WebGL/Three.js/辉光效果.md",
+    "study/WebGL/Three.js/application.md",
+    "study/WebGL/Three.js/threeJS.md",
+    "天行健/booklog/map/AMap.md",
+    "天行健/booklog/map/images/Pasted image 20240222161509.png",
+    "天行健/booklog/map/images/Pasted image 20240222161502.png",
+    "天行健/booklog/东庄水利.md",
+    "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
+    "天行健/WebSocket.md",
+    "天行健/booklog/公司问题库.md",
+    "天行健/booklog/map/supermap.md",
+    "天行健/booklog/map/Leaflet.md",
+    "天行健/booklog/map/images/Pasted image 20240221095238.png",
+    "天行健/booklog/map/img/Pasted image 20231026114748.png",
+    "天行健/booklog/map/img/5415145db39f0f097263727e71ac2ad.png",
+    "study/WebGL/Three.js/images/Pasted image 20240220114012.png",
+    "天行健/booklog/map/images/Pasted image 20240220105505.png",
+    "天行健/booklog/map/images/Pasted image 20240220104953.png",
+    "天行健/booklog/map/images/Pasted image 20240219145327.png",
+    "天行健/booklog/map/巡航器.md",
+    "天行健/booklog/map/images/Pasted image 20240219144059.png",
+    "天行健/booklog/map/images",
+    "my/readme.md",
     "study/前端基础/vue/vue3快速上手.md",
-    "study/workTools/前端环境安装/前端环境安装.md",
+    "study/前端基础/vue/vue_x.md",
     "study/前端基础/vue/vue_cli.md",
     "study/前端基础/vue/vue_router 路由.md",
-    "study/前端基础/vue/总结.md",
-    "study/前端基础/vue/硅谷甄选项目笔记.md",
-    "天行健/booklog/公司问题库.md",
-    "天行健/booklog/东庄水利.md",
-    "天行健/WebSocket.md",
+    "study/WebGis/images",
+    "study/WebGis",
+    "study/未命名.md",
+    "study/WebGL/WebGL.md",
+    "study/前端基础/代码规范.md",
+    "study/前端基础/JS.md",
+    "study/前端基础/vue/vue项目/小兔鲜 —— 黑马.md",
     "未命名.md",
-    "天行健/readme.md",
-    "Pasted image 20240124175910.png",
-    "Pasted image 20240202111619.png",
-    "Pasted image 20240124180008.png",
-    "Pasted image 20240124175948.png",
-    "天行健/booklog/images/Pasted image 20240202111622.png",
-    "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
-    "天行健/booklog/渣土车重构.md",
-    "study/前端基础/vue/vue_x.md",
-    "study/z其他/项目/商品汇/myNote/03 三级联动态数据、节流、路由跳转.md",
-    "study/前端基础/vue/未命名.md",
-    "study/z其他/项目/商品汇/myNote/04 Search中的TypeNav过渡动画与性能优化.md",
-    "study/前端基础/vue/目录.md",
-    "study/WebGL/Three.js/application.md",
-    "study/前端基础/z-other/Promise/99大佬/03手写 Promise.md",
-    "study/前端基础/z-other/Promise/00 promise基础.md",
-    "study/前端基础/z-other/Promise/99大佬/07异步综合面试题.md",
-    "study/前端基础/z-other/Promise/99大佬/06async 与 await.md",
-    "study/前端基础/z-other/Promise/99大佬/05Promise 相关面试题.md",
-    "Pasted image 20240125160038.png",
-    "天行健/booklog/images/Pasted image 20240124153701.png",
-    "天行健/booklog/map/aba9f547112644e64a4eec6599e3d59.png",
+    "study/前端基础/vue/vue项目/images",
+    "study/前端基础/vue/vue项目/yarn和npm对比.md",
+    "study/前端基础/vue/vue项目/vue 项目.md",
     "study/前端基础/vue/tips",
-    "天行健/booklog/map/img/Pasted image 20231123112838.png",
-    "天行健/booklog/map/img/Pasted image 20231123114137.png",
     "天行健/booklog/map/img",
     "天行健/booklog/map",
     "未命名",
     "study/node后端/images",
     "study/WebGL",
-    "study/WebGL/Three.js/images",
-    "my/未命名",
-    "study/node后端",
-    "study/z其他/未命名",
     "未命名.canvas",
     "未命名 1.canvas",
     "未命名 3.canvas",
