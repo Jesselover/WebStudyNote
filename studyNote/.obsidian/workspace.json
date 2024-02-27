@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4fd1d11a8e8d167a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "study/前端基础/vue/vue_x.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/WebGL/Three.js/threeJS.md"
+                "file": "study/前端基础/vue/vue_x.md"
               }
             }
           },
@@ -122,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/WebGL/Three.js/threeJS.md",
+                "file": "study/前端基础/vue/vue_x.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/WebGL/Three.js/threeJS.md",
+                "file": "study/前端基础/vue/vue_x.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +164,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -172,8 +187,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "219fc56da771c4ba",
+  "active": "6ac9a494f1df9476",
   "lastOpenFiles": [
+    "study/前端基础/vue/vue3快速上手.md",
     "study/node后端/node.md",
     "study/WebGL/Three.js/threeJS.md",
     "study/WebGL/Three.js/01 基础.md",
@@ -199,7 +215,6 @@
     "study/0-directory.md",
     "study/前端基础/z-other/Promise/00 promise基础.md",
     "study/前端基础/z-other/Promise/99大佬/02Promise 的理解和使用.md",
-    "天行健/booklog/map/supermap.md",
     "天行健/booklog/map/aba9f547112644e64a4eec6599e3d59.png",
     "study/前端基础/vue/tips",
     "天行健/booklog/map/img/Pasted image 20231123112838.png",
