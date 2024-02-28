@@ -30,8 +30,11 @@
 	%%升级了算法,让虚拟DOM的对比更快%%
 	%%webpack本身就支持Tree-Shaking%%
 
-  ......
-
+  群体的一般特征：
+1. 群体是个活的生物
+2. 构成群体的条件：每一个人个性的消失；感情与思想都关注于同一件事
+3. 群体既有共性，也有不同
+4. 
 ### 3.拥抱TypeScript
 
 - Vue3可以更好的支持TypeScript
@@ -130,8 +133,15 @@ new Vue({
     render: h => h(App)
 }).$mount('#app')
 ```
-2.**组件中模板结构可以没有根标签**
+2. 记得在vue.config.js 中关闭掉烦人的语法检查
+```js
+const { defineConfig } = require("@vue/cli-service");
+module.exports = defineConfig({
+  transpileDependencies: true,
+  lintOnSave: false, // 关闭语法检查
+});
 
+```
 # 二、常用 Composition API
 
 官方文档: https://v3.cn.vuejs.org/guide/composition-api-introduction.html
@@ -155,6 +165,9 @@ new Vue({
    2. setup不能是一个async函数，（因为返回值不再是return的对象, 而是promise, 模板看不到return对象中的属性）。（后期也可以返回一个Promise实例，但需要Suspense和异步组件的配合）
 
 ##  2.ref函数
+
+RefImpl ：reference implement  引用实现对象
+
 https://cn.vuejs.org/api/reactivity-core.html#ref
 `import {ref} from "vue"`
 - 作用: 定义一个响应式的数据
@@ -167,6 +180,8 @@ https://cn.vuejs.org/api/reactivity-core.html#ref
   - 基本类型的数据：响应式依然是靠``Object.defineProperty()``的```get```与```set```完成的。
   - 对象类型的数据：内部 <i style="color:gray;font-weight:bold">“ 求助 ”</i> 了Vue3.0中的一个新函数—— ```reactive```函数(Proxy操作封装在这里)。
 
+
+
 ## 3.reactive函数
 https://cn.vuejs.org/api/reactivity-core.html#reactive
 
@@ -174,6 +189,7 @@ https://cn.vuejs.org/api/reactivity-core.html#reactive
 - 语法：```const 代理对象= reactive(源对象)```接收一个对象（或数组），返回一个<strong style="color:#DD5145">代理对象（Proxy的实例对象，简称proxy对象）</strong>
 - reactive定义的响应式数据是“深层次的”。
 - **内部**基于 ES6 的 Proxy 实现，通过代理对象操作源对象内部数据进行操作(可以被vue捕捉)。
+- 使用方法： 直接用
 
 ## 4.Vue3.0中的响应式原理
 
@@ -197,6 +213,7 @@ https://cn.vuejs.org/api/reactivity-core.html#reactive
 
 ### Vue3.0的响应式
 
+1. 代理
 ```js
 // 模拟vue2响应式
 //`window 身上的内置函数 Proxy`
@@ -215,29 +232,34 @@ const p = new Proxy(person，{})
 // 打在p身，痛在person身
 
 ```
+
+2. 代理 + 反射
 ```js
-      new Proxy(data, {
-      	// 拦截读取属性值
-          get (target, prop) {
-          	return Reflect.get(target, prop)
-          },
-          //target 源对象, prop 被读取n的属性
-          // 拦截设置属性值或**添加**新属性
-          set (target, prop, value) {
-          	return Reflect.set(target, prop, value)
-          },
-          // 拦截删除属性
-          deleteProperty (target, prop) {
-          	return Reflect.deleteProperty(target, prop)
-          }
-      })
-      
-      proxy.name = 'tom'   
+new Proxy(data, {
+// 拦截读取属性值
+  get (target, prop) {
+	// return target[prop]
+	return Reflect.get(target, prop)
+  },
+  //target 源对象, prop 被读取n的属性
+  // 拦截设置属性值或**添加**新属性
+  set (target, prop, value) {
+  	// target[prop] = value
+	return Reflect.set(target, prop, value)
+  },
+  // 拦截删除属性
+  deleteProperty (target, prop) {
+	// return delete target[prop]
+	return Reflect.deleteProperty(target, prop)
+  }
+})
+
+proxy.name = 'tom'   
 ```
 
 **实现原理:** (Proxy,Reflect都是window上的)
   1.  通过Proxy（代理）:  拦截对象中任意属性的变化, 包括：属性值的读写、属性的添加、属性的删除等。
-  2. 通过Reflect（反射）:  对源对象的属性进行操作。===>可以提高代码的健壮性
+  2. 通过Reflect（反射）:  对源对象的属性进行操作。===>可以提高代码的健壮性,不用写那么多try catch
 	  - Reflect.defineProperty(),可以重复定义属性不会报错,但会返回一个false值。
 	  - Object.defineProperty()定义重名属性，代码会直接报错，代码会挂掉
   - MDN文档中描述的Proxy与Reflect：
@@ -261,11 +283,12 @@ const p = new Proxy(person，{})
    -  reactive定义的数据：操作数据与读取数据：<strong style="color:#DD5145">均不需要</strong>```.value```。
 
 ## 6.setup的两个注意点
+
 (setup 的this 是undefined)
 1. setup执行的时机
   - 在beforeCreate之前执行一次，this是undefined。
   
-2. setup的参数
+2. setup的参数 `setuo(props,context){...}`
   - props：值为对象，包含：组件外部传递过来，且组件内部声明接收了的属性。(要用props1接受)
   - context：上下文对象
     - attrs: 值为对象，包含：组件外部传递过来，但没有在props配置中声明的属性, 相当于 ```this.$attrs```。( %%vue2组件外部传数据的时候,不用props接收,会出现在$attrs中,被 $attrs 捡漏兜底%%)(用emits 接收)
@@ -761,16 +784,16 @@ import {ref} from 'vue'
 
   - 将全局的API，即：```Vue.xxx```调整到应用实例（```app```）上
 
-    | 2.x 全局 API（```Vue```）      | 3.x 实例 API (`app`)                          |
-    | ------------------------- | ------------------------------------------- |
-    | Vue.config.xxxx           | app.config.xxxx                             |
-    | Vue.config.productionTip  | **已经被移除**                                  |
-    | Vue.component             | app.component                               |
-    | Vue.directive             | app.directive                               |
-    | Vue.mixin                 | app.mixin                                   |
-    | Vue.use                   | app.use                                     |
-    | Vue.prototype             | app.config.globalProperties                 |
-  
+| 2.x 全局 API（```Vue```）      | 3.x 实例 API (`app`)                          |
+| ------------------------- | --------------------------------|
+| Vue.config.xxxx           | app.config.xxxx                             |
+| Vue.config.productionTip  | **已经被移除**                                  |
+| Vue.component             | app.component                               |
+| Vue.directive             | app.directive                               |
+| Vue.mixin                 | app.mixin                                   |
+| Vue.use                   | app.use                                     |
+| Vue.prototype             | app.config.globalProperties                 |
+
 
 ## 2.其他改变
 
@@ -835,3 +858,6 @@ import {ref} from 'vue'
 
 
 
+
+
+# 七、组件通信

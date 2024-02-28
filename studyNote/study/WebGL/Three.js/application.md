@@ -13,7 +13,7 @@
 
 ###### target
 
-- [x] 轮子的转动 number
+- [x]  轮子的转动 number
 - [x] 踏板
 - [x] 车是否启动  Boolean
 - [ ]  灯光、转向灯 
@@ -188,3 +188,32 @@ plan
 2. 下雪、下雨场景
 3. 添加 ”下载“ 功能：可以下载当前视角下模型的图片
 4. 模型加载显示文字提示
+
+24-1-4
+1. 高光描边效果优化 -- 加粗闪烁
+2. css2D 标签
+
+24-1-5
+1.  仪表盘 ：转速 1 =  8.4 ° 速度 1 = 2.1°
+
+
+## application 4
+
+[three.js 汽车行驶动画效果 - 0611163 - 博客园 (cnblogs.com)](https://www.cnblogs.com/s0611163/p/17879849.html)
+[F4map Demo - Interactive 3D map](https://demo.f4map.com/#lat=55.7952387&lon=36.7900533&zoom=19)
+
+> [!question] 打点时是否调用gis服务？
+> 答：可以不调用。但是缩放、平移地图时会调用，获取地图瓦片
+
+
+![[Pasted image 20240220114012.png]]
+
+
+>[!question] leaflet 如何与three结合？
+>1. 高德地图开发了结合three使用的api，leaflet我仍在研究。但是，应该时能给实现的
+
+[在高德地图中进行THREE开发-贴地呼吸点图层 - 掘金 (juejin.cn)](https://juejin.cn/post/7116407380480360485?searchId=20240220140314973F2D373FBAE67FCEB4)
+
+[高德地图API 使用Threejs加载GLTF模型并设置模型朝向角 - 掘金 (juejin.cn)](https://juejin.cn/post/7143083085968441380?from=search-suggest)
+
+我的高德密钥：f3149af18efa39ec282876317d3fcddb

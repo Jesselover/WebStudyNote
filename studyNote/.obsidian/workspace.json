@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/WebGL/Three.js/threeJS.md"
+                "file": "study/前端基础/vue/vue_x.md"
               }
             }
           },
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/WebGL/Three.js/threeJS.md",
+                "file": "study/前端基础/vue/vue_x.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/WebGL/Three.js/threeJS.md",
+                "file": "study/前端基础/vue/vue_x.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,11 +187,29 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6ac9a494f1df9476",
+  "active": "4fd1d11a8e8d167a",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "study/WebGL/Three.js/threeJS.md",
+    "天行健/booklog/map/images/Pasted image 20240222161509.png",
+    "天行健/booklog/map/images/Pasted image 20240222161502.png",
+    "天行健/booklog/map/images/Pasted image 20240221095238.png",
+    "天行健/booklog/map/images/Pasted image 20240220105505.png",
+    "天行健/booklog/map/images/Pasted image 20240220104953.png",
+    "天行健/booklog/map/images/Pasted image 20240219145327.png",
+    "天行健/booklog/map/images/Pasted image 20240219144059.png",
+    "天行健/booklog/map/images",
+    "study/前端基础/vue/vue项目/images/Pasted image 20240218092855.png",
+    "study/前端基础/vue/vue项目/images/Pasted image 20240207101922.png",
+    "study/前端基础/vue/vue项目/images/Blender.md",
+    "study/前端基础/vue/vue项目/images",
+    "study/前端基础/JS.md",
+    "study/WebGis/WebGis.md",
+    "study/WebGis",
+    "study/WebGL/Three.js/辉光效果.md",
+    "study/WebGL/Three.js/images/Pasted image 20240220114012.png",
     "study/前端基础/vue/vue3快速上手.md",
     "study/node后端/node.md",
-    "study/WebGL/Three.js/threeJS.md",
     "study/WebGL/Three.js/01 基础.md",
     "study/WebGL/Three.js/application.md",
     "study/WebGL/WebGL.md",
@@ -210,31 +228,13 @@
     "天行健/WebSocket.md",
     "study/前端基础/代码规范.md",
     "天行健/booklog/map/巡航器.md",
-    "study/前端基础/z-other/WebSocket.md",
-    "study/内部组件开发/Note.md",
-    "study/0-directory.md",
-    "study/前端基础/z-other/Promise/00 promise基础.md",
-    "study/前端基础/z-other/Promise/99大佬/02Promise 的理解和使用.md",
-    "天行健/booklog/map/aba9f547112644e64a4eec6599e3d59.png",
     "study/前端基础/vue/tips",
-    "天行健/booklog/map/img/Pasted image 20231123112838.png",
-    "天行健/booklog/map/img/Pasted image 20231123114137.png",
-    "天行健/booklog/map/img/Pasted image 20231123114140.png",
-    "Pasted image 20231123111228.png",
-    "study/workTools/前端环境安装/images/348c76c01f14b023a3b93bb057f698d.jpg",
-    "Pasted image 20231108112224.png",
-    "天行健/booklog/map/img/Pasted image 20231116140631.png",
-    "天行健/booklog/map/img/5415145db39f0f097263727e71ac2ad.png",
-    "天行健/booklog/map/img/Pasted image 20231031173129.png",
     "天行健/booklog/map/img",
     "天行健/booklog/map",
     "未命名",
     "study/node后端/images",
     "study/WebGL",
     "study/WebGL/Three.js/images",
-    "my/未命名",
-    "study/node后端",
-    "study/z其他/未命名",
     "未命名.canvas",
     "未命名 1.canvas",
     "未命名 3.canvas",

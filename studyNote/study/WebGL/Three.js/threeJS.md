@@ -77,7 +77,7 @@ import * as THREE from 'three';
 ```
 
 
-#### 创建轨道控制器
+#### 创建轨道控制器——控制相机
 
 1. Orbitcontrols（轨道控制器）可以使得相机围绕目标进行轨道运动。
 2. threeJs 扩展库。
@@ -106,20 +106,46 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       requestAnimationFrame(this.render);
     },
 ```
+<<<<<<< HEAD
+=======
+
+#### 创建灯光
+
+- 环境光ambient：环境光会均匀的照亮场景中所有物体，环境光不能用来投射阴影，因为它没有方向。
+- 平行光directionalLight ：类似于太阳光
+- 点光源pointLight：类似于灯泡
+- 聚光灯spotlight：类似于手电筒 
+
+```js
+  
+
+    // 添加燈光
+    createLight() {
+      let light1 = new THREE.DirectionalLight(0xffffff, 1); // 创建一个方向光，参数为光的颜色和强度
+      light1.position.set(0, 0, 10);
+      this.scene.add(light1);
+    },
+```
+
+>>>>>>> 057ed8172ceeb336b0dad41f450d4342c17bb9ed
 #### 创建渲染器
 
 ```js
     // 创建渲染器
-
     createRenderer() {
       this.renderer = new THREE.WebGL1Renderer();
       this.renderer.setSize(
         this.container.clientWidth,
         this.container.clientHeight
+<<<<<<< HEAD
       ); // 
       this.renderer.antialisa = true; // 抗锯齿
       this.renderer.setPixelRatio(window.devicePixelRatio) // 如果你遇到canvas画布输出模糊问题，注意设置设备像素比
       
+=======
+      );
+      this.renderer.antialisa = true; // 抗锯齿
+>>>>>>> 057ed8172ceeb336b0dad41f450d4342c17bb9ed
       //   this.renderer.setClearColor("pink"); // 设置画面颜色
       this.container.appendChild(this.renderer.domElement);
     },
@@ -146,6 +172,53 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       this.scene.add(axesHelper);
     },
 ```
+<<<<<<< HEAD
+=======
+
+#### 载入模型
+
+[载入3D模型 – three.js docs (threejs.org)](https://threejs.org/docs/index.html#manual/zh/introduction/Loading-3D-models)
+[GLTFLoader – three.js docs (threejs.org)](https://threejs.org/docs/index.html#examples/zh/loaders/GLTFLoader)
+
+```js
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+```
+```js
+   const loader = new GLTFLoader();
+      loader.load(
+        "path/to/model.glb",
+        (gltf) => {
+          console.log("模型加载完毕...")
+          this.scene.add(gltf.scene);
+          // 遍历模型，拿到目标子模型
+          glft.scene.traverse((child) => {
+          if (child.name === "door_right") {
+            this.rightDoor = child;
+          }
+          })
+        },
+    
+      );
+```
+
+> 1. 加载地址写打包后的相对地址，否则可能加载不出来
+> 2. blender 导出的部分纹理，threejs可能无法加载出,如：颜色渐变等 
+> 3. 载入模型后，记得根据模型调节相机参数
+
+#### 自定义mesh
+
+```js
+    createMesh () {
+      const box = new THREE.BoxGeometry(1, 1, 1);
+      // 材质：MeshStandardMaterial标准网格材质，是基于物理渲染的，能够基于物理模型处理灯光和阴影，更接近物理世界的真实场景。
+      const material = new THREE.MeshStandardMaterial({ color: 0xffff00 })
+      // 物体
+      const cube = new THREE.Mesh(box, material);
+      cube.castShadow = true; // 设置物体的投射阴影
+      this.scene.add(cube)
+    },
+```
+>>>>>>> 057ed8172ceeb336b0dad41f450d4342c17bb9ed
 ### 灯光与阴影
 
 材质：有些材质受光照影响（eg. MeshLamBerMaterial），有些不受光照影响(eg. MeshBasicMaterial)
@@ -203,14 +276,12 @@ sphere.castShadow = true
 plane.receiveShadow = true
 ```
 
-
 ```js
 // 阴影贴图模糊度
 light1.shadow.radius = 20; 
 // 阴影贴图分辨率
 light1.shadow.mapSize.set(2048, 2048);
 ```
-
 
 [OrthographicCamera – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=ca#api/zh/cameras/OrthographicCamera)
 ```js
@@ -226,6 +297,7 @@ directionaLight.shadow.camera.updateProjectionMatrix()
 ```
 
 
+<<<<<<< HEAD
 ### 请求动画帧 window.requestAnimationFrame(Fn)
 
 https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame
@@ -236,54 +308,24 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame
 
 
 ### TWEEN
+=======
+```js
+      light1.angle = Math.PI / 10;
+      light1.distance = 40;
+      // light1.target = this.cube;
+      light1.penumbra = 0.5; 
+      //  this.renderer.physicalCorrectLights = true;
+      light1.decay = 0.5;
+```
+####  点光源
+****### TWEEN
+>>>>>>> 057ed8172ceeb336b0dad41f450d4342c17bb9ed
 [tween.js 用户指南 | tween.js (tweenjs.github.io)](https://tweenjs.github.io/tween.js/docs/user_guide_zh-CN.html)
 
 ### 光线投射技术
 
 [Three.js - Group 组合对象_group和object3d有什么区别_「已注销」的博客-CSDN博客](https://blog.csdn.net/ithanmang/article/details/80965712?spm=1001.2014.3001.5501)
 
-### 载入模型
-
-[载入3D模型 – three.js docs (threejs.org)](https://threejs.org/docs/index.html#manual/zh/introduction/Loading-3D-models)
-[GLTFLoader – three.js docs (threejs.org)](https://threejs.org/docs/index.html#examples/zh/loaders/GLTFLoader)
-
-```js
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-```
-
-```js
-   const loader = new GLTFLoader();
-
-      loader.load(
-
-        "path/to/model.glb",
-
-        function (gltf) {
-
-          scene.add(gltf.scene);
-
-        },
-
-        undefined,
-
-        function (error) {
-
-          console.error(error);
-
-        }
-
-      );
-```
-
->[!warning]  加载地址写打包后的相对地址
-
-否则可能加载不出来
-
->[!tip] blender 导出的部分纹理，threejs可能无法加载出
-
-如：颜色渐变等 
-
-> 载入模型后，记得根据模型调节相机参数
 ### Object3D
 
 [Object3D – three.js docs (threejs.org)](https://threejs.org/docs/index.html#api/zh/core/Object3D)
@@ -291,8 +333,9 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 #### 世界坐标与局部坐标
 
 #####   局部坐标/世界坐标
-世界坐标：自己的局部坐标position与所有父对象的局部坐标position的叠加
 
+世界坐标：自己的局部坐标position与所有父对象的局部坐标position的叠加
+局部坐标/本地坐标：模型的position
 ```js
 const worldPosition = new THREE.Vector3()
       this.gearshift.getWorldPosition(worldPosition)
@@ -306,12 +349,10 @@ const worldPosition = new THREE.Vector3()
 
 rotation属性和旋转方法rotateX()差异类似position属性和平移方法translateX()的差异，一个是相对坐标系设置角度、位置，一个是相对当前的三维模型的状态设置角度、位置参数。 旋转与平移参考的都是坐标系，不过参考的坐标系稍有不同，平移参考的是世界坐标系或者说三维场景对象Scene的坐标系，和相机对象一样，在整个三维场景中的位置， 三维模型的旋转参考的是模型坐标系，也就是对三维模型本身建立的坐标系。
 
-
 ##### visible 
 
 控制模型的可见性，布尔值
 才智material也有这个属性
-
 
 ##### material
 
@@ -383,6 +424,7 @@ obj.add( obj1 );
       }
     },
 ```
+
 
 ####  点云Points
 
@@ -511,11 +553,84 @@ obj.add( obj1 );
     },
 ```
 
+
+### 射线 raycaster
+
+> 1. 射线穿透问题：把可能会碰撞的所有物体都放进去，选取第一个碰撞的物体做判断
+
+```js
+import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js"
+import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js"
+```
+```js
+    createRay () {
+      addEventListener('click', (event) => {
+        // 1. 创建
+        this.raycaster = new THREE.Raycaster();
+        this.mouse = new THREE.Vector2();
+        //通过鼠标点击的位置计算出raycaster所需要的点的位置，以屏幕中心为原点，值的范围为-1到1.
+        this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+        this.mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
+        this.raycaster.setFromCamera(this.mouse, this.camera);
+        // 2. 计算
+        const intersectsRight = this.raycaster.intersectObjects([this.rightDoor]);  
+        const intersectsLeft = this.raycaster.intersectObjects([this.leftDoor]);
+        // 3. 添加功能
+        if (intersectsRight.length) {
+          this.createComposer(this.rightDoor)
+          if (this.rightDoorStatus) {
+            this.closeDoor('right')
+          } else {
+            this.openDoor('right')
+          }
+        }
+        if (intersectsLeft.length) {
+          this.createComposer(this.leftDoor)
+          if (this.leftDoorStatus) {
+            this.closeDoor('left')
+          } else {
+            this.openDoor('left')
+          }
+        }
+        this.renderer.render(this.scene, this.camera);
+      })
+    },
+```
 ### 后处理
 
+1. 引入 : `
+```JS
+import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js"
+import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js"
+import { OutlinePass } from "three/examples/jsm/postprocessing/OutlinePass.js"
+import { GammaCorrectionShader } from 'three/examples/jsm/shaders/GammaCorrectionShader.js'
+import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js'
+```
+
+```js
+ createComposer (mesh) {
+      const composer = new EffectComposer(this.renderer)
+      const renderPass = new RenderPass(this.scene, this.camera) // 后处理通道
+      composer.addPass(renderPass)
+      // 解决发光描边后环境变暗,必须放在 composer.addPass(renderPass) 后
+      const gammaCorrectionShader = new ShaderPass(GammaCorrectionShader);
+      composer.addPass(gammaCorrectionShader);
+      // end 
+      const v2 = new THREE.Vector2(this.container.clientWidth, this.container.clientHeight)  // 与canva 画布尺寸保持一致
+      const outlinePass = new OutlinePass(v2, this.scene, this.camera)
+      outlinePass.selectedObjects = [mesh]// 发光描边得网格模型，可以写多个
+      composer.addPass(outlinePass)
+      this.composer = composer
+    },
+    
+    // 加载
+    render () {
+      this.composer && this.composer.render()
+    },
+    
+```
 ### tools
 
 [Three.js - dat.GUI库的使用详解 - 615 - 博客园 (cnblogs.com)](https://www.cnblogs.com/wuqun/p/14366057.html)
 
-#### OutlinePass.js 高亮发光描边
-![[Pasted image 20230816165030.png]]
+[了解Threejs中的Clock对象以及简单应用 - 掘金 (juejin.cn)](https://juejin.cn/post/7036927681409056805)

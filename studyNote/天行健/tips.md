@@ -17,16 +17,29 @@ console.log(a);
 ```
 Similar ：`arr1.push(...arr2)`
 
+2. 可选链式调用
+[深入理解并解决Uncaught TypeError: Cannot read properties of null“的全面指南“-CSDN博客](https://blog.csdn.net/tombosky/article/details/134333073)
+[可选链运算符（?.） - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
 ## vue
 
-### tip
-[使用this.$nextTick()获取不到数据更新后的this.$refs.xxx._this.$refs获取不到-CSDN博客](https://blog.csdn.net/Rised/article/details/128437042
-[看完这篇nextTick就别再问别人了 - 掘金 (juejin.cn)](https://juejin.cn/post/7266374711823171636?searchId=20230928173417F9D75B5E5F12B1CF5A9E)
+```js
+折叠
+#region
+#end region
 
-[解决Vue项目中img的:src动态加载图片不成功_vue img :src-CSDN博客](https://blog.csdn.net/weixin_46074961/article/details/115522372#:~:text=%E5%8E%9F%E5%9B%A0%EF%BC%9A%E5%8A%A8%E6%80%81%E5%9C%B0%E5%9D%80%EF%BC%8C%E8%B7%AF%E5%BE%84%E8%A2%AB%E5%8A%A0%E8%BD%BD%E5%99%A8%E8%A7%A3%E6%9E%90%E4%B8%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%8C%E6%89%80%E4%BB%A5%E5%9B%BE%E7%89%87%E6%89%BE%E4%B8%8D%E5%88%B0,%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%9A%20%E8%AE%BE%E7%BD%AE%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E6%88%96%E8%80%85%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E6%98%AF%E6%94%B9%E4%B8%BA%E7%94%A8require%E5%BC%95%E5%85%A5%E6%89%8D%E8%83%BD%E6%88%90%E5%8A%9F%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E5%8A%A8%E6%80%81%E4%BD%BF%E7%94%A8%E4%BA%86%E3%80%82)
-原因：动态地址，路径被加载器解析为字符串，所以图片找不到  
-解决方法：  
-设置绝对路径或者相对路径是改为用require引入才能成功，就可以动态使用了。
+```
+
+### tip
+1.  使用this.$nextTick()获取不到数据更新后的this.$refs.xxx._this.$refs获取不到-CSDN博客](https://blog.csdn.net/Rised/article/details/128437042
+	[看完这篇nextTick就别再问别人了 - 掘金 (juejin.cn)](https://juejin.cn/post/7266374711823171636?searchId=20230928173417F9D75B5E5F12B1CF5A9E)
+
+2. [解决Vue项目中img的:src动态加载图片不成功_vue img :src-CSDN博客](https://blog.csdn.net/weixin_46074961/article/details/115522372#:~:text=%E5%8E%9F%E5%9B%A0%EF%BC%9A%E5%8A%A8%E6%80%81%E5%9C%B0%E5%9D%80%EF%BC%8C%E8%B7%AF%E5%BE%84%E8%A2%AB%E5%8A%A0%E8%BD%BD%E5%99%A8%E8%A7%A3%E6%9E%90%E4%B8%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%8C%E6%89%80%E4%BB%A5%E5%9B%BE%E7%89%87%E6%89%BE%E4%B8%8D%E5%88%B0,%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%9A%20%E8%AE%BE%E7%BD%AE%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E6%88%96%E8%80%85%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E6%98%AF%E6%94%B9%E4%B8%BA%E7%94%A8require%E5%BC%95%E5%85%A5%E6%89%8D%E8%83%BD%E6%88%90%E5%8A%9F%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E5%8A%A8%E6%80%81%E4%BD%BF%E7%94%A8%E4%BA%86%E3%80%82)
+	原因：动态地址，路径被加载器解析为字符串，所以图片找不到  
+	解决方法： 设置绝对路径或者相对路径是改为用require引入才能成功，就可以动态使用了。
+	
+3. [vue data和methods可以重名吗？](https://segmentfault.com/q/1010000007103404)
+	如果真的重名了，data中的变量会覆盖methods中的方法
 ## element ui
 
 ### tip
@@ -40,7 +53,75 @@ Similar ：`arr1.push(...arr2)`
 [element-UI——el-table添加序号 - cecelia - 博客园 (cnblogs.com)](https://www.cnblogs.com/ceceliahappycoding/p/10723702.html)
 [min-width not working in table-掘金 (juejin.cn)](https://juejin.cn/s/min-width%20not%20working%20in%20table)
 
+
+[el-input内容超出输入框鼠标悬浮展示_elinput展示不全信息鼠标移入展示-CSDN博客](https://blog.csdn.net/qq_45093219/article/details/133088813)
 ### 改变el-table某列样式
+
+### 使用 v-for 动态渲染多个 el-form 如何进行校验
+
+要实现 el-form 表单动态增删功能，可以定义一个 formList 数组，使用 v-for 进行动态渲染 。但是数组内部的每一个 el-form 表单如何验证呢？
+ el-form 表单验证
+ 1. 规则设置：在 el-form 中设置 rules，或者在 el-form-item 中设置 rules。
+ 2. 验证：` his.$refs.formName.validate( valid => { }) ` ，返回的 valid 为 true 则校验成功，`formName` 为当前表格的 ref。
+v-for 渲染出的el-form 表单验证
+1.   规则设置：只能在  el-form-item 中设置 rules。（在 el-form 中设置 rules会失败，我的提示文字就没成功）
+2. 验证：方法不变，但是循环出的 el-form 需要各自的、独一无二的 ref。我这里使用 `"'infoForm'+infoForm.index"` 来unique的表示 el-form，其中 `infoForm.index` 为当前 el-table 在 formList 中的索引，你可以使用其他的方法。
+
+话不多说，看代码：
+
+1.   结构：
+```html
+    <ul>
+      <li v-for="(infoForm) in  infoList"
+          :key="infoForm.index">
+        <hr>
+        <el-form :model="infoForm"
+                 :ref="'infoForm'+infoForm.index">  
+          <el-form-item label="描述"
+                        :rules="infoRules.description"
+                        prop="description">
+              <el-input v-model="infoForm.description"/>
+          </el-form-item>
+        </el-form>
+      </li>
+    </ul>
+```
+
+	核心代码
+	`:ref="'infoForm'+infoForm.index"` 
+	`:rules="infoRules.description"`
+	
+
+2. 数据
+```JS      
+reportRules: {
+        description: { required: true, trigger: 'blur', message: '请输入问题描述' },
+      },
+infoList:[
+{
+	description:"好心态决定女人的一生"，
+	index:0, // 当前对象在数组中的索引
+}
+]
+```
+
+3. 验证
+```js
+for (let i = 0; i < this.infoList.length; i++) {
+          const refStr = "infoForm" + i
+          const form = this.$refs[refStr][0] // 注意 ！！！
+          form.validate(valid => {
+            if(valid){
+              // 验证通过代码
+            } else {
+            this.$message.error("有必填项未填写！")
+            }
+          })
+```
+我将 `this.$refs[refStr]`打印出来后是个数组，因此要取 `this.$refs[refStr][0]`
+![[Pasted image 20240202111622.png]]
+
+
 ## Echart
 ### Echart表格异常显示问题
 

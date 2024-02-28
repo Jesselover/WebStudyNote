@@ -91,9 +91,7 @@ subdomains：服务的子域。可以传递一个字符串（其中每一个字�
 
 Leaflet.markercluster
 `npm i leaflet.markercluster `
-[Vue-CLI and Leaflet （11）: 点聚合 Leaflet.markercluster - 掘金 (juejin.cn)](https://juejin.cn/post/6844903866102710279#heading-1)
-[leaflet.markercluster中文文档|leaflet.markercluster js中文教程|解析 | npm中文文档 (npmdoc.org)](http://www.npmdoc.org/leaflet-markerclusterzhongwenwendangleaflet-markercluster-jszhongwenjiaochengjiexi.html)
-[Leaflet.markercluster | Marker Clustering plugin for Leaflet](http://leaflet.github.io/Leaflet.markercluster/)
+
 ### 反向地理编码
 
 [L.esri.Geocoding.Geocode |Esri 宣传册 |ArcGIS 开发人员](https://developers.arcgis.com/esri-leaflet/api-reference/tasks/geocode/)
