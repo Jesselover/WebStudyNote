@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/前端基础/vue/vue_x.md"
+                "file": "study/WebGL/Three.js/threeJS.md"
               }
             }
           },
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/前端基础/vue/vue_x.md",
+                "file": "study/WebGL/Three.js/threeJS.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/前端基础/vue/vue_x.md",
+                "file": "study/WebGL/Three.js/threeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
