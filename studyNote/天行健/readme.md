@@ -8,6 +8,7 @@
 工号：108 089 80 
 管理平台地址： 192.168.84.10
 云桌面：txj108 089 80 / dtf191023
+新的git地址：http://gitlab.sqtxj.com/    密码：txj123456
 
 |                            |              | 账号密码|
 |-------------------|--------------------------------------------|---|
@@ -44,6 +45,7 @@ user.email  2864380034@qq.com
  ` npm install --save core-js`
  若还无法启动
  将node_modules 删除 先 ` npm install --save core-js` 再 `npm i`
+
 
 
 

@@ -1,4 +1,4 @@
-# （[00 node.js基础](00%20node.js基础.md)二） 包与 npm 包管理器
+0.147.0# （[00 node.js基础](00%20node.js基础.md)二） 包与 npm 包管理器
 
 ## 1. package 包
 

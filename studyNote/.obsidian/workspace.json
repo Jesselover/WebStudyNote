@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1b614415bc46bf34",
+        "id": "1a98fe5d30f4c2bf",
         "type": "tabs",
         "children": [
           {
-            "id": "7aa5186c98c34417",
+            "id": "f3656ac40cf2485d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "d96ef2258927d1ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md"
+                "file": "天行健/booklog/map/cesium.md"
               }
             }
           },
@@ -135,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
+                "file": "天行健/booklog/map/cesium.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
+                "file": "天行健/booklog/map/cesium.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,47 +175,46 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d96ef2258927d1ef",
+  "active": "f3656ac40cf2485d",
   "lastOpenFiles": [
-    "天行健/booklog/images/Pasted image 20240228161445.png",
-    "天行健/booklog/images/Pasted image 20240228161025.png",
-    "天行健/booklog/images/Pasted image 20240228155516.png",
-    "天行健/booklog/images/Pasted image 20240228155158.png",
-    "天行健/booklog/map/AMap.md",
-    "天行健/booklog/公司问题库.md",
-    "天行健/booklog/渣土车重构.md",
-    "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
     "天行健/readme.md",
+    "天行健/booklog/一种 3D 模型+自采地图结合的技术应用.md",
     "天行健/booklog/map/cesium.md",
+    "天行健/booklog/map/images/Pasted image 20240308114627.png",
+    "天行健/booklog/map/images/Pasted image 20240308104541.png",
+    "study/前端基础/z-other/Node.js/02 包与 npm 包管理器.md",
+    "study/前端基础/z-other/WebSocket.md",
+    "study/前端基础/代码规范.md",
+    "study/node后端/node.md",
+    "天行健/booklog/map/images/31bc35eae2b48c62d0c92d719338c3c.jpg",
+    "天行健/booklog/map/images/Pasted image 20240307153657.png",
+    "天行健/booklog/map/images/Pasted image 20240307153702.png",
+    "天行健/tips.md",
+    "天行健/WebSocket.md",
+    "天行健/booklog/map/images/Pasted image 20240306153500.png",
+    "天行健/booklog/map/images/Pasted image 20240306152225.png",
+    "天行健/booklog/map/images/Pasted image 20240306151040.png",
+    "天行健/booklog/map/images/Pasted image 20240306144155.png",
+    "天行健/booklog/map/images/Pasted image 20240306142731.png",
+    "天行健/booklog/map/AMap.md",
+    "天行健/booklog/东庄水利.md",
+    "study/前端基础/vue/总结.md",
+    "天行健/booklog/公司问题库.md",
     "天行健/booklog/map/supermap.md",
+    "天行健/booklog/渣土车重构.md",
+    "study/workTools/前端环境安装/前端环境安装.md",
+    "study/workTools/git.md",
     "study/WebGis/WebGis.md",
     "study/WebGL/Three.js/01 基础.md",
     "study/WebGL/Three.js/辉光效果.md",
     "study/WebGL/Three.js/application.md",
     "study/WebGL/Three.js/threeJS.md",
-    "天行健/booklog/map/images/Pasted image 20240222161509.png",
-    "天行健/booklog/map/images/Pasted image 20240222161502.png",
-    "天行健/booklog/东庄水利.md",
-    "天行健/WebSocket.md",
     "天行健/booklog/map/Leaflet.md",
-    "天行健/booklog/map/images/Pasted image 20240221095238.png",
-    "天行健/booklog/map/img/Pasted image 20231026114748.png",
-    "天行健/booklog/map/img/5415145db39f0f097263727e71ac2ad.png",
-    "study/WebGL/Three.js/images/Pasted image 20240220114012.png",
-    "天行健/booklog/map/images/Pasted image 20240220105505.png",
     "天行健/booklog/map/巡航器.md",
     "天行健/booklog/map/images",
     "my/readme.md",
-    "study/前端基础/vue/vue3快速上手.md",
-    "study/前端基础/vue/vue_x.md",
-    "study/前端基础/vue/vue_cli.md",
-    "study/前端基础/vue/vue_router 路由.md",
     "study/WebGis/images",
     "study/WebGis",
-    "study/未命名.md",
-    "study/WebGL/WebGL.md",
-    "study/前端基础/代码规范.md",
-    "study/前端基础/JS.md",
     "study/前端基础/vue/vue项目/images",
     "study/前端基础/vue/tips",
     "天行健/booklog/map/img",

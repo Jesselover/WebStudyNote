@@ -55,6 +55,7 @@ function initMap () {
 # 结合THREE
 
 [自定义图层-GLCustomLayer 结合 THREE-自有数据图层-示例中心-JS API 2.0 示例 | 高德地图API (amap.com)](https://lbs.amap.com/demo/javascript-api-v2/example/selflayer/glcustom-layer)
+[3d自定义图层 | @vuemap/vue-amap (guyixi.cn)](https://vue-amap.guyixi.cn/zh-cn/component/layer/data/gl-custom.html)
 
 环境搭建：
 1. 高德地图环境搭建看上一章
