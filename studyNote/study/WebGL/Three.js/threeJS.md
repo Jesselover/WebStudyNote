@@ -7,6 +7,9 @@
 
 [Three.js中文网 (webgl3d.cn)](http://www.webgl3d.cn/)
 
+### threeJs 语法总结
+
+
 ### 初始化
 
 介绍： 主要总结threeJs在vue中的使用
@@ -76,13 +79,14 @@ import * as THREE from 'three';
 
 #### 创建轨道控制器——控制相机
 
-Orbit controls（轨道控制器）可以使得相机围绕目标进行轨道运动。
+1. Orbitcontrols（轨道控制器）可以使得相机围绕目标进行轨道运动。
+2. threeJs 扩展库。
+3. 本质：改变相机位置
 
 > 轨道控制器会影响lookAt的设置，注意手动修改`control`
 ```js
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 ```
-
 ```js
     // 创建控制器
     createOrbitControls() {
@@ -102,6 +106,8 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       requestAnimationFrame(this.render);
     },
 ```
+<<<<<<< HEAD
+=======
 
 #### 创建灯光
 
@@ -121,6 +127,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
     },
 ```
 
+>>>>>>> 057ed8172ceeb336b0dad41f450d4342c17bb9ed
 #### 创建渲染器
 
 ```js
@@ -130,8 +137,15 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       this.renderer.setSize(
         this.container.clientWidth,
         this.container.clientHeight
+<<<<<<< HEAD
+      ); // 
+      this.renderer.antialisa = true; // 抗锯齿
+      this.renderer.setPixelRatio(window.devicePixelRatio) // 如果你遇到canvas画布输出模糊问题，注意设置设备像素比
+      
+=======
       );
       this.renderer.antialisa = true; // 抗锯齿
+>>>>>>> 057ed8172ceeb336b0dad41f450d4342c17bb9ed
       //   this.renderer.setClearColor("pink"); // 设置画面颜色
       this.container.appendChild(this.renderer.domElement);
     },
@@ -158,6 +172,8 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       this.scene.add(axesHelper);
     },
 ```
+<<<<<<< HEAD
+=======
 
 #### 载入模型
 
@@ -202,7 +218,46 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
       this.scene.add(cube)
     },
 ```
+>>>>>>> 057ed8172ceeb336b0dad41f450d4342c17bb9ed
 ### 灯光与阴影
+
+材质：有些材质受光照影响（eg. MeshLamBerMaterial），有些不受光照影响(eg. MeshBasicMaterial)
+
+- 环境光ambient：环境光会均匀的照亮场景中所有物体，环境光不能用来投射阴影，因为它没有方向。
+- 平行光directionalLight ：类似于太阳光
+- 点光源pointLight：类似于灯泡
+- 聚光灯spotlight：类似于手电筒 
+
+```js
+    // 添加燈光
+    createLight() {
+      let light1 = new THREE.DirectionalLight(0xffffff, 1); // 创建一个方向光，参数为光的颜色和强度
+      light1.position.set(0, 0, 10);
+      this.scene.add(light1);
+    },
+```
+#### 聚光灯
+[SpotLight – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=spo#api/zh/lights/SpotLight)
+```js
+      light1.angle = Math.PI / 10;
+      light1.distance = 40; // 光源照射的最大距离
+      // light1.target = this.cube;
+      light1.penumbra = 0.5; //聚光锥的半影缩减百分比
+      //  this.renderer.physicalCorrectLights = true;
+      light1.decay = 0.5; // `decay` 是否随着距离衰减，默认2.0，0.0表示不衰减
+```
+####  点光源
+
+#### 平行光
+```js      
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
+      directionalLight.position.set(1000, 1000, 1000);
+      directionalLight.target = this.truck
+      this.scene.add(directionalLight);
+      const dirLightHelper = new THREE.DirectionalLightHelper(directionalLight, 5, 0xff0000); // 可视化平行光
+      this.scene.add(dirLightHelper)
+
+```
 
 #### 阴影
 
@@ -241,9 +296,19 @@ directionaLight.shadow.camera.near = 0.5
 directionaLight.shadow.camera.updateProjectionMatrix()
 ```
 
-#### 聚光灯
-[SpotLight – three.js docs (threejs.org)](https://threejs.org/docs/index.html?q=spo#api/zh/lights/SpotLight)
 
+<<<<<<< HEAD
+### 请求动画帧 window.requestAnimationFrame(Fn)
+
+https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame
+
+- 理想状态下,以每秒60次的频率调用回调函数 Fn， 通常与浏览器刷新次数匹配
+- 注： 使用请求动画帧不必在`render`中 `this.controls && this.controls.update(); // 使用requestAnimationFrame 后，不在需要更新轨道/相机控制器
+      TWEEN.update();`
+
+
+### TWEEN
+=======
 ```js
       light1.angle = Math.PI / 10;
       light1.distance = 40;
@@ -254,6 +319,7 @@ directionaLight.shadow.camera.updateProjectionMatrix()
 ```
 ####  点光源
 ****### TWEEN
+>>>>>>> 057ed8172ceeb336b0dad41f450d4342c17bb9ed
 [tween.js 用户指南 | tween.js (tweenjs.github.io)](https://tweenjs.github.io/tween.js/docs/user_guide_zh-CN.html)
 
 ### 光线投射技术
